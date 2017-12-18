@@ -1,0 +1,84 @@
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+EE...E.......                                                     13 / 13 (100%).............E.
+
+Time: 9.49 minutes, Memory: 56.00MB
+
+There were 4 errors:
+
+1) Magento\BarcodeSuccess\Test\TestCase\Adminhtml\BarcodeListing\Form\GenerateNewBarcodeEntityTest::test with data set "GenerateNewBarcodeEntityTestVariation1_0" (GenerateNewBarcodeEntityTestVariation1_0)
+Exception: Searched item was not found by filter
+Array
+(
+    [sku] => 24-MB04
+)
+
+
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:275
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Block/Adminhtml/BarcodeListing/Generate/Form/Section/ProductsToGenerate.php:55
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/TestCase/Adminhtml/BarcodeListing/Form/GenerateNewBarcodeEntityTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\BarcodeSuccess\Test\TestCase\Adminhtml\BarcodeListing\Form\GenerateNewBarcodeEntityTest::test with data set "GenerateNewBarcodeEntityTestVariation2_0" (GenerateNewBarcodeEntityTestVariation2_0)
+Exception: Searched item was not found by filter
+Array
+(
+    [sku] => 24-MB02
+)
+
+
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:275
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Block/Adminhtml/BarcodeListing/Generate/Form/Section/ProductsToGenerate.php:55
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/TestCase/Adminhtml/BarcodeListing/Form/GenerateNewBarcodeEntityTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\BarcodeSuccess\Test\TestCase\Adminhtml\BarcodeListing\Grid\MassActionEntityForBarcodeListingTest::test with data set "MassActionPrint_0" (MassActionPrint_0)
+Exception: Searched item was not found by filter
+Array
+(
+    [sku] => 24-MB04
+)
+
+
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:275
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Block/Adminhtml/BarcodeListing/Generate/Form/Section/ProductsToGenerate.php:55
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/TestCase/Adminhtml/BarcodeListing/Grid/MassActionEntityForBarcodeListingTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\BarcodeSuccess\Test\TestCase\Adminhtml\BarcodeTemplate\SaveNewTemplateEntityForBarcodeTest::test with data set "SaveNewTemplateEntityForBarcodeTestVariation2_0" (SaveNewTemplateEntityForBarcodeTestVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:94
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Constraint/Adminhtml/BarcodeTemplate/AssertTemplateSuccessSaveMessage.php:38
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 28, Assertions: 169, Errors: 4.
