@@ -3,43 +3,39 @@ PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-E.....                                                              6 / 6 (100%)...
+EE....                                                              6 / 6 (100%)........
 
-Time: 4.82 minutes, Memory: 114.00MB
+Time: 7.82 minutes, Memory: 120.00MB
 
-There was 1 error:
+There were 2 errors:
 
 1) Magento\Customercredit\Test\TestCase\CreditProduct\CreateCreditProductEntityTest::testCreate with data set "Create credit product with all fields and fixed value type_0" (Create credit product with all fields and fixed value type_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Unable to connect to host localhost on port 7055 after 45000 ms. Firefox console output:
-Error: cannot open display: :1.0
- in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(71): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/SessionStrategy/Isolated.php(67): PHPUnit_Extensions_Selenium2TestCase_Driver->startSession(Array, Object(PHPUnit_Extensions_Selenium2TestCase_URL))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/SessionStrategy/Shared.php(79): PHPUnit_Extensions_Selenium2TestCase_SessionStrategy_Isolated->session(Array)
-#3 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(296): PHPUnit_Extensions_Selenium2TestCase_SessionStrategy_Shared->session(Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(112): PHPUnit_Extensions_Selenium2TestCase->prepareSession()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(85): Magento\Mtf\Client\Driver\Selenium\Driver->init()
-#6 [internal function]: Magento\Mtf\Client\Driver\Selenium\Driver->__construct(Object(Magento\Mtf\Config\Data), Object(Magento\Mtf\Client\Driver\Selenium\RemoteDriverFactory), Object(Magento\Mtf\System\Event\EventManager), Object(Magento\Mtf\ObjectManager), Object(Magento\Mtf\Client\Driver\Selenium\Driver\PageLoader))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(245): ReflectionClass->newInstanceArgs(Array)
-#8 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(66): Magento\Mtf\ObjectManager\Factory->create('Magento\\Mtf\\Cli...')
-#9 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(155): Magento\Mtf\ObjectManager\ObjectManager->get('Magento\\Mtf\\Cli...')
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(236): Magento\Mtf\ObjectManager\Factory->_resolveArguments('Magento\\Mtf\\Cli...', Array, Array)
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(66): Magento\Mtf\ObjectManager\Factory->create('Magento\\Mtf\\Cli...')
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(155): Magento\Mtf\ObjectManager\ObjectManager->get('Magento\\Mtf\\Cli...')
-#13 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(236): Magento\Mtf\ObjectManager\Factory->_resolveArguments('Magento\\Custome...', Array, Array)
-#14 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(53): Magento\Mtf\ObjectManager\Factory->create('Magento\\Custome...', Array)
-#15 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(156): Magento\Mtf\ObjectManager\ObjectManager->create('Magento\\Custome...', Array)
-#16 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(88): Magento\Mtf\ObjectManager\Factory->_resolveArguments('Magento\\Custome...', Array, Array)
-#17 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php(68): Magento\Mtf\ObjectManager\Factory->prepareArguments(Object(Magento\Customercredit\Test\TestCase\CreditProduct\CreateCreditProductEntityTest), 'testCreate', Array)
-#18 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(283): Magento\Mtf\ObjectManager->prepareArguments(Object(Magento\Customercredit\Test\TestCase\CreditProduct\CreateCreditProductEntityTest), 'testCreate', Array)
-#19 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(164): Magento\Mtf\TestCase\Injectable->prepareVariation(Array, Array)
-#20 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#21 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#22 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#23 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#24 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#25 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#26 {main}
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name=description])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:426
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/AbstractContainer.php:40
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/AbstractFormContainers.php:177
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Block/Adminhtml/Product/ProductForm.php:131
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CreditProduct/CreateCreditProductEntityTest.php:52
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Customercredit\Test\TestCase\CreditProduct\CreateCreditProductEntityTest::testCreate with data set "Create credit product with all fields and range of values type_0" (Create credit product with all fields and range of values type_0)
+Exception: Main menu item "add" is not visible.
+
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/Block/Adminhtml/GridPageActions.php:42
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CreditProduct/CreateCreditProductEntityTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
 ERRORS!
-Tests: 9, Assertions: 121, Errors: 1.
+Tests: 14, Assertions: 136, Errors: 2.
