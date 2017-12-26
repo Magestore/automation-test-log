@@ -1,0 +1,41 @@
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+EE....                                                              6 / 6 (100%)........
+
+Time: 7.47 minutes, Memory: 116.00MB
+
+There were 2 errors:
+
+1) Magento\Customercredit\Test\TestCase\CreditProduct\CreateCreditProductEntityTest::testCreate with data set "Create credit product with all fields and fixed value type_0" (Create credit product with all fields and fixed value type_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name=description])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:426
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/AbstractContainer.php:40
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/AbstractFormContainers.php:177
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Block/Adminhtml/Product/ProductForm.php:131
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CreditProduct/CreateCreditProductEntityTest.php:52
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Customercredit\Test\TestCase\CreditProduct\CreateCreditProductEntityTest::testCreate with data set "Create credit product with all fields and range of values type_0" (Create credit product with all fields and range of values type_0)
+Exception: Main menu item "add" is not visible.
+
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/Block/Adminhtml/GridPageActions.php:42
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CreditProduct/CreateCreditProductEntityTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 14, Assertions: 136, Errors: 2.
