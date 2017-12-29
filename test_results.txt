@@ -1,31 +1,392 @@
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+PHPUnit 4.1.0 by Sebastian Bergmann.
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
+Configuration read from /var/www/dev/tests/functional/phpunit.xml
 
-...E......                                                        10 / 10 (100%).........
+[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m
 
-Time: 5.52 minutes, Memory: 110.00MB
+Time: 29.93 minutes, Memory: 124.75MB
 
-There was 1 error:
+There were 19 errors:
 
-1) Magento\PurchaseOrderSuccess\Test\TestCase\OpenAddPricelistEntityTest::test with data set "OpenAddPricelistEntityTestVariation1_0" (OpenAddPricelistEntityTestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#html-body > div.modals-wrapper > aside.modal-slide.undefined.os_supplier_pricinglist_form_os_supplier_pricinglist_form_supplier_pricinglist_listing_add._show)" . Wait: "1"
+1) Magento\PurchaseOrderSuccess\Test\TestCase\Form\CheckSettingEntityForPurchaseManagementTest::test with data set "CheckSettingEntityForPurchaseManagementTestVariation1" (CheckSettingEntityForPurchaseManagementTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/Block/Adminhtml/Pricelist/ModalAddPricelist.php:20
-/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/Constraint/Form/AssertAddPricelistFormIsAvailable.php:22
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/TestCase/Form/CheckSettingEntityForPurchaseManagementTest.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
 
-ERRORS!
-Tests: 19, Assertions: 149, Errors: 1.
+2) Magento\PurchaseOrderSuccess\Test\TestCase\Form\CheckSettingEntityForSupplierConfigurationTest::test with data set "CheckSettingEntityForSupplierConfigurationTestVariation1" (CheckSettingEntityForSupplierConfigurationTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/TestCase/Form/CheckSettingEntityForSupplierConfigurationTest.php:31
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+3) Magento\PurchaseOrderSuccess\Test\TestCase\OpenAddNewSupplierEntityTest::test with data set "OpenAddNewSupplierEntityTestVariation1" (OpenAddNewSupplierEntityTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/TestCase/OpenAddNewSupplierEntityTest.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+4) Magento\PurchaseOrderSuccess\Test\TestCase\OpenAddPricelistEntityTest::test with data set "OpenAddPricelistEntityTestVariation1" (OpenAddPricelistEntityTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/TestCase/OpenAddPricelistEntityTest.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+5) Magento\PurchaseOrderSuccess\Test\TestCase\OpenCreatePurchaseOrderEntityTest::test with data set "OpenCreatePurchaseOrderEntityTestTestVariation1" (OpenCreatePurchaseOrderEntityTestTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/TestCase/OpenCreatePurchaseOrderEntityTest.php:31
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+6) Magento\PurchaseOrderSuccess\Test\TestCase\OpenCreateQuotationEntityTest::test with data set "OpenCreateQuotationEntityTestVariation1" (OpenCreateQuotationEntityTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/TestCase/OpenCreateQuotationEntityTest.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+7) Magento\PurchaseOrderSuccess\Test\TestCase\OpenCreateReturnRequestEntityTest::test with data set "OpenCreateReturnRequestEntityTestVariation1" (OpenCreateReturnRequestEntityTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/TestCase/OpenCreateReturnRequestEntityTest.php:28
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+8) Magento\PurchaseOrderSuccess\Test\TestCase\OpenImportPricelistEntityTest::test with data set "OpenImportPricelistEntityTestVariation1" (OpenImportPricelistEntityTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/TestCase/OpenImportPricelistEntityTest.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+9) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+10) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+11) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+12) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+13) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+14) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+15) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+16) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+17) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+18) Magento\PurchaseOrderSuccess\Test\TestCase\PurchaseOrderMenuTest::test with data set "PurchaseOrderMenuTestVariation10" (PurchaseOrderMenuTestVariation10)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+19) Magento\PurchaseOrderSuccess\Test\TestCase\Supplier\CreateSupplierEntityTest::test with data set "CreateSupplierEntityTestVariation1" (CreateSupplierEntityTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/TestCase/Supplier/CreateSupplierEntityTest.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[37;41m                                     [0m
+[37;41mFAILURES!                            [0m
+[37;41mTests: 19, Assertions: 0, Errors: 19.[0m
