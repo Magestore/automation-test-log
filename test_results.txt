@@ -1,28 +1,323 @@
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+PHPUnit 4.1.0 by Sebastian Bergmann.
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
+Configuration read from /var/www/dev/tests/functional/phpunit.xml
 
-..........                                                        10 / 10 (100%)..F......
+[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m
 
-Time: 13.17 minutes, Memory: 118.00MB
+Time: 14.6 minutes, Memory: 126.75MB
 
-There was 1 failure:
+There were 14 errors:
 
-1) Magento\Customercredit\Test\TestCase\CustomerUsingCredit\CustomerUsingCreditGridSortingTest::test with data set "CustomerUsingCreditGridSortingTest_0" (CustomerUsingCreditGridSortingTest_0)
-Sorting for "Credit Balance" column have not changed the first item of grid!
-Failed asserting that '1' is not equal to <string:1>.
+1) Magento\Customercredit\Test\TestCase\CreditProduct\CreateCreditProductEntityTest::testCreate with data set "Create credit product with all fields and fixed value type" (Create credit product with all fields and fixed value type)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/admin/system_config/save/section/admin" Response: ""
 
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Constraint/AssertGridSorting.php:28
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:128
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:125
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:102
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:89
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:236
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Fixture/Product/CategoryIds.php:60
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:222
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:88
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:68
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:269
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:157
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+2) Magento\Customercredit\Test\TestCase\CreditProduct\CreditProductGridFilteringTest::test with data set "CreditProductGridFilteringTest" (CreditProductGridFilteringTest)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/catalog/product/save/type/customercredit/set/4/popup/1/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/Handler/CreditProduct/Curl.php:235
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/Handler/CreditProduct/Curl.php:218
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:148
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+3) Magento\Customercredit\Test\TestCase\CreditProduct\CreditProductGridSortingTest::test with data set "Credit Product grid sorting test" (Credit Product grid sorting test)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/catalog/product/save/type/customercredit/set/4/popup/1/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/Handler/CreditProduct/Curl.php:235
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/Handler/CreditProduct/Curl.php:218
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:83
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+4) Magento\Customercredit\Test\TestCase\CreditProduct\MassChangeStatusCreditProductBackendEntityTest::test
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CreditProduct/MassChangeStatusCreditProductBackendEntityTest.php:52
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:145
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
 
-FAILURES!
-Tests: 19, Assertions: 190, Failures: 1.
+5) Magento\Customercredit\Test\TestCase\CreditProduct\MassDeleteCreditProductBackendEntityTest::test
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CreditProduct/MassDeleteCreditProductBackendEntityTest.php:49
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:145
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+6) Magento\Customercredit\Test\TestCase\CreditProductFormTest::test with data set "Add credit product form test" (Add credit product form test)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CreditProductFormTest.php:42
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+7) Magento\Customercredit\Test\TestCase\CustomerUsingCredit\CustomerUsingCreditGridFilteringTest::test with data set "CustomerUsingCreditGridFilteringTest" (CustomerUsingCreditGridFilteringTest)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/admin/system_config/save/section/admin" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:128
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:125
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:102
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:89
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:236
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/Fixture/CustomerUseCredit/Customer.php:35
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:222
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/FixtureFactory.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:147
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CustomerUsingCredit/CustomerUsingCreditGridFilteringTest.php:37
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+8) Magento\Customercredit\Test\TestCase\CustomerUsingCredit\CustomerUsingCreditGridSortingTest::test
+Exception: Form key is absent! Url: "http://magento2.travis/backend/admin/system_config/save/section/admin" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:128
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:125
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:102
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:89
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:236
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/Fixture/CustomerUseCredit/Customer.php:35
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:222
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/FixtureFactory.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CustomerUsingCredit/CustomerUsingCreditGridSortingTest.php:27
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:132
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+9) Magento\Customercredit\Test\TestCase\StoreCreditFrontendMenuTest::test with data set "StoreCreditFrontendMenuTest" (StoreCreditFrontendMenuTest)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.header .links)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:249
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Links.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Links.php:72
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/StoreCreditFrontendMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+10) Magento\Customercredit\Test\TestCase\StoreCreditMenuTest::test with data set "Settings" (Settings)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+11) Magento\Customercredit\Test\TestCase\StoreCreditMenuTest::test with data set "Settings" (Settings)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+12) Magento\Customercredit\Test\TestCase\StoreCreditMenuTest::test with data set "Settings" (Settings)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+13) Magento\Customercredit\Test\TestCase\StoreCreditMenuTest::test with data set "Settings" (Settings)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+14) Magento\Customercredit\Test\TestCase\StoreCreditMenuTest::test with data set "Settings" (Settings)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[37;41m                                     [0m
+[37;41mFAILURES!                            [0m
+[37;41mTests: 10, Assertions: 0, Errors: 14.[0m
