@@ -1,45 +1,1071 @@
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+PHPUnit 4.1.0 by Sebastian Bergmann.
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
+Configuration read from /var/www/dev/tests/functional/phpunit.xml
 
-................................EEEE.                               35 / 35 (100%).......................
+[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m
 
-Time: 46.13 minutes, Memory: 120.00MB
+Time: 53.69 minutes, Memory: 132.25MB
 
-There were 2 errors:
+There were 58 errors:
 
-1) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118_0" (GiftcodeMassActionsTestVariation118_0)
-PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] to http://localhost:4444/wd/hub/session/fbd1ed74-3e99-4a42-ad04-576d6c7bae67/execute: Operation timed out after 90001 milliseconds with 0 bytes received
+1) Magento\Giftvoucher\Test\TestCase\Account\AddExistedGiftcodeToCustomerListTest::test with data set "AddExistedGiftcodeToCustomerListTestVariation1" (AddExistedGiftcodeToCustomerListTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.page-title-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:123
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:287
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php:65
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php:83
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:317
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:465
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Html/Title.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LogoutCustomerOnFrontendStep.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LoginCustomerOnFrontendStep.php:73
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/Account/AddExistedGiftcodeToCustomerListTest.php:16
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
 
-2) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassEmailTest::test with data set "GiftcodeMassActionsTestVariation1_0" (GiftcodeMassActionsTestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] to http://localhost:4444/wd/hub/session/da755772-56fe-4c2a-97ff-8f96eea57cb8/execute: Operation timed out after 90000 milliseconds with 0 bytes received
+2) Magento\Giftvoucher\Test\TestCase\Account\AddExistedGiftcodeToCustomerListTest::test with data set "AddExistedGiftcodeToCustomerListTestVariation1" (AddExistedGiftcodeToCustomerListTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.page-title-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:123
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:287
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php:65
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php:83
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:317
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:465
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Html/Title.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LogoutCustomerOnFrontendStep.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LoginCustomerOnFrontendStep.php:87
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:98
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:84
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
 
-ERRORS!
-Tests: 58, Assertions: 312, Errors: 2.
+3) Magento\Giftvoucher\Test\TestCase\Account\AddGiftcodeToCustomerListTest::test with data set "AddGiftcodeToCustomerListTestVariation1" (AddGiftcodeToCustomerListTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.page-title-wrapper)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:465
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Html/Title.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LogoutCustomerOnFrontendStep.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LoginCustomerOnFrontendStep.php:73
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/Account/AddGiftcodeToCustomerListTest.php:16
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+4) Magento\Giftvoucher\Test\TestCase\Account\AddGiftcodeToCustomerListTest::test with data set "AddGiftcodeToCustomerListTestVariation1" (AddGiftcodeToCustomerListTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.page-title-wrapper)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:465
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Html/Title.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LogoutCustomerOnFrontendStep.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LoginCustomerOnFrontendStep.php:87
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:98
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:84
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+5) Magento\Giftvoucher\Test\TestCase\Account\PagingGiftcodeListTest::test with data set "PagingGiftcodeListTestVariation1" (PagingGiftcodeListTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.page-title-wrapper)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:465
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Html/Title.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LogoutCustomerOnFrontendStep.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LoginCustomerOnFrontendStep.php:73
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/Account/PagingGiftcodeListTest.php:16
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+6) Magento\Giftvoucher\Test\TestCase\Account\PagingGiftcodeListTest::test with data set "PagingGiftcodeListTestVariation1" (PagingGiftcodeListTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.page-title-wrapper)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:465
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Html/Title.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LogoutCustomerOnFrontendStep.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LoginCustomerOnFrontendStep.php:87
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:98
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:84
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+7) Magento\Giftvoucher\Test\TestCase\Account\SearchGiftcodeOnCustomerListTest::test with data set "SearchGiftcodeOnCustomerListTestVariation1" (SearchGiftcodeOnCustomerListTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.page-title-wrapper)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:465
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Html/Title.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LogoutCustomerOnFrontendStep.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LoginCustomerOnFrontendStep.php:73
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/Account/SearchGiftcodeOnCustomerListTest.php:16
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+8) Magento\Giftvoucher\Test\TestCase\Account\SearchGiftcodeOnCustomerListTest::test with data set "SearchGiftcodeOnCustomerListTestVariation1" (SearchGiftcodeOnCustomerListTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.page-title-wrapper)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:465
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Html/Title.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LogoutCustomerOnFrontendStep.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Customer/Test/TestStep/LoginCustomerOnFrontendStep.php:87
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:98
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:84
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+9) Magento\Giftvoucher\Test\TestCase\CheckVisibleForm\CheckAddGiftCardProductTest::test with data set "CheckAddGiftCardProductTest1" (CheckAddGiftCardProductTest1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/CheckVisibleForm/CheckAddGiftCardProductTest.php:50
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+10) Magento\Giftvoucher\Test\TestCase\CheckVisibleForm\CheckAddGiftCodeTest::testCreate with data set "CheckAddGiftCodeTestVariation1" (CheckAddGiftCodeTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/CheckVisibleForm/CheckAddGiftCodeTest.php:47
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+11) Magento\Giftvoucher\Test\TestCase\CheckVisibleForm\CheckAddNewGiftCodePartternTest::testCreate with data set "CheckAddNewGiftCodePartternTestVariation1" (CheckAddNewGiftCodePartternTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/CheckVisibleForm/CheckAddNewGiftCodePartternTest.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+12) Magento\Giftvoucher\Test\TestCase\CheckVisibleForm\CheckImportGiftCodeTest::testCreate with data set "CheckImportGiftCodeTestVariation1" (CheckImportGiftCodeTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/CheckVisibleForm/CheckImportGiftCodeTest.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+13) Magento\Giftvoucher\Test\TestCase\CheckVisibleForm\CheckNewTemplateGiftvoucherTest::testCreate with data set "CheckNewTemplateGiftvoucherTestVariation1" (CheckNewTemplateGiftvoucherTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/CheckVisibleForm/CheckNewTemplateGiftvoucherTest.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+14) Magento\Giftvoucher\Test\TestCase\GiftVoucherMenuTest::test with data set "GiftVoucherMenuTest6" (GiftVoucherMenuTest6)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+15) Magento\Giftvoucher\Test\TestCase\GiftVoucherMenuTest::test with data set "GiftVoucherMenuTest6" (GiftVoucherMenuTest6)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+16) Magento\Giftvoucher\Test\TestCase\GiftVoucherMenuTest::test with data set "GiftVoucherMenuTest6" (GiftVoucherMenuTest6)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+17) Magento\Giftvoucher\Test\TestCase\GiftVoucherMenuTest::test with data set "GiftVoucherMenuTest6" (GiftVoucherMenuTest6)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+18) Magento\Giftvoucher\Test\TestCase\GiftVoucherMenuTest::test with data set "GiftVoucherMenuTest6" (GiftVoucherMenuTest6)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+19) Magento\Giftvoucher\Test\TestCase\GiftVoucherMenuTest::test with data set "GiftVoucherMenuTest6" (GiftVoucherMenuTest6)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+20) Magento\Giftvoucher\Test\TestCase\GiftcardCode\CreateGiftcodeActionTest::test with data set "CreateGiftcodeActionTestVariation2" (CreateGiftcodeActionTestVariation2)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/CreateGiftcodeActionTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+21) Magento\Giftvoucher\Test\TestCase\GiftcardCode\CreateGiftcodeActionTest::test with data set "CreateGiftcodeActionTestVariation2" (CreateGiftcodeActionTestVariation2)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/CreateGiftcodeActionTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+22) Magento\Giftvoucher\Test\TestCase\GiftcardCode\CreateGiftcodeEntityTest::test with data set "CreateGiftcodeEntityTestVariation1" (CreateGiftcodeEntityTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/CreateGiftcodeEntityTest.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+23) Magento\Giftvoucher\Test\TestCase\GiftcardCode\DeleteGiftcodeEntityTest::test with data set "DeleteGiftcodeEntityTestVariation1" (DeleteGiftcodeEntityTestVariation1)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/DeleteGiftcodeEntityTest.php:110
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/DeleteGiftcodeEntityTest.php:87
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+24) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeFormButtonsTest::test with data set "GiftcodeFormButtonsTestVariation1" (GiftcodeFormButtonsTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeFormButtonsTest.php:70
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+25) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeGridFilteringTest::test with data set "GiftcodeGridFilteringTest" (GiftcodeGridFilteringTest)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:148
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+26) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeGridSortingTest::test with data set "GiftcodeGridSorting" (GiftcodeGridSorting)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeGridSortingTest.php:27
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+27) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118" (GiftcodeMassActionsTestVariation118)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeMassActionsTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+28) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118" (GiftcodeMassActionsTestVariation118)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeMassActionsTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+29) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118" (GiftcodeMassActionsTestVariation118)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeMassActionsTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+30) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118" (GiftcodeMassActionsTestVariation118)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeMassActionsTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+31) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118" (GiftcodeMassActionsTestVariation118)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeMassActionsTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+32) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118" (GiftcodeMassActionsTestVariation118)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeMassActionsTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+33) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118" (GiftcodeMassActionsTestVariation118)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeMassActionsTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+34) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassEmailTest::test with data set "GiftcodeMassActionsTestVariation1" (GiftcodeMassActionsTestVariation1)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/GiftcodeMassActionsTest.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+35) Magento\Giftvoucher\Test\TestCase\GiftcardCode\ImportGiftcodeTest::test with data set #1 (1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/ImportGiftcodeTest.php:45
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+36) Magento\Giftvoucher\Test\TestCase\GiftcardCode\ShowGiftcodeGridTest::test with data set "ShowGiftcodeGridTestVariation1" (ShowGiftcodeGridTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/ShowGiftcodeGridTest.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+37) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation7" (UpdateGiftcodeEntityTestVariation7)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/UpdateGiftcodeEntityTest.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+38) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation7" (UpdateGiftcodeEntityTestVariation7)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/UpdateGiftcodeEntityTest.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+39) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation7" (UpdateGiftcodeEntityTestVariation7)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/UpdateGiftcodeEntityTest.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+40) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation7" (UpdateGiftcodeEntityTestVariation7)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/UpdateGiftcodeEntityTest.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+41) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation7" (UpdateGiftcodeEntityTestVariation7)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/UpdateGiftcodeEntityTest.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+42) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation7" (UpdateGiftcodeEntityTestVariation7)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/UpdateGiftcodeEntityTest.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+43) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation7" (UpdateGiftcodeEntityTestVariation7)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/giftvoucheradmin/giftvoucher/save/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Giftcode/Curl.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/UpdateGiftcodeEntityTest.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+44) Magento\Giftvoucher\Test\TestCase\GiftcardHistory\GiftcardHistoryGridFilteringTest::test with data set "GiftcardHistoryGridFilteringTest" (GiftcardHistoryGridFilteringTest)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/mui/index/render/?namespace=giftcard_history_listing&paging[pageSize]=1&paging[current]=1&sorting[field]=created_at&sorting[direction]=desc&isAjax=true" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/Gifthistory/Curl.php:65
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:148
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+45) Magento\Giftvoucher\Test\TestCase\GiftcardHistory\GiftcardHistoryGridSortingTest::test with data set "GiftcardHistoryGridSorting" (GiftcardHistoryGridSorting)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:89
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+46) Magento\Giftvoucher\Test\TestCase\GiftcardPattern\CreatePatternEntityTest::test with data set "CreatePatternEntityTestVariation1" (CreatePatternEntityTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardPattern/CreatePatternEntityTest.php:99
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+47) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\CreateGiftVoucherProductEntityTest::testCreate
+Exception: Form key is absent! Url: "http://magento2.travis/backend/admin/system_config/save/section/admin" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:128
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:125
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:102
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:89
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:236
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/CreateGiftVoucherProductEntityTest.php:66
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:132
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+48) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherGridFilteringTest::test with data set "GiftvoucherGridFilteringTest" (GiftvoucherGridFilteringTest)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/catalog/product/save/type/giftvoucher/set/4/popup/1/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:246
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:229
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:148
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+49) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherGridSortingTest::test with data set "GiftvoucherGridSorting" (GiftvoucherGridSorting)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/catalog/product/save/type/giftvoucher/set/4/popup/1/back/edit" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:246
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:229
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/GiftvoucherGridSortingTest.php:27
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+50) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation1" (GiftvoucherProductCheckoutTestVariation1)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/admin/system_config/save/section/payment" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:128
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/TestStep/SetupConfigurationStep.php:96
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/GiftvoucherProductCheckoutTest.php:54
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+51) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation1" (GiftvoucherProductCheckoutTestVariation1)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/admin/system_config/save/section/payment" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:128
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/TestStep/SetupConfigurationStep.php:96
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/TestStep/SetupConfigurationStep.php:118
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:98
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:84
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+52) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\ShowGiftvoucherGridTest::test with data set #1 (1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/ShowGiftvoucherGridTest.php:33
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+53) Magento\Giftvoucher\Test\TestCase\GiftcardTemplate\CreateGiftcardTemplateEntityTest::test with data set "CreateGiftcardTemplateEntityTestVariation1" (CreateGiftcardTemplateEntityTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardTemplate/CreateGiftcardTemplateEntityTest.php:100
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+54) Magento\Giftvoucher\Test\TestCase\GiftcardTemplate\GiftcardTemplateFormButtonsTest::test with data set "GiftcardTemplateFormButtonsTestVariation1" (GiftcardTemplateFormButtonsTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardTemplate/GiftcardTemplateFormButtonsTest.php:70
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+55) Magento\Giftvoucher\Test\TestCase\GiftcardTemplate\GiftcardTemplateGridFilteringTest::test with data set "GiftcardTemplateGridFilteringTest" (GiftcardTemplateGridFilteringTest)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:89
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+56) Magento\Giftvoucher\Test\TestCase\GiftcardTemplate\GiftcardTemplateGridSortingTest::test with data set "GiftcardTemplateGridSorting" (GiftcardTemplateGridSorting)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:89
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+57) Magento\Giftvoucher\Test\TestCase\GiftcardTemplate\ShowGiftcardTemplateGridTest::test with data set #1 (1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardTemplate/ShowGiftcardTemplateGridTest.php:28
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+58) Magento\Giftvoucher\Test\TestCase\Sales\CancelGiftCardOrderTest::test with data set "CancelGiftCardOrderTestVariation1" (CancelGiftCardOrderTestVariation1)
+Exception: Form key is absent! Url: "http://magento2.travis/backend/admin/system_config/save/section/admin" Response: ""
+
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:128
+/var/www/dev/tests/functional/tests/app/Magento/Config/Test/Handler/ConfigData/Curl.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:125
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:102
+/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/WebapiDecorator.php:89
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:236
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Sales/Test/Fixture/OrderInjectable/EntityId.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:222
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:88
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:68
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:269
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:157
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[37;41m                                     [0m
+[37;41mFAILURES!                            [0m
+[37;41mTests: 51, Assertions: 0, Errors: 58.[0m
