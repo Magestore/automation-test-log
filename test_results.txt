@@ -1,0 +1,45 @@
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+................................EEEE.                               35 / 35 (100%).......................
+
+Time: 46.13 minutes, Memory: 120.00MB
+
+There were 2 errors:
+
+1) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118_0" (GiftcodeMassActionsTestVariation118_0)
+PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] to http://localhost:4444/wd/hub/session/fbd1ed74-3e99-4a42-ad04-576d6c7bae67/execute: Operation timed out after 90001 milliseconds with 0 bytes received
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:123
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:287
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php:65
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php:83
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:317
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassEmailTest::test with data set "GiftcodeMassActionsTestVariation1_0" (GiftcodeMassActionsTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] to http://localhost:4444/wd/hub/session/da755772-56fe-4c2a-97ff-8f96eea57cb8/execute: Operation timed out after 90000 milliseconds with 0 bytes received
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:123
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:287
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php:65
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php:83
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:317
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 58, Assertions: 312, Errors: 2.
