@@ -1,10 +1,612 @@
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+PHPUnit 4.1.0 by Sebastian Bergmann.
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
+Configuration read from /var/www/dev/tests/functional/phpunit.xml
 
-..........                                                        10 / 10 (100%)....................
+[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m
 
-Time: 6.03 minutes, Memory: 112.00MB
+Time: 46.97 minutes, Memory: 124.25MB
 
-OK (30 tests, 256 assertions)
+There were 30 errors:
+
+1) Magento\InventorySuccess\Test\TestCase\Form\CheckSettingEntityForInventoryTest::test with data set "CheckSettingEntityForInventoryTestVariation1" (CheckSettingEntityForInventoryTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/TestCase/Form/CheckSettingEntityForInventoryTest.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+2) Magento\InventorySuccess\Test\TestCase\Form\InventoryAdjustStockAddStockAdjustmentFormTest::test with data set "InventoryAdjustStockAddStockAdjustmentFormTestVariation1" (InventoryAdjustStockAddStockAdjustmentFormTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/TestCase/Form/InventoryAdjustStockAddStockAdjustmentFormTest.php:31
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+3) Magento\InventorySuccess\Test\TestCase\Form\InventoryLowStockRuleAddNewRuleFormTest::test with data set "InventoryLowStockRuleAddNewRuleFormTestVariation1" (InventoryLowStockRuleAddNewRuleFormTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/TestCase/Form/InventoryLowStockRuleAddNewRuleFormTest.php:31
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+4) Magento\InventorySuccess\Test\TestCase\Form\InventoryRequestStockHistoryNewRequestStockFormTest::test with data set "InventoryRequestStockHistoryNewRequestStockFormTestVariation1" (InventoryRequestStockHistoryNewRequestStockFormTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/TestCase/Form/InventoryRequestStockHistoryNewRequestStockFormTest.php:31
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+5) Magento\InventorySuccess\Test\TestCase\Form\InventorySendStockHistoryNewSendStockFormTest::test with data set "InventorySendStockHistoryNewSendStockFormTestVariation1" (InventorySendStockHistoryNewSendStockFormTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/TestCase/Form/InventorySendStockHistoryNewSendStockFormTest.php:31
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+6) Magento\InventorySuccess\Test\TestCase\Form\InventoryStocktakingAddStocktakingFormTest::test with data set "InventoryStocktakingAddStocktakingFormTestVariation1" (InventoryStocktakingAddStocktakingFormTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/TestCase/Form/InventoryStocktakingAddStocktakingFormTest.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+7) Magento\InventorySuccess\Test\TestCase\Form\InventoryTranferFromExternalAddNewTranferFormTest::test with data set "InventoryTranferFromExternalAddNewTranferFormTestVariation1" (InventoryTranferFromExternalAddNewTranferFormTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/TestCase/Form/InventoryTranferFromExternalAddNewTranferFormTest.php:31
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+8) Magento\InventorySuccess\Test\TestCase\Form\InventoryTranferToExternalHistoryAddNewTranferFromTest::test with data set "InventoryTranferToExternalHistoryAddNewTranferFromTestVariation1" (InventoryTranferToExternalHistoryAddNewTranferFromTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/TestCase/Form/InventoryTranferToExternalHistoryAddNewTranferFromTest.php:31
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+9) Magento\InventorySuccess\Test\TestCase\Form\InventoryWarehouseAddNewWarehouseFormTest::test with data set "InventoryWarehouseAddNewWarehouseFormTestVariation1" (InventoryWarehouseAddNewWarehouseFormTestVariation1)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/TestCase/Form/InventoryWarehouseAddNewWarehouseFormTest.php:38
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+10) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+11) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+12) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+13) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+14) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+15) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+16) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+17) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+18) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+19) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+20) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+21) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+22) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+23) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+24) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+25) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+26) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+27) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+28) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+29) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+
+30) Magento\InventorySuccess\Test\TestCase\InventoryMenuTest::test with data set "InventoryMenuTest21" (InventoryMenuTest21)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
+/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
+/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
+/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+[37;41m                                     [0m
+[37;41mFAILURES!                            [0m
+[37;41mTests: 30, Assertions: 0, Errors: 30.[0m
