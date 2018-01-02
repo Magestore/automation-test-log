@@ -1,35 +1,30 @@
-PHPUnit 4.1.0 by Sebastian Bergmann.
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Configuration read from /var/www/dev/tests/functional/phpunit.xml
+Runtime:       PHP 7.0.25
+Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-[31;1mE[0m.............
+E.........                                                        10 / 10 (100%).........
 
-Time: 9.04 minutes, Memory: 74.00MB
+Time: 14 minutes, Memory: 86.00MB
 
 There was 1 error:
 
-1) Magento\Customercredit\Test\TestCase\CreditProduct\CreateCreditProductEntityTest::testCreate with data set "Create credit product with all fields and fixed value type" (Create credit product with all fields and fixed value type)
-InvalidArgumentException: Invalid class name: Magento\Catalog\Test\Fixture\Product\Image
+1) Magento\Customercredit\Test\TestCase\CreditProduct\CreateCreditProductEntityTest::testCreate with data set "Create credit product with all fields and fixed value type_0" (Create credit product with all fields and fixed value type_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([data-index='gallery'])" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Generate/Fixture.php:42
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Code/Generator.php:70
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Code/Generator/Autoloader.php:37
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Code/Reader/ClassReader.php:22
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Definition/Runtime.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:225
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:218
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:88
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:68
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:269
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:156
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-[37;41m                                      [0m
-[37;41mFAILURES!                             [0m
-[37;41mTests: 14, Assertions: 159, Errors: 1.[0m
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:690
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:213
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Block/Adminhtml/Product/ProductForm.php:146
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/FormSections.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/AbstractFormContainers.php:174
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Block/Adminhtml/Product/ProductForm.php:131
+/var/www/dev/tests/functional/tests/app/Magento/Customercredit/Test/TestCase/CreditProduct/CreateCreditProductEntityTest.php:47
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 19, Assertions: 181, Errors: 1.
