@@ -1,0 +1,33 @@
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+.......................                                           23 / 23 (100%)...............F....
+
+Time: 14.68 minutes, Memory: 118.00MB
+
+There was 1 failure:
+
+1) Magento\PurchaseOrderSuccess\Test\TestCase\Supplier\MassActionDeleteSupplierEntityTest::test with data set "MassActionDeleteSupplierEntityTestVariation1_0" (MassActionDeleteSupplierEntityTestVariation1_0)
+Wrong supplier delete message is displayed.
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'2 record(s) have been deleted.'
++'3 record(s) have been deleted.'
+
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/Constraint/Supplier/AssertSupplierMassDeteteSuccessMessage.php:33
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 43, Assertions: 411, Failures: 1.
