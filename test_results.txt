@@ -1,655 +1,142 @@
-PHPUnit 4.1.0 by Sebastian Bergmann.
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Configuration read from /var/www/dev/tests/functional/phpunit.xml
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m[31;1mE[0m
+FF.....FF......F.....EE.....                                      28 / 28 (100%).............F.....
 
-Time: 32.18 minutes, Memory: 126.75MB
+Time: 36.21 minutes, Memory: 116.00MB
 
-There were 35 errors:
+There were 2 errors:
 
-1) Magento\Storepickup\Test\TestCase\Holiday\CreateStorePickupHolidayEntityTest::test with data set "Create Store Pickup Holiday Entity Test with all fields data" (Create Store Pickup Holiday Entity Test with all fields data)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/store/save/" Response: ""
+1) Magento\Storepickup\Test\TestCase\Store\CreateStorePickupStoreEntityTest::test with data set "Create store pickup store entity test with all fields data_0" (Create store pickup store entity test with all fields data_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.messages .message) -> css selector([data-ui-id$=message-success]:last-child)" . Wait: "1"
 
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupStore/Curl.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Fixture/Tag/Stores.php:29
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:222
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:88
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:68
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:269
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:157
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-2) Magento\Storepickup\Test\TestCase\Holiday\HolidayGridFilteringTest::test with data set "HolidayGridFilteringTest" (HolidayGridFilteringTest)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/holiday/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupHoliday/Curl.php:58
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:148
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:85
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-3) Magento\Storepickup\Test\TestCase\Holiday\HolidayGridSortingTest::test
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/holiday/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupHoliday/Curl.php:58
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Holiday/HolidayGridSortingTest.php:30
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:96
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Store/AssertStoreSuccessSaveMessage.php:20
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:132
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Storepickup\Test\TestCase\Holiday\MassDeleteHolidayBackendEntityTest::test
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+2) Magento\Storepickup\Test\TestCase\Store\CreateStorePickupStoreEntityTest::test with data set "Create store pickup store entity test with require fields data_0" (Create store pickup store entity test with require fields data_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name=address])" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:426
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Holiday/MassDeleteHolidayBackendEntityTest.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/AbstractContainer.php:40
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/AbstractFormContainers.php:177
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/AbstractFormContainers.php:130
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Store/CreateStorePickupStoreEntityTest.php:48
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There were 6 failures:
+
+1) Magento\Storepickup\Test\TestCase\Holiday\CreateStorePickupHolidayEntityTest::test with data set "Create Store Pickup Holiday Entity Test with all fields data_0" (Create Store Pickup Holiday Entity Test with all fields data_0)
+There is more than one holiday founded
+Failed asserting that 1 matches expected 2.
+
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Holiday/AssertHolidayInGrid.php:41
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:145
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-5) Magento\Storepickup\Test\TestCase\HolidayFormTest::test with data set "Add New Holiday form test" (Add New Holiday form test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+2) Magento\Storepickup\Test\TestCase\Holiday\CreateStorePickupHolidayEntityTest::test with data set "Create Store Pickup Holiday Entity Test with require fields data_0" (Create Store Pickup Holiday Entity Test with require fields data_0)
+There is more than one holiday founded
+Failed asserting that 1 matches expected 2.
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/HolidayFormTest.php:42
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-6) Magento\Storepickup\Test\TestCase\Schedule\CreateStorePickupScheduleEntityTest::test with data set "Create Store Pickup Schedule Entity Test with all fields data" (Create Store Pickup Schedule Entity Test with all fields data)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/store/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupStore/Curl.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Fixture/Tag/Stores.php:29
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:222
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:88
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:68
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:269
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:157
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-7) Magento\Storepickup\Test\TestCase\Schedule\MassDeleteScheduleBackendEntityTest::test
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Schedule/MassDeleteScheduleBackendEntityTest.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Holiday/AssertHolidayInGrid.php:41
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:145
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-8) Magento\Storepickup\Test\TestCase\Schedule\ScheduleGridFilteringTest::test with data set "ScheduleGridFilteringTest" (ScheduleGridFilteringTest)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/schedule/save/" Response: ""
+3) Magento\Storepickup\Test\TestCase\Schedule\CreateStorePickupScheduleEntityTest::test with data set "Create Store Pickup Schedule Entity Test with all fields data_0" (Create Store Pickup Schedule Entity Test with all fields data_0)
+There is more than one schedule founded
+Failed asserting that 1 matches expected 2.
 
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupSchedule/Curl.php:87
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:148
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:85
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-9) Magento\Storepickup\Test\TestCase\Schedule\ScheduleGridSortingTest::test
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/schedule/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupSchedule/Curl.php:87
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Schedule/ScheduleGridSortingTest.php:30
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Schedule/AssertScheduleInGrid.php:41
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:132
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-10) Magento\Storepickup\Test\TestCase\ScheduleFormTest::test with data set "Add New Schedule form test" (Add New Schedule form test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+4) Magento\Storepickup\Test\TestCase\Schedule\CreateStorePickupScheduleEntityTest::test with data set "Create Store Pickup Schedule Entity Test with require fields data_0" (Create Store Pickup Schedule Entity Test with require fields data_0)
+There is more than one schedule founded
+Failed asserting that 1 matches expected 2.
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/ScheduleFormTest.php:42
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-11) Magento\Storepickup\Test\TestCase\Specialday\CreateStorePickupSpecialdayEntityTest::test with data set "Create Store Pickup Specialday Entity Test with all fields data" (Create Store Pickup Specialday Entity Test with all fields data)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/store/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupStore/Curl.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Fixture/Tag/Stores.php:29
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:222
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:88
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:68
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:269
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:157
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-12) Magento\Storepickup\Test\TestCase\Specialday\MassDeleteSpecialdayBackendEntityTest::test
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Specialday/MassDeleteSpecialdayBackendEntityTest.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Schedule/AssertScheduleInGrid.php:41
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:145
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-13) Magento\Storepickup\Test\TestCase\Specialday\SpecialdayGridFilteringTest::test with data set "SpecialdayGridFilteringTest" (SpecialdayGridFilteringTest)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/specialday/save/" Response: ""
+5) Magento\Storepickup\Test\TestCase\Specialday\CreateStorePickupSpecialdayEntityTest::test with data set "Create Store Pickup Specialday Entity Test with require fields data_0" (Create Store Pickup Specialday Entity Test with require fields data_0)
+There is more than one special day founded
+Failed asserting that 1 matches expected 2.
 
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupSpecialday/Curl.php:59
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:148
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:85
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-14) Magento\Storepickup\Test\TestCase\Specialday\SpecialdayGridSortingTest::test
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/specialday/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupSpecialday/Curl.php:59
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Specialday/SpecialdayGridSortingTest.php:30
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Specialday/AssertSpecialdayInGrid.php:41
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:132
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-15) Magento\Storepickup\Test\TestCase\SpecialdayFormTest::test with data set "Add New Special day form test" (Add New Special day form test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
+6) Magento\Storepickup\Test\TestCase\Tag\CreateStorePickupTagEntityTest::test with data set "Create store pickup Tag entity test with require fields_0" (Create store pickup Tag entity test with require fields_0)
+There is more than one tag founded
+Failed asserting that 1 matches expected 2.
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/SpecialdayFormTest.php:42
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-16) Magento\Storepickup\Test\TestCase\Store\CreateStorePickupStoreEntityTest::test with data set "Create store pickup store entity test with all fields data" (Create store pickup store entity test with all fields data)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/inventorysuccess/warehouse/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/InventorySuccess/Test/Handler/Warehouse/Curl.php:45
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Fixture/Store/WarehouseId.php:28
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:222
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:88
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:68
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:269
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:157
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-17) Magento\Storepickup\Test\TestCase\Store\ImportStorePickupStoreTest::test
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Store/ImportStorePickupStoreTest.php:47
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Tag/AssertTagInGrid.php:41
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:145
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-18) Magento\Storepickup\Test\TestCase\Store\MassActionStoreBackendEntityTest::test
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Store/MassActionStoreBackendEntityTest.php:60
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:145
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-19) Magento\Storepickup\Test\TestCase\Store\StoreGridFilteringTest::test with data set "StoreGridFilteringTest" (StoreGridFilteringTest)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/store/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupStore/Curl.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:148
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:85
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-20) Magento\Storepickup\Test\TestCase\Store\StoreGridSortingTest::test
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/store/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupStore/Curl.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Store/StoreGridSortingTest.php:30
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:132
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-21) Magento\Storepickup\Test\TestCase\StoreFormTest::test with data set "Import Store form test" (Import Store form test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/StoreFormTest.php:42
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-22) Magento\Storepickup\Test\TestCase\StoreFormTest::test with data set "Import Store form test" (Import Store form test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/StoreFormTest.php:42
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-23) Magento\Storepickup\Test\TestCase\StorePickupFrontendMenuTest::test with data set "StorePickupFrontendMenuTest" (StorePickupFrontendMenuTest)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.header .links)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:249
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Links.php:59
-/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Links.php:72
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/StorePickupFrontendMenuTest.php:40
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-24) Magento\Storepickup\Test\TestCase\StorePickupMenuTest::test with data set "Settings Menu Test" (Settings Menu Test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-25) Magento\Storepickup\Test\TestCase\StorePickupMenuTest::test with data set "Settings Menu Test" (Settings Menu Test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-26) Magento\Storepickup\Test\TestCase\StorePickupMenuTest::test with data set "Settings Menu Test" (Settings Menu Test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-27) Magento\Storepickup\Test\TestCase\StorePickupMenuTest::test with data set "Settings Menu Test" (Settings Menu Test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-28) Magento\Storepickup\Test\TestCase\StorePickupMenuTest::test with data set "Settings Menu Test" (Settings Menu Test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-29) Magento\Storepickup\Test\TestCase\StorePickupMenuTest::test with data set "Settings Menu Test" (Settings Menu Test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-30) Magento\Storepickup\Test\TestCase\StorePickupMenuTest::test with data set "Settings Menu Test" (Settings Menu Test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/TestCase/NavigateMenuTest.php:36
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-31) Magento\Storepickup\Test\TestCase\Tag\CreateStorePickupTagEntityTest::test with data set "Create store pickup Tag entity test with all fields data" (Create store pickup Tag entity test with all fields data)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/store/save/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupStore/Curl.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Fixture/Tag/Stores.php:29
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:222
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:88
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:68
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:269
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:157
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-32) Magento\Storepickup\Test\TestCase\Tag\MassDeleteTagBackendEntityTest::test
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/Tag/MassDeleteTagBackendEntityTest.php:52
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:145
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-33) Magento\Storepickup\Test\TestCase\Tag\TagGridFilteringTest::test with data set "TagGridFilteringTest" (TagGridFilteringTest)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/tag/save/active_tab/stores_section/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupTag/Curl.php:58
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:148
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:85
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-34) Magento\Storepickup\Test\TestCase\Tag\TagGridSortingTest::test with data set "TagGridSortingTest" (TagGridSortingTest)
-Exception: Form key is absent! Url: "http://magento2.travis/backend/storepickupadmin/tag/save/active_tab/stores_section/" Response: ""
-
-/var/www/dev/tests/functional/lib/Magento/Mtf/Util/Protocol/CurlTransport/BackendDecorator.php:116
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Handler/StorepickupTag/Curl.php:58
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:83
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-
-35) Magento\Storepickup\Test\TestCase\TagFormTest::test with data set "Add New Tag form test" (Add New Tag form test)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:168
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:411
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Handler/Ui/LoginUser.php:41
-/var/www/dev/tests/functional/generated/Magento/Mtf/Handler/HandlerFactoryDeprecated.php:31
-/var/www/dev/tests/functional/lib/Magento/Mtf/Page/BackendPage.php:35
-/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/TestCase/TagFormTest.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:212
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:288
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:202
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:197
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:158
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:179
-/var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php:132
-[37;41m                                     [0m
-[37;41mFAILURES!                            [0m
-[37;41mTests: 20, Assertions: 0, Errors: 35.[0m
+ERRORS!
+Tests: 47, Assertions: 500, Errors: 2, Failures: 6.
