@@ -1,15 +1,93 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.1.11
+Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.F.....FF......F......E.....                                      28 / 28 (100%)...................
+FF...E.FF.E....F.E...EE..EEE                                      28 / 28 (100%).............F.E...
 
-Time: 27.88 minutes, Memory: 116.00MB
+Time: 41.35 minutes, Memory: 84.00MB
 
-There was 1 error:
+There were 9 errors:
 
-1) Magento\Storepickup\Test\TestCase\Store\CreateStorePickupStoreEntityTest::test with data set "Create store pickup store entity test with require fields data_0" (Create store pickup store entity test with require fields data_0)
+1) Magento\Storepickup\Test\TestCase\Holiday\MassDeleteHolidayBackendEntityTest::test with data set "MassDeleteHolidayBackendEntityTestVariation1_0" (MassDeleteHolidayBackendEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:94
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Holiday/AssertHolidayMassDeleteSuccessMessage.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Storepickup\Test\TestCase\Schedule\MassDeleteScheduleBackendEntityTest::test with data set "MassDeleteScheduleBackendEntityTestVariation1_0" (MassDeleteScheduleBackendEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:94
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Schedule/AssertScheduleMassDeleteSuccessMessage.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Storepickup\Test\TestCase\Specialday\MassDeleteSpecialdayBackendEntityTest::test with data set "MassDeleteSpecialdayBackendEntityTestVariation1_0" (MassDeleteSpecialdayBackendEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:94
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Specialday/AssertSpecialdayMassDeleteSuccessMessage.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Storepickup\Test\TestCase\Store\CreateStorePickupStoreEntityTest::test with data set "Create store pickup store entity test with all fields data_0" (Create store pickup store entity test with all fields data_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.messages .message) -> css selector([data-ui-id$=message-success]:last-child)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:96
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Store/AssertStoreSuccessSaveMessage.php:20
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Storepickup\Test\TestCase\Store\CreateStorePickupStoreEntityTest::test with data set "Create store pickup store entity test with require fields data_0" (Create store pickup store entity test with require fields data_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name=address])" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
@@ -26,11 +104,91 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
+6) Magento\Storepickup\Test\TestCase\Store\MassActionStoreBackendEntityTest::test with data set "Enable massaction test_0" (Enable massaction test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:94
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Store/AssertStoreMassEnableSuccessMessage.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Storepickup\Test\TestCase\Store\MassActionStoreBackendEntityTest::test with data set "Disable massaction test_0" (Disable massaction test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:94
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Store/AssertStoreMassDisableSuccessMessage.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+8) Magento\Storepickup\Test\TestCase\Store\MassActionStoreBackendEntityTest::test with data set "Delete massaction test_0" (Delete massaction test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:94
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Store/AssertStoreMassDeleteSuccessMessage.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+9) Magento\Storepickup\Test\TestCase\Tag\MassDeleteTagBackendEntityTest::test with data set "MassDeleteTagBackendEntityTestVariation1_0" (MassDeleteTagBackendEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:94
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Tag/AssertTagMassDeleteSuccessMessage.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
 --
 
-There were 4 failures:
+There were 6 failures:
 
-1) Magento\Storepickup\Test\TestCase\Holiday\CreateStorePickupHolidayEntityTest::test with data set "Create Store Pickup Holiday Entity Test with require fields data_0" (Create Store Pickup Holiday Entity Test with require fields data_0)
+1) Magento\Storepickup\Test\TestCase\Holiday\CreateStorePickupHolidayEntityTest::test with data set "Create Store Pickup Holiday Entity Test with all fields data_0" (Create Store Pickup Holiday Entity Test with all fields data_0)
 There is more than one holiday founded
 Failed asserting that 1 matches expected 2.
 
@@ -45,7 +203,22 @@ Failed asserting that 1 matches expected 2.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Storepickup\Test\TestCase\Schedule\CreateStorePickupScheduleEntityTest::test with data set "Create Store Pickup Schedule Entity Test with all fields data_0" (Create Store Pickup Schedule Entity Test with all fields data_0)
+2) Magento\Storepickup\Test\TestCase\Holiday\CreateStorePickupHolidayEntityTest::test with data set "Create Store Pickup Holiday Entity Test with require fields data_0" (Create Store Pickup Holiday Entity Test with require fields data_0)
+There is more than one holiday founded
+Failed asserting that 1 matches expected 2.
+
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Holiday/AssertHolidayInGrid.php:41
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Storepickup\Test\TestCase\Schedule\CreateStorePickupScheduleEntityTest::test with data set "Create Store Pickup Schedule Entity Test with all fields data_0" (Create Store Pickup Schedule Entity Test with all fields data_0)
 There is more than one schedule founded
 Failed asserting that 1 matches expected 2.
 
@@ -60,7 +233,7 @@ Failed asserting that 1 matches expected 2.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Storepickup\Test\TestCase\Schedule\CreateStorePickupScheduleEntityTest::test with data set "Create Store Pickup Schedule Entity Test with require fields data_0" (Create Store Pickup Schedule Entity Test with require fields data_0)
+4) Magento\Storepickup\Test\TestCase\Schedule\CreateStorePickupScheduleEntityTest::test with data set "Create Store Pickup Schedule Entity Test with require fields data_0" (Create Store Pickup Schedule Entity Test with require fields data_0)
 There is more than one schedule founded
 Failed asserting that 1 matches expected 2.
 
@@ -75,7 +248,7 @@ Failed asserting that 1 matches expected 2.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Storepickup\Test\TestCase\Specialday\CreateStorePickupSpecialdayEntityTest::test with data set "Create Store Pickup Specialday Entity Test with require fields data_0" (Create Store Pickup Specialday Entity Test with require fields data_0)
+5) Magento\Storepickup\Test\TestCase\Specialday\CreateStorePickupSpecialdayEntityTest::test with data set "Create Store Pickup Specialday Entity Test with require fields data_0" (Create Store Pickup Specialday Entity Test with require fields data_0)
 There is more than one special day founded
 Failed asserting that 1 matches expected 2.
 
@@ -90,5 +263,20 @@ Failed asserting that 1 matches expected 2.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
+6) Magento\Storepickup\Test\TestCase\Tag\CreateStorePickupTagEntityTest::test with data set "Create store pickup Tag entity test with require fields_0" (Create store pickup Tag entity test with require fields_0)
+There is more than one tag founded
+Failed asserting that 1 matches expected 2.
+
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Tag/AssertTagInGrid.php:41
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
 ERRORS!
-Tests: 47, Assertions: 504, Errors: 1, Failures: 4.
+Tests: 47, Assertions: 457, Errors: 9, Failures: 6.
