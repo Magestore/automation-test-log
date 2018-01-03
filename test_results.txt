@@ -1,40 +1,23 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.0.25
+Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
 .......E.........                                                 17 / 17 (100%).....EE.EE
 
-Time: 13.03 minutes, Memory: 82.00MB
+Time: 12.01 minutes, Memory: 116.00MB
 
 There were 5 errors:
 
 1) Magento\Rewardpoints\Test\TestCase\ManagePointBalances\ManagePointBalancesGridSortingTest::test with data set "Manage Point Balances grid sorting test_0" (Manage Point Balances grid sorting test_0)
-Exception: Location entity creation by curl handler was not successful! Response: <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
-    <title>There has been an error processing your request</title>
-    <base href="http://magento2.travis/pub/errors/default/" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="robots" content="*"/>
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-</head>
-<body>
-    <main class="page-main">
-        
-<h1>There has been an error processing your request</h1>
-
-<div class="trace-container">
-    <div class="trace">
-        <pre>Warning: array_key_exists(): The first argument should be either a string or an integer in /var/www/vendor/magento/framework/Model/AbstractModel.php on line 352</pre>
-    </div>
-</div>
-    <p>Error log record number: 871094616302</p>
-    </main>
-</body>
-</html>
+Exception: Location entity creation by curl handler was not successful! Response: <br />
+<b>Fatal error</b>:  Uncaught Error: Call to a member function prepareTransaction() on null in /var/www/app/code/Magestore/Rewardpoints/Helper/Action.php:123
+Stack trace:
+#0 /var/www/app/code/Magestore/Rewardpoints/Controller/Adminhtml/Transaction/Save.php(45): Magestore\Rewardpoints\Helper\Action-&gt;addTransaction('admin', Object(Magento\Customer\Model\Backend\Customer\Interceptor), Object(Magento\Framework\DataObject))
+#1 /var/www/vendor/magento/framework/App/Action/Action.php(107): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save-&gt;execute()
+#2 /var/www/vendor/magento/module-backend/App/AbstractAction.php(229): Magento\Framework\App\Action\Action-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Backend\App\AbstractAction-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/vendor/magento/framework/Interception/Interceptor.php(138): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save\Interceptor-&gt;___callParent('dis in <b>/var/www/app/code/Magestore/Rewardpoints/Helper/Action.php</b> on line <b>123</b><br />
 
 
 /var/www/dev/tests/functional/tests/app/Magento/Rewardpoints/Test/Handler/Transaction/Curl.php:51
@@ -88,31 +71,14 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 4) Magento\Rewardpoints\Test\TestCase\Transactions\MassTransactionsChangeStatusTest::test with data set "MassTransactionsChangeStatusTest0_0" (MassTransactionsChangeStatusTest0_0)
-Exception: Location entity creation by curl handler was not successful! Response: <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
-    <title>There has been an error processing your request</title>
-    <base href="http://magento2.travis/pub/errors/default/" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="robots" content="*"/>
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-</head>
-<body>
-    <main class="page-main">
-        
-<h1>There has been an error processing your request</h1>
-
-<div class="trace-container">
-    <div class="trace">
-        <pre>Warning: array_key_exists(): The first argument should be either a string or an integer in /var/www/vendor/magento/framework/Model/AbstractModel.php on line 352</pre>
-    </div>
-</div>
-    <p>Error log record number: 171189090899</p>
-    </main>
-</body>
-</html>
+Exception: Location entity creation by curl handler was not successful! Response: <br />
+<b>Fatal error</b>:  Uncaught Error: Call to a member function prepareTransaction() on null in /var/www/app/code/Magestore/Rewardpoints/Helper/Action.php:123
+Stack trace:
+#0 /var/www/app/code/Magestore/Rewardpoints/Controller/Adminhtml/Transaction/Save.php(45): Magestore\Rewardpoints\Helper\Action-&gt;addTransaction('admin', Object(Magento\Customer\Model\Backend\Customer\Interceptor), Object(Magento\Framework\DataObject))
+#1 /var/www/vendor/magento/framework/App/Action/Action.php(107): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save-&gt;execute()
+#2 /var/www/vendor/magento/module-backend/App/AbstractAction.php(229): Magento\Framework\App\Action\Action-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Backend\App\AbstractAction-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/vendor/magento/framework/Interception/Interceptor.php(138): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save\Interceptor-&gt;___callParent('dis in <b>/var/www/app/code/Magestore/Rewardpoints/Helper/Action.php</b> on line <b>123</b><br />
 
 
 /var/www/dev/tests/functional/tests/app/Magento/Rewardpoints/Test/Handler/Transaction/Curl.php:51
@@ -125,31 +91,14 @@ Exception: Location entity creation by curl handler was not successful! Response
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 5) Magento\Rewardpoints\Test\TestCase\Transactions\TransactionsGridSortingTest::test with data set "Transactions grid sorting test_0" (Transactions grid sorting test_0)
-Exception: Location entity creation by curl handler was not successful! Response: <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
-    <title>There has been an error processing your request</title>
-    <base href="http://magento2.travis/pub/errors/default/" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="robots" content="*"/>
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-</head>
-<body>
-    <main class="page-main">
-        
-<h1>There has been an error processing your request</h1>
-
-<div class="trace-container">
-    <div class="trace">
-        <pre>Warning: array_key_exists(): The first argument should be either a string or an integer in /var/www/vendor/magento/framework/Model/AbstractModel.php on line 352</pre>
-    </div>
-</div>
-    <p>Error log record number: 931692846028</p>
-    </main>
-</body>
-</html>
+Exception: Location entity creation by curl handler was not successful! Response: <br />
+<b>Fatal error</b>:  Uncaught Error: Call to a member function prepareTransaction() on null in /var/www/app/code/Magestore/Rewardpoints/Helper/Action.php:123
+Stack trace:
+#0 /var/www/app/code/Magestore/Rewardpoints/Controller/Adminhtml/Transaction/Save.php(45): Magestore\Rewardpoints\Helper\Action-&gt;addTransaction('admin', Object(Magento\Customer\Model\Backend\Customer\Interceptor), Object(Magento\Framework\DataObject))
+#1 /var/www/vendor/magento/framework/App/Action/Action.php(107): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save-&gt;execute()
+#2 /var/www/vendor/magento/module-backend/App/AbstractAction.php(229): Magento\Framework\App\Action\Action-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Backend\App\AbstractAction-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/vendor/magento/framework/Interception/Interceptor.php(138): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save\Interceptor-&gt;___callParent('dis in <b>/var/www/app/code/Magestore/Rewardpoints/Helper/Action.php</b> on line <b>123</b><br />
 
 
 /var/www/dev/tests/functional/tests/app/Magento/Rewardpoints/Test/Handler/Transaction/Curl.php:51
