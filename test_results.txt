@@ -1,11 +1,11 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.1.11
+Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
 .......E.........                                                 17 / 17 (100%).....EE.EE
 
-Time: 12.01 minutes, Memory: 116.00MB
+Time: 11.94 minutes, Memory: 82.00MB
 
 There were 5 errors:
 
@@ -14,10 +14,10 @@ Exception: Location entity creation by curl handler was not successful! Response
 <b>Fatal error</b>:  Uncaught Error: Call to a member function prepareTransaction() on null in /var/www/app/code/Magestore/Rewardpoints/Helper/Action.php:123
 Stack trace:
 #0 /var/www/app/code/Magestore/Rewardpoints/Controller/Adminhtml/Transaction/Save.php(45): Magestore\Rewardpoints\Helper\Action-&gt;addTransaction('admin', Object(Magento\Customer\Model\Backend\Customer\Interceptor), Object(Magento\Framework\DataObject))
-#1 /var/www/vendor/magento/framework/App/Action/Action.php(107): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save-&gt;execute()
-#2 /var/www/vendor/magento/module-backend/App/AbstractAction.php(229): Magento\Framework\App\Action\Action-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
-#3 /var/www/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Backend\App\AbstractAction-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
-#4 /var/www/vendor/magento/framework/Interception/Interceptor.php(138): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save\Interceptor-&gt;___callParent('dis in <b>/var/www/app/code/Magestore/Rewardpoints/Helper/Action.php</b> on line <b>123</b><br />
+#1 /var/www/vendor/magento/framework/App/Action/Action.php(102): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save-&gt;execute()
+#2 /var/www/vendor/magento/module-backend/App/AbstractAction.php(226): Magento\Framework\App\Action\Action-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/vendor/magento/framework/Interception/Interceptor.php(74): Magento\Backend\App\AbstractAction-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/vendor/magento/framework/Interception/Chain/Chain.php(70): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save\Interceptor-&gt;___callParent('disp in <b>/var/www/app/code/Magestore/Rewardpoints/Helper/Action.php</b> on line <b>123</b><br />
 
 
 /var/www/dev/tests/functional/tests/app/Magento/Rewardpoints/Test/Handler/Transaction/Curl.php:51
@@ -75,10 +75,10 @@ Exception: Location entity creation by curl handler was not successful! Response
 <b>Fatal error</b>:  Uncaught Error: Call to a member function prepareTransaction() on null in /var/www/app/code/Magestore/Rewardpoints/Helper/Action.php:123
 Stack trace:
 #0 /var/www/app/code/Magestore/Rewardpoints/Controller/Adminhtml/Transaction/Save.php(45): Magestore\Rewardpoints\Helper\Action-&gt;addTransaction('admin', Object(Magento\Customer\Model\Backend\Customer\Interceptor), Object(Magento\Framework\DataObject))
-#1 /var/www/vendor/magento/framework/App/Action/Action.php(107): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save-&gt;execute()
-#2 /var/www/vendor/magento/module-backend/App/AbstractAction.php(229): Magento\Framework\App\Action\Action-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
-#3 /var/www/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Backend\App\AbstractAction-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
-#4 /var/www/vendor/magento/framework/Interception/Interceptor.php(138): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save\Interceptor-&gt;___callParent('dis in <b>/var/www/app/code/Magestore/Rewardpoints/Helper/Action.php</b> on line <b>123</b><br />
+#1 /var/www/vendor/magento/framework/App/Action/Action.php(102): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save-&gt;execute()
+#2 /var/www/vendor/magento/module-backend/App/AbstractAction.php(226): Magento\Framework\App\Action\Action-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/vendor/magento/framework/Interception/Interceptor.php(74): Magento\Backend\App\AbstractAction-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/vendor/magento/framework/Interception/Chain/Chain.php(70): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save\Interceptor-&gt;___callParent('disp in <b>/var/www/app/code/Magestore/Rewardpoints/Helper/Action.php</b> on line <b>123</b><br />
 
 
 /var/www/dev/tests/functional/tests/app/Magento/Rewardpoints/Test/Handler/Transaction/Curl.php:51
@@ -95,10 +95,10 @@ Exception: Location entity creation by curl handler was not successful! Response
 <b>Fatal error</b>:  Uncaught Error: Call to a member function prepareTransaction() on null in /var/www/app/code/Magestore/Rewardpoints/Helper/Action.php:123
 Stack trace:
 #0 /var/www/app/code/Magestore/Rewardpoints/Controller/Adminhtml/Transaction/Save.php(45): Magestore\Rewardpoints\Helper\Action-&gt;addTransaction('admin', Object(Magento\Customer\Model\Backend\Customer\Interceptor), Object(Magento\Framework\DataObject))
-#1 /var/www/vendor/magento/framework/App/Action/Action.php(107): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save-&gt;execute()
-#2 /var/www/vendor/magento/module-backend/App/AbstractAction.php(229): Magento\Framework\App\Action\Action-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
-#3 /var/www/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Backend\App\AbstractAction-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
-#4 /var/www/vendor/magento/framework/Interception/Interceptor.php(138): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save\Interceptor-&gt;___callParent('dis in <b>/var/www/app/code/Magestore/Rewardpoints/Helper/Action.php</b> on line <b>123</b><br />
+#1 /var/www/vendor/magento/framework/App/Action/Action.php(102): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save-&gt;execute()
+#2 /var/www/vendor/magento/module-backend/App/AbstractAction.php(226): Magento\Framework\App\Action\Action-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/vendor/magento/framework/Interception/Interceptor.php(74): Magento\Backend\App\AbstractAction-&gt;dispatch(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/vendor/magento/framework/Interception/Chain/Chain.php(70): Magestore\Rewardpoints\Controller\Adminhtml\Transaction\Save\Interceptor-&gt;___callParent('disp in <b>/var/www/app/code/Magestore/Rewardpoints/Helper/Action.php</b> on line <b>123</b><br />
 
 
 /var/www/dev/tests/functional/tests/app/Magento/Rewardpoints/Test/Handler/Transaction/Curl.php:51
