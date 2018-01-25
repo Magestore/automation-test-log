@@ -1,10 +1,72 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.1.11
+Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-....................                                              20 / 20 (100%).................
+..EE................                                              20 / 20 (100%).E...............
 
-Time: 15.33 minutes, Memory: 128.00MB
+Time: 16.99 minutes, Memory: 96.00MB
 
-OK (37 tests, 218 assertions)
+There were 3 errors:
+
+1) Magento\BarcodeSuccess\Test\TestCase\Adminhtml\BarcodeListing\Form\GenerateNewBarcodeEntityTest::test with data set "GenerateVariation1_0" (GenerateVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:193
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Block/Adminhtml/BarcodeListing/Generate/Form/Section/ProductsToGenerate/Grid.php:47
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:238
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Block/Adminhtml/BarcodeListing/Generate/Form/Section/ProductsToGenerate/Grid.php:35
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Block/Adminhtml/BarcodeListing/Generate/Form/Section/ProductsToGenerate.php:58
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/TestCase/Adminhtml/BarcodeListing/Form/GenerateNewBarcodeEntityTest.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\BarcodeSuccess\Test\TestCase\Adminhtml\BarcodeListing\Form\GenerateNewBarcodeEntityTest::test with data set "GenerateVariation2_0" (GenerateVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:193
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Block/Adminhtml/BarcodeListing/Generate/Form/Section/ProductsToGenerate/Grid.php:47
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:238
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Block/Adminhtml/BarcodeListing/Generate/Form/Section/ProductsToGenerate/Grid.php:35
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/Block/Adminhtml/BarcodeListing/Generate/Form/Section/ProductsToGenerate.php:58
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/TestCase/Adminhtml/BarcodeListing/Form/GenerateNewBarcodeEntityTest.php:53
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\BarcodeSuccess\Test\TestCase\Adminhtml\BarcodePrint\Grid\FilterPrintBarcodeEntityTest::test with data set "VariationFilter1_0" (VariationFilter1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Element must be user-editable in order to clear it.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-f5161d15-ff30-4239-9ae9-812fb079a313', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:453
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Widget/Grid.php:234
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Widget/Grid.php:249
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:239
+/var/www/dev/tests/functional/tests/app/Magento/BarcodeSuccess/Test/TestCase/Adminhtml/BarcodePrint/Grid/FilterPrintBarcodeEntityTest.php:49
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 37, Assertions: 212, Errors: 3.
