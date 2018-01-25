@@ -1,31 +1,10 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.0.25
+Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....................                                             21 / 21 (100%).......E......
+.....................                                             21 / 21 (100%)..............
 
-Time: 16.73 minutes, Memory: 84.00MB
+Time: 13.51 minutes, Memory: 128.00MB
 
-There was 1 error:
-
-1) Magento\PurchaseOrderSuccess\Test\TestCase\Supplier\CreateSupplierEntityTest::test with data set "CreateSupplierEntityTestVariation1-RequireFieldsData_0" (CreateSupplierEntityTestVariation1-RequireFieldsData_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.messages .message) -> css selector([data-ui-id$=message-success]:last-child)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:96
-/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/Constraint/Supplier/AssertSupplierSuccessSaveMessage.php:21
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 35, Assertions: 245, Errors: 1.
+OK (35 tests, 245 assertions)
