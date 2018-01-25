@@ -1,34 +1,38 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.0.25
+Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........E.......................EEEE.                               35 / 35 (100%)...........EEEEE......E
+......................E.........EEEE.                               35 / 35 (100%)...............F.......
 
-Time: 43.9 minutes, Memory: 88.00MB
+Time: 47.09 minutes, Memory: 122.00MB
 
-There were 9 errors:
+There were 3 errors:
 
-1) Magento\Giftvoucher\Test\TestCase\CheckVisibleForm\CheckAddGiftCardProductTest::test with data set "CheckAddGiftCardProductTest1_0" (CheckAddGiftCardProductTest1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.page-title-wrapper)" . Wait: "1"
+1) Magento\Giftvoucher\Test\TestCase\GiftcardCode\DeleteGiftcodeEntityTest::test with data set "DeleteGiftcodeEntityTestVariation1_0" (DeleteGiftcodeEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: unterminated string literal
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-66000084-bfd9-48e2-8ac7-4f93cc96fff2', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Theme/Test/Block/Html/Title.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Constraint/AssertBackendPageIsAvailable.php:30
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:282
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:258
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:227
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:255
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/DeleteGiftcodeEntityTest.php:98
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 2) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassActionsTest::test with data set "GiftcodeMassActionsTestVariation118_0" (GiftcodeMassActionsTestVariation118_0)
-PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] to http://localhost:4444/wd/hub/session/3708807a-1507-4f43-b152-01db4050fc4c/execute: Operation timed out after 90001 milliseconds with 0 bytes received
+PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] to http://localhost:4444/wd/hub/session/ead57989-53ec-4ec3-bf6c-93be5663694f/execute: Operation timed out after 90001 milliseconds with 0 bytes received
 
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:123
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
@@ -44,7 +48,7 @@ PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] t
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 3) Magento\Giftvoucher\Test\TestCase\GiftcardCode\GiftcodeMassEmailTest::test with data set "GiftcodeMassActionsTestVariation1_0" (GiftcodeMassActionsTestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] to http://localhost:4444/wd/hub/session/72be710a-bfb9-4e09-a4dd-776710504a6e/execute: Operation timed out after 90001 milliseconds with 0 bytes received
+PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] to http://localhost:4444/wd/hub/session/784ebc0b-9540-4689-a953-74e90d9f3414/execute: Operation timed out after 90001 milliseconds with 0 bytes received
 
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:123
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
@@ -59,58 +63,21 @@ PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] t
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\CreateGiftVoucherProductEntityTest::testCreate with data set "CreateGiftVoucherProductEntityTestVariation1_0" (CreateGiftVoucherProductEntityTestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"])" . Wait: "1"
+--
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:690
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:213
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Block/Adminhtml/Product/ProductForm.php:110
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/FormSections.php:48
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/AbstractFormContainers.php:174
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Block/Adminhtml/Product/ProductForm.php:95
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/CreateGiftVoucherProductEntityTest.php:97
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+There was 1 failure:
 
-5) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherGridFilteringTest::test with data set "GiftvoucherGridFilteringTest_0" (GiftvoucherGridFilteringTest_0)
-Exception: Product creation by curl handler was not successful!
+1) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation2_0" (GiftvoucherProductCheckoutTestVariation2_0)
+Grand Total price: 55.00 not equals with price from data set: 50.00
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'50.00'
++'55.00'
 
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:252
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:229
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:149
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:86
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-6) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherGridSortingTest::test with data set "GiftvoucherGridSorting_0" (GiftvoucherGridSorting_0)
-Exception: Product creation by curl handler was not successful!
-
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:252
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:229
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/GiftvoucherGridSortingTest.php:27
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-7) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation1_0" (GiftvoucherProductCheckoutTestVariation1_0)
-Exception: Product creation by curl handler was not successful!
-
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:252
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:229
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/TestStep/CreateProductsStep.php:81
+/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/Constraint/AssertGrandTotalOrderReview.php:39
+/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/TestStep/PlaceOrderStep.php:105
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
 /var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/GiftvoucherProductCheckoutTest.php:54
@@ -121,49 +88,5 @@ Exception: Product creation by curl handler was not successful!
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-8) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation2_0" (GiftvoucherProductCheckoutTestVariation2_0)
-Exception: Product creation by curl handler was not successful!
-
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:252
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:229
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/TestStep/CreateProductsStep.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/GiftvoucherProductCheckoutTest.php:54
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-9) Magento\Giftvoucher\Test\TestCase\Sales\CancelGiftCardOrderTest::test with data set "CancelGiftCardOrderTestVariation1_0" (CancelGiftCardOrderTestVariation1_0)
-Exception: Product creation by curl handler was not successful! in /var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php:252
-Stack trace:
-#0 /var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/Handler/GiftProduct/Curl.php(229): Magento\Giftvoucher\Test\Handler\GiftProduct\Curl->createProduct(Array, Array)
-#1 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php(254): Magento\Giftvoucher\Test\Handler\GiftProduct\Curl->persist(Object(Magento\Giftvoucher\Test\Fixture\Giftproduct))
-#2 /var/www/dev/tests/functional/tests/app/Magento/Sales/Test/Fixture/OrderInjectable/EntityId.php(40): Magento\Mtf\Fixture\InjectableFixture->persist()
-#3 [internal function]: Magento\Sales\Test\Fixture\OrderInjectable\EntityId->__construct(Object(Magento\Mtf\Fixture\FixtureFactory), Array, Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(245): ReflectionClass->newInstanceArgs(Array)
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(53): Magento\Mtf\ObjectManager\Factory->create('Magento\\Sales\\T...', Array)
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php(48): Magento\Mtf\ObjectManager\ObjectManager->create('Magento\\Sales\\T...', Array)
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php(218): Magento\Mtf\Factory\AbstractFactory->create('Magento\\Sales\\T...', Array)
-#8 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php(159): Magento\Mtf\Fixture\InjectableFixture->prepareSource('entity_id', Array, Array)
-#9 [internal function]: Magento\Mtf\Fixture\InjectableFixture->__construct(Object(Magento\Mtf\Config\Data), Object(Magento\Mtf\Repository\RepositoryFactory), Object(Magento\Mtf\Fixture\FixtureFactory), Object(Magento\Mtf\Handler\HandlerFactory), Object(Magento\Mtf\System\Event\EventManager), Object(Magento\Mtf\Fixture\InjectableFixture\Replacer), Array, 'default', false)
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(245): ReflectionClass->newInstanceArgs(Array)
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(53): Magento\Mtf\ObjectManager\Factory->create('Magento\\Sales\\T...', Array)
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(156): Magento\Mtf\ObjectManager\ObjectManager->create('Magento\\Sales\\T...', Array)
-#13 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(88): Magento\Mtf\ObjectManager\Factory->_resolveArguments('Magento\\Giftvou...', Array, Array)
-#14 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php(68): Magento\Mtf\ObjectManager\Factory->prepareArguments(Object(Magento\Giftvoucher\Test\TestCase\Sales\CancelGiftCardOrderTest), 'test', Array)
-#15 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(283): Magento\Mtf\ObjectManager->prepareArguments(Object(Magento\Giftvoucher\Test\TestCase\Sales\CancelGiftCardOrderTest), 'test', Array)
-#16 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(164): Magento\Mtf\TestCase\Injectable->prepareVariation(Array, Array)
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#20 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#21 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#22 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#23 {main}
 ERRORS!
-Tests: 57, Assertions: 261, Errors: 9.
+Tests: 58, Assertions: 293, Errors: 3, Failures: 1.
