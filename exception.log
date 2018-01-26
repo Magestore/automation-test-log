@@ -1,0 +1,62 @@
+[2018-01-26 02:40:37] main.CRITICAL: Exception: Notice: Array to string conversion in /var/www/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php on line 2929 in /var/www/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 /var/www/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(2929): Magento\Framework\App\ErrorHandler->handler(8, 'Array to string...', '/var/www/vendor...', 2929, Array)
+#1 /var/www/vendor/magento/framework/Model/ResourceModel/AbstractResource.php(168): Magento\Framework\DB\Adapter\Pdo\Mysql->prepareColumnValue(Array, Array)
+#2 /var/www/vendor/magento/framework/Model/ResourceModel/Db/AbstractDb.php(728): Magento\Framework\Model\ResourceModel\AbstractResource->_prepareDataForTable(Object(Magento\Quote\Model\Quote\Address), 'quote_address')
+#3 /var/www/vendor/magento/framework/Model/ResourceModel/Db/AbstractDb.php(784): Magento\Framework\Model\ResourceModel\Db\AbstractDb->prepareDataForUpdate(Object(Magento\Quote\Model\Quote\Address))
+#4 /var/www/vendor/magento/framework/Model/ResourceModel/Db/AbstractDb.php(403): Magento\Framework\Model\ResourceModel\Db\AbstractDb->updateObject(Object(Magento\Quote\Model\Quote\Address))
+#5 /var/www/vendor/magento/framework/Model/AbstractModel.php(636): Magento\Framework\Model\ResourceModel\Db\AbstractDb->save(Object(Magento\Quote\Model\Quote\Address))
+#6 /var/www/app/code/Magestore/Rewardpoints/Model/Total/Quote/Point.php(173): Magento\Framework\Model\AbstractModel->save()
+#7 /var/www/vendor/magento/module-quote/Model/Quote/TotalsCollector.php(265): Magestore\Rewardpoints\Model\Total\Quote\Point->collect(Object(Magento\Quote\Model\Quote), Object(Magento\Quote\Model\ShippingAssignment), Object(Magento\Quote\Model\Quote\Address\Total))
+#8 /var/www/vendor/magento/module-quote/Model/ShippingMethodManagement.php(295): Magento\Quote\Model\Quote\TotalsCollector->collectAddressTotals(Object(Magento\Quote\Model\Quote), Object(Magento\Quote\Model\Quote\Address))
+#9 /var/www/vendor/magento/module-quote/Model/ShippingMethodManagement.php(231): Magento\Quote\Model\ShippingMethodManagement->getShippingMethods(Object(Magento\Quote\Model\Quote), Object(Magento\Quote\Model\Quote\Address))
+#10 /var/www/vendor/magento/module-quote/Model/GuestCart/GuestShippingMethodManagement.php(103): Magento\Quote\Model\ShippingMethodManagement->estimateByExtendedAddress(10, Object(Magento\Quote\Model\Quote\Address))
+#11 [internal function]: Magento\Quote\Model\GuestCart\GuestShippingMethodManagement->estimateByExtendedAddress('5df7539e61c3c4b...', Object(Magento\Quote\Model\Quote\Address))
+#12 /var/www/app/code/Magestore/Webpos/Controller/Rest.php(104): call_user_func_array(Array, Array)
+#13 /var/www/vendor/magento/module-webapi/Controller/Rest.php(216): Magestore\Webpos\Controller\Rest->processApiRequest()
+#14 /var/www/var/generation/Magestore/Webpos/Controller/Rest/Interceptor.php(24): Magento\Webapi\Controller\Rest->dispatch(Object(Magento\Framework\App\Request\Http))
+#15 /var/www/vendor/magento/framework/App/Http.php(135): Magestore\Webpos\Controller\Rest\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#16 /var/www/vendor/magento/framework/App/Bootstrap.php(258): Magento\Framework\App\Http->launch()
+#17 /var/www/index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http))
+#18 {main}
+
+Next Exception: Report ID: webapi-5a6a95255e24e; Message: Notice: Array to string conversion in /var/www/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php on line 2929 in /var/www/vendor/magento/framework/Webapi/ErrorProcessor.php:195
+Stack trace:
+#0 /var/www/vendor/magento/framework/Webapi/ErrorProcessor.php(139): Magento\Framework\Webapi\ErrorProcessor->_critical(Object(Exception))
+#1 /var/www/vendor/magento/module-webapi/Controller/Rest.php(219): Magento\Framework\Webapi\ErrorProcessor->maskException(Object(Exception))
+#2 /var/www/var/generation/Magestore/Webpos/Controller/Rest/Interceptor.php(24): Magento\Webapi\Controller\Rest->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/vendor/magento/framework/App/Http.php(135): Magestore\Webpos\Controller\Rest\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/vendor/magento/framework/App/Bootstrap.php(258): Magento\Framework\App\Http->launch()
+#5 /var/www/index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http))
+#6 {main} [] []
+[2018-01-26 02:40:41] main.CRITICAL: Exception: Notice: Array to string conversion in /var/www/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php on line 2929 in /var/www/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 /var/www/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(2929): Magento\Framework\App\ErrorHandler->handler(8, 'Array to string...', '/var/www/vendor...', 2929, Array)
+#1 /var/www/vendor/magento/framework/Model/ResourceModel/AbstractResource.php(168): Magento\Framework\DB\Adapter\Pdo\Mysql->prepareColumnValue(Array, Array)
+#2 /var/www/vendor/magento/framework/Model/ResourceModel/Db/AbstractDb.php(728): Magento\Framework\Model\ResourceModel\AbstractResource->_prepareDataForTable(Object(Magento\Quote\Model\Quote\Address), 'quote_address')
+#3 /var/www/vendor/magento/framework/Model/ResourceModel/Db/AbstractDb.php(784): Magento\Framework\Model\ResourceModel\Db\AbstractDb->prepareDataForUpdate(Object(Magento\Quote\Model\Quote\Address))
+#4 /var/www/vendor/magento/framework/Model/ResourceModel/Db/AbstractDb.php(403): Magento\Framework\Model\ResourceModel\Db\AbstractDb->updateObject(Object(Magento\Quote\Model\Quote\Address))
+#5 /var/www/vendor/magento/framework/Model/AbstractModel.php(636): Magento\Framework\Model\ResourceModel\Db\AbstractDb->save(Object(Magento\Quote\Model\Quote\Address))
+#6 /var/www/app/code/Magestore/Rewardpoints/Model/Total/Quote/Point.php(173): Magento\Framework\Model\AbstractModel->save()
+#7 /var/www/vendor/magento/module-quote/Model/Quote/TotalsCollector.php(265): Magestore\Rewardpoints\Model\Total\Quote\Point->collect(Object(Magento\Quote\Model\Quote), Object(Magento\Quote\Model\ShippingAssignment), Object(Magento\Quote\Model\Quote\Address\Total))
+#8 /var/www/vendor/magento/module-quote/Model/ShippingMethodManagement.php(295): Magento\Quote\Model\Quote\TotalsCollector->collectAddressTotals(Object(Magento\Quote\Model\Quote), Object(Magento\Quote\Model\Quote\Address))
+#9 /var/www/vendor/magento/module-quote/Model/ShippingMethodManagement.php(231): Magento\Quote\Model\ShippingMethodManagement->getShippingMethods(Object(Magento\Quote\Model\Quote), Object(Magento\Quote\Model\Quote\Address))
+#10 /var/www/vendor/magento/module-quote/Model/GuestCart/GuestShippingMethodManagement.php(103): Magento\Quote\Model\ShippingMethodManagement->estimateByExtendedAddress(10, Object(Magento\Quote\Model\Quote\Address))
+#11 [internal function]: Magento\Quote\Model\GuestCart\GuestShippingMethodManagement->estimateByExtendedAddress('5df7539e61c3c4b...', Object(Magento\Quote\Model\Quote\Address))
+#12 /var/www/app/code/Magestore/Webpos/Controller/Rest.php(104): call_user_func_array(Array, Array)
+#13 /var/www/vendor/magento/module-webapi/Controller/Rest.php(216): Magestore\Webpos\Controller\Rest->processApiRequest()
+#14 /var/www/var/generation/Magestore/Webpos/Controller/Rest/Interceptor.php(24): Magento\Webapi\Controller\Rest->dispatch(Object(Magento\Framework\App\Request\Http))
+#15 /var/www/vendor/magento/framework/App/Http.php(135): Magestore\Webpos\Controller\Rest\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#16 /var/www/vendor/magento/framework/App/Bootstrap.php(258): Magento\Framework\App\Http->launch()
+#17 /var/www/index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http))
+#18 {main}
+
+Next Exception: Report ID: webapi-5a6a95292eea1; Message: Notice: Array to string conversion in /var/www/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php on line 2929 in /var/www/vendor/magento/framework/Webapi/ErrorProcessor.php:195
+Stack trace:
+#0 /var/www/vendor/magento/framework/Webapi/ErrorProcessor.php(139): Magento\Framework\Webapi\ErrorProcessor->_critical(Object(Exception))
+#1 /var/www/vendor/magento/module-webapi/Controller/Rest.php(219): Magento\Framework\Webapi\ErrorProcessor->maskException(Object(Exception))
+#2 /var/www/var/generation/Magestore/Webpos/Controller/Rest/Interceptor.php(24): Magento\Webapi\Controller\Rest->dispatch(Object(Magento\Framework\App\Request\Http))
+#3 /var/www/vendor/magento/framework/App/Http.php(135): Magestore\Webpos\Controller\Rest\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/vendor/magento/framework/App/Bootstrap.php(258): Magento\Framework\App\Http->launch()
+#5 /var/www/index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http))
+#6 {main} [] []
