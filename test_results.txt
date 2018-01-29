@@ -1,10 +1,48 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.1.11
+Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..................................                                34 / 34 (100%)....................
+..................................                                34 / 34 (100%)...........EE.......
 
-Time: 39.9 minutes, Memory: 134.00MB
+Time: 33.99 minutes, Memory: 102.00MB
 
-OK (54 tests, 301 assertions)
+There were 2 errors:
+
+1) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation1_0" (GiftvoucherProductCheckoutTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/Block/Onepage/Payment/Method.php:77
+/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/TestStep/PlaceOrderStep.php:107
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/GiftvoucherProductCheckoutTest.php:54
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation2_0" (GiftvoucherProductCheckoutTestVariation2_0)
+Exception: Such payment method is absent.
+
+/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/Block/Onepage/Payment.php:96
+/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/TestStep/SelectPaymentMethodStep.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/GiftvoucherProductCheckoutTest.php:54
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 54, Assertions: 276, Errors: 2.
