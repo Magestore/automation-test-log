@@ -1,18 +1,18 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.1.11
+Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......................E...........                                34 / 34 (100%)....................
+..................................                                34 / 34 (100%)....E......E........
 
-Time: 36.88 minutes, Memory: 134.00MB
+Time: 37.13 minutes, Memory: 102.00MB
 
-There was 1 error:
+There were 2 errors:
 
-1) Magento\Giftvoucher\Test\TestCase\GiftcardCode\DeleteGiftcodeEntityTest::test with data set "DeleteGiftcodeEntityTestVariation1_0" (DeleteGiftcodeEntityTestVariation1_0)
+1) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation7_0" (UpdateGiftcodeEntityTestVariation7_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: unterminated string literal
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-8c872a2b-f528-451b-b5fd-50e07bebf32d', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-36b2109b-1ee1-4807-a97b-1a08d0097dc8', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
@@ -20,16 +20,34 @@ Driver info: driver.version: unknown
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:282
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:258
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
 /var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:227
 /var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:255
-/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/DeleteGiftcodeEntityTest.php:98
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/UpdateGiftcodeEntityTest.php:44
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
+2) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation1_0" (GiftvoucherProductCheckoutTestVariation1_0)
+Exception: Unable to set value to field 'email' as it's disabled.
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:250
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/Block/Onepage/Payment/Method/Billing.php:65
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestStep/FillBillingInformationStep.php:139
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/GiftvoucherProductCheckoutTest.php:54
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
 ERRORS!
-Tests: 54, Assertions: 294, Errors: 1.
+Tests: 54, Assertions: 283, Errors: 2.
