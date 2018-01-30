@@ -3,16 +3,16 @@ PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..................................                                34 / 34 (100%)E..........E........
+..................................                                34 / 34 (100%)...E.......E........
 
-Time: 34.15 minutes, Memory: 102.00MB
+Time: 38.04 minutes, Memory: 102.00MB
 
 There were 2 errors:
 
-1) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation1_0" (UpdateGiftcodeEntityTestVariation1_0)
+1) Magento\Giftvoucher\Test\TestCase\GiftcardCode\UpdateGiftcodeEntityTest::test with data set "UpdateGiftcodeEntityTestVariation6_0" (UpdateGiftcodeEntityTestVariation6_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: unterminated string literal
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-90dcccf3-3bd4-4402-9604-792a6f978246', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-fb738e56-8935-480f-a65b-e4b72d032a22', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
@@ -33,15 +33,12 @@ Driver info: driver.version: unknown
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 2) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation1_0" (GiftvoucherProductCheckoutTestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+Exception: Unable to set value to field 'email' as it's disabled.
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
-/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/Block/Onepage/Payment/Method.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/TestStep/PlaceOrderStep.php:107
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:250
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Checkout/Test/Block/Onepage/Payment/Method/Billing.php:65
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestStep/FillBillingInformationStep.php:139
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
 /var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardProduct/GiftvoucherProductCheckoutTest.php:54
@@ -53,4 +50,4 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 54, Assertions: 281, Errors: 2.
+Tests: 54, Assertions: 283, Errors: 2.
