@@ -1,10 +1,35 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.0.25
+Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..................................                                34 / 34 (100%)...............
+......................E...........                                34 / 34 (100%)...............
 
-Time: 29.51 minutes, Memory: 102.00MB
+Time: 27.98 minutes, Memory: 108.00MB
 
-OK (49 tests, 260 assertions)
+There was 1 error:
+
+1) Magento\Giftvoucher\Test\TestCase\GiftcardCode\DeleteGiftcodeEntityTest::test with data set "DeleteGiftcodeEntityTestVariation1_0" (DeleteGiftcodeEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: unterminated string literal
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-a9b1a821-8e4e-4366-a24d-917b2f7c8df6', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:282
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:258
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:227
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:255
+/var/www/dev/tests/functional/tests/app/Magento/Giftvoucher/Test/TestCase/GiftcardCode/DeleteGiftcodeEntityTest.php:98
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 49, Assertions: 253, Errors: 1.
