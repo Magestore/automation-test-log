@@ -1,87 +1,115 @@
-============== Test suite Webpos4 =============
+============== Test suite Webpos7 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..F.EEEE........EEFF.....                                         25 / 25 (100%)....
+.E.E.EEEEEE.EEEEEEEEEEEEEE                                        26 / 26 (100%)
 
-Time: 47.6 minutes, Memory: 72.00MB
+Time: 1.32 hours, Memory: 70.00MB
 
-There were 6 errors:
+There were 22 errors:
 
-1) Magento\Webpos\Test\TestCase\Checkout\CartPage\EditQty\WebposCheckoutCartEditQtyChangeProductQtyTest::test with data set "WebposCheckoutCartEditQtyChangeProductQtyTestVariation_CP48_0" (WebposCheckoutCartEditQtyChangeProductQtyTestVariation_CP48_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-09136c54-7de6-40f5-a2f8-ce122f9de702', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
+1) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP203Test::test with data set "WebposCheckoutPaymentMethodCP203_CP203_0" (WebposCheckoutPaymentMethodCP203_CP203_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/CartPage/EditQty/AssertProductQtyOnCartIsCorrect.php:20
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\Checkout\CartPage\EditQty\WebposCheckoutCartEditQtyChangeProductQtyTest::test with data set "WebposCheckoutCartEditQtyChangeProductQtyTestVariation_CP49_0" (WebposCheckoutCartEditQtyChangeProductQtyTestVariation_CP49_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-09136c54-7de6-40f5-a2f8-ce122f9de702', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/CartPage/EditQty/AssertProductQtyOnCartIsCorrect.php:20
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\Checkout\CartPage\EditQty\WebposCheckoutCartEditQtyCheckEditProductFormTest::test with data set "WebposCheckoutCartEditQtyCheckEditProductFormTestVariation1_CP45_CP46_0" (WebposCheckoutCartEditQtyCheckEditProductFormTestVariation1_CP45_CP46_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-09136c54-7de6-40f5-a2f8-ce122f9de702', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/EditQty/WebposCheckoutCartEditQtyCheckEditProductFormTest.php:66
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP203Test.php:47
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\Checkout\CartPage\EditQty\WebposCheckoutCartEditQtyCheckoutByEditQtyProductTest::test with data set "WebposCheckoutCartEditQtyCheckoutByEditQtyProductTestVariation_CP53_0" (WebposCheckoutCartEditQtyCheckoutByEditQtyProductTestVariation_CP53_0)
+2) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP205Test::test with data set "WebposCheckoutPaymentMethodCP205_CP205_0" (WebposCheckoutPaymentMethodCP205_CP205_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP205Test.php:65
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP207Test::test with data set "WebposCheckoutPaymentMethodCP207_CP207_0" (WebposCheckoutPaymentMethodCP207_CP207_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP207Test.php:60
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP208Test::test with data set "WebposCheckoutPaymentMethodCP208_CP208_0" (WebposCheckoutPaymentMethodCP208_CP208_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP208Test.php:60
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP209Test::test with data set "WebposCheckoutPaymentMethodCP209_CP209_0" (WebposCheckoutPaymentMethodCP209_CP209_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP209Test.php:60
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP210Test::test with data set "WebposCheckoutPaymentMethodCP210_CP210_0" (WebposCheckoutPaymentMethodCP210_CP210_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP210Test.php:60
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP211Test::test with data set "WebposCheckoutPaymentMethodCP211_CP211_0" (WebposCheckoutPaymentMethodCP211_CP211_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-09136c54-7de6-40f5-a2f8-ce122f9de702', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-245faba4-3dc3-43f5-908c-630b4dfac852', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
@@ -91,17 +119,77 @@ Driver info: driver.version: unknown
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/EditQty/WebposCheckoutCartEditQtyCheckoutByEditQtyProductTest.php:65
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP211Test.php:77
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-5) Magento\Webpos\Test\TestCase\Checkout\CartPage\HoldOrder\WebposHoldOrderCP162Test::test with data set "WebposHoldOrderCP162TestVariation_0" (WebposHoldOrderCP162TestVariation_0)
+8) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP212Test::test with data set "WebposCheckoutPaymentMethodCP212_CP212_0" (WebposCheckoutPaymentMethodCP212_CP212_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP212Test.php:60
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+9) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP214Test::test with data set "WebposCheckoutPaymentMethodCP214_CP214_0" (WebposCheckoutPaymentMethodCP214_CP214_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP214Test.php:60
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+10) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP215Test::test with data set "WebposCheckoutPaymentMethodCP215_CP215_0" (WebposCheckoutPaymentMethodCP215_CP215_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP215Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+11) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP216Test::test with data set "WebposCheckoutPaymentMethodCP216_CP216_0" (WebposCheckoutPaymentMethodCP216_CP216_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP216Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+12) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP217Test::test with data set "WebposCheckoutPaymentMethodCP217_CP217_0" (WebposCheckoutPaymentMethodCP217_CP217_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-09136c54-7de6-40f5-a2f8-ce122f9de702', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-245faba4-3dc3-43f5-908c-630b4dfac852', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
@@ -111,113 +199,234 @@ Driver info: driver.version: unknown
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/HoldOrder/WebposHoldOrderCP162Test.php:55
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP217Test.php:76
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-6) Magento\Webpos\Test\TestCase\Checkout\CartPage\HoldOrder\WebposHoldOrderCP163Test::test with data set "WebposHoldOrderCP163TestVariation_0" (WebposHoldOrderCP163TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-09136c54-7de6-40f5-a2f8-ce122f9de702', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
+13) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP218Test::test with data set "WebposCheckoutPaymentMethodCP218_CP218_0" (WebposCheckoutPaymentMethodCP218_CP218_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/HoldOrder/WebposHoldOrderCP163Test.php:55
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP218Test.php:79
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
---
+14) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP219Test::test with data set "WebposCheckoutPaymentMethodCP219_CP219_0" (WebposCheckoutPaymentMethodCP219_CP219_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-There were 3 failures:
-
-1) Magento\Webpos\Test\TestCase\Checkout\CartPage\EditQty\WebposCheckoutCartEditQtyChangeProductQtyByManualTest::test with data set "WebposCheckoutCartEditQtyChangeProductQtyByManualTestVariation_CP52_0" (WebposCheckoutCartEditQtyChangeProductQtyByManualTestVariation_CP52_0)
-CategoryRepository - TaxClass - Edit Product Qty - Minimum qty allow warning message is wrong
-Expected: Joust Duffle Bag has minimum quantity allow in cart is 1
-Actual: The fewest you may purchase is 1
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'Joust Duffle Bag has minimum quantity allow in cart is 1'
-+'The fewest you may purchase is 1'
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/CartPage/EditQty/AssertMinimumQtyAllowWarningMessageIsCorrect.php:26
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP219Test.php:68
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Checkout\CartPage\HoldOrder\WebposHoldOrderCP164Test::test with data set "WebposHoldOrderCP164TestVariation_0" (WebposHoldOrderCP164TestVariation_0)
-Add discount is not display
-Failed asserting that false is true.
+15) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP220Test::test with data set "WebposCheckoutPaymentMethodCP220_CP220_0" (WebposCheckoutPaymentMethodCP220_CP220_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckDiscountDefault.php:19
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP220Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Webpos\Test\TestCase\Checkout\CartPage\HoldOrder\WebposHoldOrderCP165Test::test with data set "WebposHoldOrderCP165TestVariation_0" (WebposHoldOrderCP165TestVariation_0)
-Add discount is not display
-Failed asserting that false is true.
+16) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP221Test::test with data set "WebposCheckoutPaymentMethodCP221_CP221_0" (WebposCheckoutPaymentMethodCP221_CP221_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckDiscountDefault.php:19
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP221Test.php:68
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+17) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP222Test::test with data set "WebposCheckoutPaymentMethodCP222_CP222_0" (WebposCheckoutPaymentMethodCP222_CP222_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP222Test.php:60
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+18) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP223Test::test with data set "WebposCheckoutPaymentMethodCP223_CP223_0" (WebposCheckoutPaymentMethodCP223_CP223_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP223Test.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+19) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP224Test::test with data set "WebposCheckoutPaymentMethodCP224_CP224_0" (WebposCheckoutPaymentMethodCP224_CP224_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP224Test.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+20) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP225Test::test with data set "WebposCheckoutPaymentMethodCP225_CP225_0" (WebposCheckoutPaymentMethodCP225_CP225_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP225Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+21) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP226Test::test with data set "WebposCheckoutPaymentMethodCP226_CP226_0" (WebposCheckoutPaymentMethodCP226_CP226_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP226Test.php:69
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+22) Magento\Webpos\Test\TestCase\Checkout\PaymentMethod\WebposCheckoutPaymentMethodCP238Test::test with data set "WebposCheckoutPaymentMethodCP238_0" (WebposCheckoutPaymentMethodCP238_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/PaymentMethod/WebposCheckoutPaymentMethodCP238Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 29, Assertions: 203, Errors: 6, Failures: 3.
-============== Test suite Webpos5 =============
+Tests: 26, Assertions: 16, Errors: 22.
+============== Test suite Webpos8 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..F.E....                                                           9 / 9 (100%)..
+EF.E.E..E                                                           9 / 9 (100%)
 
-Time: 13.7 minutes, Memory: 66.00MB
+Time: 22.69 minutes, Memory: 68.00MB
 
-There was 1 error:
+There were 4 errors:
 
-1) Magento\Webpos\Test\TestCase\Checkout\CartPageActionMenu\WebposEnterFullScreenTest::test with data set "WebposEnterFullScreenTestVariation1_CP15_0" (WebposEnterFullScreenTestVariation1_CP15_0)
-BadMethodCallException: Missing required argument $minHeightBefore of Magento\Webpos\Test\Constraint\Checkout\CartPageActionMenu\AssertWebposEnterFullScreen.
+1) Magento\Webpos\Test\TestCase\Checkout\ShippingMethod\WebposShippingMethodCP193Test::test with data set "WebposShippingMethodCP193TestVariation_0" (WebposShippingMethodCP193TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:124
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:88
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:51
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/ShippingMethod/WebposShippingMethodCP193Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Checkout\ShippingMethod\WebposShippingMethodCP196Test::test with data set "WebposShippingMethodCP196TestVariation_0" (WebposShippingMethodCP196TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/ShippingMethod/WebposShippingMethodCP196Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Checkout\ShippingMethod\WebposShippingMethodCP198Test::test with data set "WebposShippingMethodCP198TestVariation_0" (WebposShippingMethodCP198TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/ShippingMethod/WebposShippingMethodCP198Test.php:55
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\Checkout\ShippingMethod\WebposShippingMethodCP201Test::test with data set "WebposShippingMethodCP201TestVariation_0" (WebposShippingMethodCP201TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/ShippingMethod/WebposShippingMethodCP201Test.php:50
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
@@ -227,11 +436,11 @@ BadMethodCallException: Missing required argument $minHeightBefore of Magento\We
 
 There was 1 failure:
 
-1) Magento\Webpos\Test\TestCase\Checkout\CartPageActionMenu\WebposClickSaveAndClosePopupOrderNoteTest::test with data set "WebposClickSaveAndClosePopupOrderNoteTestVariation1_CP13_0" (WebposClickSaveAndClosePopupOrderNoteTestVariation1_CP13_0)
-On the Products List Page - The action CLOSE ORDER NOTE on the popup add order note of the web POS TaxClass was visible. It might be disable.
-Failed asserting that true is false.
+1) Magento\Webpos\Test\TestCase\Checkout\ShippingMethod\WebposShippingMethodCP194Test::test with data set "WebposShippingMethodCP194TestVariation_0" (WebposShippingMethodCP194TestVariation_0)
+Shipping label doen"s display on cart 
+Failed asserting that false matches expected true.
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/CartPageActionMenu/AssertWebposClickSaveAndClosePopupOrderNote.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/ShippingMethod/AssertCheckSection.php:27
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -243,85 +452,15 @@ Failed asserting that true is false.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 11, Assertions: 58, Errors: 1, Failures: 1.
-============== Test suite Webpos6 =============
+Tests: 9, Assertions: 36, Errors: 4, Failures: 1.
+============== Test suite Webpos9 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..EEE......                                                       11 / 11 (100%)
+...............                                                   15 / 15 (100%)..
 
-Time: 25.38 minutes, Memory: 70.00MB
+Time: 7.5 minutes, Memory: 64.00MB
 
-There were 3 errors:
-
-1) Magento\Webpos\Test\TestCase\Checkout\MultiOrder\WebposCreateMultiOrderAndLogoutCP26Test::test with data set "WebposCreateMultiOrderAndLogoutCP26TestVariation1_CP26_0" (WebposCreateMultiOrderAndLogoutCP26TestVariation1_CP26_0)
-PHPUnit_Framework_Exception: Warning: Invalid argument supplied for foreach() in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Staff/Curl.php:100.
-
-/var/www/dev/tests/functional/bootstrap.php:54
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Staff/Curl.php:100
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Staff/Curl.php:59
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/DeleteStaffEntityTest.php:61
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/MultiOrder/WebposCreateMultiOrderAndLogoutCP26Test.php:120
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\Checkout\MultiOrder\WebposCreateMultiOrderAndLogoutCP27Test::test with data set "WebposCreateMultiOrderAndLogoutCP27TestVariation1_CP27_0" (WebposCreateMultiOrderAndLogoutCP27TestVariation1_CP27_0)
-PHPUnit_Framework_Exception: Warning: Invalid argument supplied for foreach() in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Staff/Curl.php:100.
-
-/var/www/dev/tests/functional/bootstrap.php:54
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Staff/Curl.php:100
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Staff/Curl.php:59
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/DeleteStaffEntityTest.php:61
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/MultiOrder/WebposCreateMultiOrderAndLogoutCP27Test.php:131
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\Checkout\MultiOrder\WebposCreateMultiOrderAndThenLogInBySameStaffCP28Test::test with data set "WebposCreateMultiOrderAndThenLogInBySameStaffCP28Variation1_CP28_0" (WebposCreateMultiOrderAndThenLogInBySameStaffCP28Variation1_CP28_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Element is not clickable at point (818, 80). Other element would receive the click: <div class="wrap-popup"></div>
-Command duration or timeout: 67 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-09136c54-7de6-40f5-a2f8-ce122f9de702', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 674c2075-c973-41cf-8987-ef8debf8958a
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:277
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:286
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:258
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/MultiOrder/WebposCreateMultiOrderAndThenLogInBySameStaffCP28Test.php:76
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 11, Assertions: 78, Errors: 3.
+OK (17 tests, 67 assertions)
