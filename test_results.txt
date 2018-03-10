@@ -1,89 +1,35 @@
-============== Test suite Webpos10 =============
+============== Test suite Webpos16 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......EEEE.....                                                   15 / 15 (100%)
+.....E.                                                             7 / 7 (100%).E
 
-Time: 29.51 minutes, Memory: 70.00MB
+Time: 19.63 minutes, Memory: 68.00MB
 
-There were 4 errors:
+There were 2 errors:
 
-1) Magento\Webpos\Test\TestCase\OnHoldOrder\HoldOrder\WebposOnHoldOrderONH07Test::test with data set "WebposOnHoldOrderONH07TestVariation_0" (WebposOnHoldOrderONH07TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-7890d4a1-16cf-4f2f-83b2-1e86e9115234', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
+1) Magento\Webpos\Test\TestCase\OrdersHistory\PaymentShippingMethod\WebposOHCheckoutWithMultiPaymentMethodTest::test with data set "WebposOHCheckoutWithMultiPaymentMethodTestVariation_OH15_0" (WebposOHCheckoutWithMultiPaymentMethodTestVariation_OH15_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector(#flatrate_flatrate)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/HoldOrder/WebposOnHoldOrderONH07Test.php:55
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/PaymentShippingMethod/WebposOHCheckoutWithMultiPaymentMethodTest.php:89
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\OnHoldOrder\HoldOrder\WebposOnHoldOrderONH08Test::test with data set "WebposOnHoldOrderONH08TestVariation_0" (WebposOnHoldOrderONH08TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-7890d4a1-16cf-4f2f-83b2-1e86e9115234', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
+2) Magento\Webpos\Test\TestCase\OrdersHistory\PaymentShippingMethod\WebposOHPaymentShippingMethodTest::test with data set "WebposOHPaymentShippingMethodTestVariation_OH14_0" (WebposOHPaymentShippingMethodTestVariation_OH14_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector(#flatrate_flatrate)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/HoldOrder/WebposOnHoldOrderONH08Test.php:55
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\OnHoldOrder\HoldOrder\WebposOnHoldOrderONH09Test::test with data set "WebposOnHoldOrderONH09TestVariation_0" (WebposOnHoldOrderONH09TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-7890d4a1-16cf-4f2f-83b2-1e86e9115234', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/HoldOrder/WebposOnHoldOrderONH09Test.php:52
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-4) Magento\Webpos\Test\TestCase\OnHoldOrder\HoldOrder\WebposOnHoldOrderONH10Test::test with data set "WebposOnHoldOrderONH10TestVariation_0" (WebposOnHoldOrderONH10TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-7890d4a1-16cf-4f2f-83b2-1e86e9115234', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/HoldOrder/WebposOnHoldOrderONH10Test.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/PaymentShippingMethod/WebposOHPaymentShippingMethodTest.php:96
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -91,160 +37,424 @@ Driver info: driver.version: unknown
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 15, Assertions: 134, Errors: 4.
-============== Test suite Webpos11 =============
+Tests: 9, Assertions: 87, Errors: 2.
+============== Test suite Webpos17 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..FE..........                                                    14 / 14 (100%)
+EEEEEEEEEEEEEEEEEEE                                               19 / 19 (100%)
 
-Time: 26.62 minutes, Memory: 70.00MB
+Time: 1.05 hours, Memory: 70.00MB
 
-There was 1 error:
+There were 19 errors:
 
-1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH19Test::test with data set "WebposOnHoldOrderONH19TestVariation_0" (WebposOnHoldOrderONH19TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-7890d4a1-16cf-4f2f-83b2-1e86e9115234', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
+1) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH81Test::test with data set "WebposTakePayment_OH81_0" (WebposTakePayment_OH81_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:60
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/ProcessingOnHoldOrder/WebposOnHoldOrderONH19Test.php:50
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH81Test.php:79
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
---
+2) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH82Test::test with data set "WebposTakePayment_OH82_0" (WebposTakePayment_OH82_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
 
-There was 1 failure:
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH82Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH18Test::test with data set "WebposOnHoldOrderONH18TestVariation_0" (WebposOnHoldOrderONH18TestVariation_0)
-Tax is not correct, taxExpected is : $8.25and taxActual is : $7
-Failed asserting that 7.0 matches expected 8.25.
+3) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH83Test::test with data set "WebposTakePayment_OH83_0" (WebposTakePayment_OH83_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckTaxHoldOrder.php:20
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH83Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH84Test::test with data set "WebposTakePayment_OH84_0" (WebposTakePayment_OH84_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH84Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH85Test::test with data set "WebposTakePayment_OH85_0" (WebposTakePayment_OH85_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH85Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH86Test::test with data set "WebposTakePayment_OH86_0" (WebposTakePayment_OH86_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH86Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH87Test::test with data set "WebposTakePayment_OH87_0" (WebposTakePayment_OH87_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH87Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+8) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH88Test::test with data set "WebposTakePayment_OH88_0" (WebposTakePayment_OH88_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH88Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+9) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH89Test::test with data set "WebposTakePayment_OH89_0" (WebposTakePayment_OH89_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH89Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+10) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH90Test::test with data set "WebposTakePayment_OH90_0" (WebposTakePayment_OH90_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH90Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+11) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH91Test::test with data set "WebposTakePayment_OH91_0" (WebposTakePayment_OH91_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH91Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+12) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH92Test::test with data set "WebposTakePayment_OH92_0" (WebposTakePayment_OH92_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH92Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+13) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH93Test::test with data set "WebposTakePayment_OH93_0" (WebposTakePayment_OH93_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH93Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+14) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH94Test::test with data set "WebposTakePayment_OH94_0" (WebposTakePayment_OH94_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH94Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+15) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH95Test::test with data set "WebposTakePayment_OH95_0" (WebposTakePayment_OH95_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH95Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+16) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH96Test::test with data set "WebposTakePayment_OH96_0" (WebposTakePayment_OH96_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH96Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+17) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH97Test::test with data set "WebposTakePayment_OH97_0" (WebposTakePayment_OH97_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH97Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+18) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH98Test::test with data set "WebposTakePayment_OH98_0" (WebposTakePayment_OH98_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH98Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+19) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH99Test::test with data set "WebposTakePayment_OH99_0" (WebposTakePayment_OH99_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"]) -> css selector([id="flatrate_flatrate"])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH99Test.php:79
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 14, Assertions: 88, Errors: 1, Failures: 1.
-============== Test suite Webpos12 =============
+Tests: 19, Assertions: 0, Errors: 19.
+============== Test suite Webpos18 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....E.E.EEE...E                                                  16 / 16 (100%)
+EE...E.......EE...EE                                              20 / 20 (100%)E.....................
 
-Time: 40.61 minutes, Memory: 74.00MB
+Time: 24.04 minutes, Memory: 68.00MB
 
-There were 6 errors:
+There were 8 errors:
 
-1) Magento\Webpos\Test\TestCase\OrdersHistory\Invoice\WebposOrdersHistoryInvoiceCheckGUITest::test with data set "WebposOrdersHistoryInvoiceCheckGUITest_OH100_OH102toOH105_0" (WebposOrdersHistoryInvoiceCheckGUITest_OH100_OH102toOH105_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#payment-popup) -> xpath(//*[@id="order_payment_list_container"]/div/div[1]/div/div/label[text()="Web POS - Cash In"]/..)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/Invoice/WebposOrdersHistoryInvoiceCheckGUITest.php:102
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\OrdersHistory\Invoice\WebposOrdersHistoryInvoiceOH106Test::test with data set "WebposOrdersHistoryInvoiceOH106Test_OH106_0" (WebposOrdersHistoryInvoiceOH106Test_OH106_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#toaster) -> css selector(.message)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Invoice/AssertCreateInvoiceSuccess.php:35
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\OrdersHistory\Invoice\WebposOrdersHistoryInvoiceOH111Test::test with data set "WebposOrdersHistoryInvoiceOH111Test_OH111_0" (WebposOrdersHistoryInvoiceOH111Test_OH111_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#payment-popup) -> xpath(//*[@id="order_payment_list_container"]/div/div[1]/div/div/label[text()="Web POS - Cash In"]/..)" . Wait: "1"
+1) Magento\Webpos\Test\TestCase\Pos\CreatePosEntityTest::test with data set "CreatePosEntityTestVariation1_0" (CreatePosEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name='location_id']) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/Invoice/WebposOrdersHistoryInvoiceOH111Test.php:97
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Pos/CreatePosEntityTest.php:70
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\OrdersHistory\Invoice\WebposOrdersHistoryInvoiceOH112Test::test with data set "WebposOrdersHistoryInvoiceOH112Test_OH112_0" (WebposOrdersHistoryInvoiceOH112Test_OH112_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#payment-popup) -> xpath(//*[@id="order_payment_list_container"]/div/div[1]/div/div/label[text()="Web POS - Cash In"]/..)" . Wait: "1"
+2) Magento\Webpos\Test\TestCase\Pos\CreatePosEntityTest::test with data set "CreatePosEntityTestVariation2_0" (CreatePosEntityTestVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name='location_id']) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/Invoice/WebposOrdersHistoryInvoiceOH112Test.php:97
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Pos/CreatePosEntityTest.php:70
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-5) Magento\Webpos\Test\TestCase\OrdersHistory\Invoice\WebposOrdersHistoryInvoiceOH113Test::test with data set "WebposOrdersHistoryInvoiceOH113Test_OH113_0" (WebposOrdersHistoryInvoiceOH113Test_OH113_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryContainer.php:39
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/Invoice/WebposOrdersHistoryInvoiceOH113Test.php:101
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-6) Magento\Webpos\Test\TestCase\OrdersHistory\Invoice\WebposOrdersHistoryInvoiceOH118Test::test with data set "WebposOrdersHistoryInvoiceOH118Test_OH118_0" (WebposOrdersHistoryInvoiceOH118Test_OH118_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#payment-popup) -> css selector(.icon-iconPOS-payment-cashforpos)" . Wait: "1"
+3) Magento\Webpos\Test\TestCase\Pos\GridPosSortingTest::test with data set "GridPosSortingTest2_0" (GridPosSortingTest2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> xpath(.//*[@data-role="grid-wrapper"]//th/span[.="Store View"])" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreatePaymentAndInvoiceSuccessfullyStep.php:67
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/Invoice/WebposOrdersHistoryInvoiceOH118Test.php:24
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:415
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:96
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocationEntityTest::test with data set "OrderListByLocationEntityTestVariation2_0" (OrderListByLocationEntityTestVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "Store Address 2")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByLocationEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocationEntityTest::test with data set "OrderListByLocationEntityTestVariation3_0" (OrderListByLocationEntityTestVariation3_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByLocationEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation1_0" (OrderListByStaffEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation2_0" (OrderListByStaffEntityTestVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+8) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation3_0" (OrderListByStaffEntityTestVariation3_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 16, Assertions: 89, Errors: 6.
+Tests: 42, Assertions: 33, Errors: 8.
