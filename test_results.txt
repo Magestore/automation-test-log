@@ -1,10 +1,28 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.0.25
+Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-............................                                      28 / 28 (100%)..................
+............................                                      28 / 28 (100%).F................
 
-Time: 26.46 minutes, Memory: 86.00MB
+Time: 25.9 minutes, Memory: 112.00MB
 
-OK (46 tests, 492 assertions)
+There was 1 failure:
+
+1) Magento\Storepickup\Test\TestCase\StoreFormTest::test with data set "Add New Store form test_0" (Add New Store form test_0)
+Store Holiday grid is not visible.
+Failed asserting that false is true.
+
+/var/www/dev/tests/functional/tests/app/Magento/Storepickup/Test/Constraint/Store/AssertStoreFormAvailable.php:88
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 46, Assertions: 492, Failures: 1.
