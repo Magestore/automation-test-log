@@ -1,275 +1,178 @@
-============== Test suite Webpos17 =============
+============== Test suite Webpos20 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EEEEEEEEEEEEEEEEEEE                                               19 / 19 (100%)
+EEEEEEEEEEEEE                                                     13 / 13 (100%)
 
-Time: 31.27 minutes, Memory: 26.00MB
+Time: 4.34 minutes, Memory: 26.00MB
 
-There were 19 errors:
+There were 13 errors:
 
-1) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH81Test::test with data set "WebposTakePayment_OH81_0" (WebposTakePayment_OH81_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+1) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX76Test::test with data set "WebposTaxTAX76TestVariation_TAX76_0" (WebposTaxTAX76TestVariation_TAX76_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4349939f8a"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH81Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX76Test.php:114
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH82Test::test with data set "WebposTakePayment_OH82_0" (WebposTakePayment_OH82_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+2) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX78Test::test with data set "WebposTaxTAX78TestVariation_TAX78_0" (WebposTaxTAX78TestVariation_TAX78_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab434ab6f8a7"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH82Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX78Test.php:109
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH83Test::test with data set "WebposTakePayment_OH83_0" (WebposTakePayment_OH83_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+3) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX79Test::test with data set "WebposTaxTAX79TestVariation_TAX79_0" (WebposTaxTAX79TestVariation_TAX79_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab434bd6435b"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH83Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX79Test.php:118
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH84Test::test with data set "WebposTakePayment_OH84_0" (WebposTakePayment_OH84_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+4) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX80Test::test with data set "WebposTaxTAX80TestVariation_TAX80_0" (WebposTaxTAX80TestVariation_TAX80_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab434cf676ec"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH84Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX80Test.php:118
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-5) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH85Test::test with data set "WebposTakePayment_OH85_0" (WebposTakePayment_OH85_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+5) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesExcludingTax\WebposTaxTAX81Test::test with data set "WebposTaxTAX81TestVariation_TAX81_0" (WebposTaxTAX81TestVariation_TAX81_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab434e13af94"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH85Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesExcludingTax/WebposTaxTAX81Test.php:111
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-6) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH86Test::test with data set "WebposTakePayment_OH86_0" (WebposTakePayment_OH86_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+6) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX82Test::test with data set "WebposTaxTAX82TestVariation_TAX82_0" (WebposTaxTAX82TestVariation_TAX82_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab434f714d4f"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH86Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX82Test.php:120
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-7) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH87Test::test with data set "WebposTakePayment_OH87_0" (WebposTakePayment_OH87_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+7) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX84Test::test with data set "WebposTaxTAX84TestVariation_TAX84_0" (WebposTaxTAX84TestVariation_TAX84_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4350e033b5"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH87Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX84Test.php:120
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-8) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH88Test::test with data set "WebposTakePayment_OH88_0" (WebposTakePayment_OH88_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+8) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX85Test::test with data set "WebposTaxTAX85TestVariation_TAX85_0" (WebposTaxTAX85TestVariation_TAX85_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab43524aaf7d"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH88Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX85Test.php:120
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-9) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH89Test::test with data set "WebposTakePayment_OH89_0" (WebposTakePayment_OH89_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+9) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX86Test::test with data set "WebposTaxTAX86TestVariation_TAX86_0" (WebposTaxTAX86TestVariation_TAX86_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4353b5c18f"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH89Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX86Test.php:122
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-10) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH90Test::test with data set "WebposTakePayment_OH90_0" (WebposTakePayment_OH90_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+10) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX92Test::test with data set "WebposTaxTAX92TestVariation_TAX92_0" (WebposTaxTAX92TestVariation_TAX92_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4354e5bb7f"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH90Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomeOriginalPriceOnly/WebposTaxTAX92Test.php:85
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-11) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH91Test::test with data set "WebposTakePayment_OH91_0" (WebposTakePayment_OH91_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+11) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX94Test::test with data set "WebposTaxTAX94TestVariation_TAX94_0" (WebposTaxTAX94TestVariation_TAX94_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4356035b5d"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH91Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomeOriginalPriceOnly/WebposTaxTAX94Test.php:85
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-12) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH92Test::test with data set "WebposTakePayment_OH92_0" (WebposTakePayment_OH92_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+12) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX95Test::test with data set "WebposTaxTAX95TestVariation_TAX95_0" (WebposTaxTAX95TestVariation_TAX95_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4357238a76"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH92Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomeOriginalPriceOnly/WebposTaxTAX95Test.php:93
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-13) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH93Test::test with data set "WebposTakePayment_OH93_0" (WebposTakePayment_OH93_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+13) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX96Test::test with data set "WebposTaxTAX96TestVariation_TAX96_0" (WebposTaxTAX96TestVariation_TAX96_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4358482e37"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH93Test.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-14) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH94Test::test with data set "WebposTakePayment_OH94_0" (WebposTakePayment_OH94_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH94Test.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-15) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH95Test::test with data set "WebposTakePayment_OH95_0" (WebposTakePayment_OH95_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH95Test.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-16) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH96Test::test with data set "WebposTakePayment_OH96_0" (WebposTakePayment_OH96_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH96Test.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-17) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH97Test::test with data set "WebposTakePayment_OH97_0" (WebposTakePayment_OH97_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH97Test.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-18) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH98Test::test with data set "WebposTakePayment_OH98_0" (WebposTakePayment_OH98_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH98Test.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-19) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH99Test::test with data set "WebposTakePayment_OH99_0" (WebposTakePayment_OH99_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH99Test.php:69
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomeOriginalPriceOnly/WebposTaxTAX96Test.php:112
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -277,184 +180,169 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 19, Assertions: 0, Errors: 19.
-============== Test suite Webpos18 =============
+Tests: 13, Assertions: 0, Errors: 13.
+============== Test suite Webpos21 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EE...E.......EEEEEEE                                              20 / 20 (100%)E.....................
+EEEEEEEEEEEE                                                      12 / 12 (100%)
 
-Time: 27.45 minutes, Memory: 38.00MB
+Time: 2.59 minutes, Memory: 26.00MB
 
-There were 11 errors:
+There were 12 errors:
 
-1) Magento\Webpos\Test\TestCase\Pos\CreatePosEntityTest::test with data set "CreatePosEntityTestVariation1_0" (CreatePosEntityTestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name='location_id']) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
+1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX87Test::test with data set "WebposTaxTAX87TestVariation_TAX87_0" (WebposTaxTAX87TestVariation_TAX87_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab435919b46a"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Pos/CreatePosEntityTest.php:70
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomePriceIfAvailable/WebposTaxTAX87Test.php:111
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Pos\CreatePosEntityTest::test with data set "CreatePosEntityTestVariation2_0" (CreatePosEntityTestVariation2_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name='location_id']) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
+2) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX89Test::test with data set "WebposTaxTAX89TestVariation_TAX89_0" (WebposTaxTAX89TestVariation_TAX89_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4359bdc313"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Pos/CreatePosEntityTest.php:70
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomePriceIfAvailable/WebposTaxTAX89Test.php:111
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Webpos\Test\TestCase\Pos\GridPosSortingTest::test with data set "GridPosSortingTest2_0" (GridPosSortingTest2_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> xpath(.//*[@data-role="grid-wrapper"]//th/span[.="Store View"])" . Wait: "1"
+3) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX90Test::test with data set "WebposTaxTAX90TestVariation_TAX90_0" (WebposTaxTAX90TestVariation_TAX90_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab435a60e83d"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:415
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:96
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomePriceIfAvailable/WebposTaxTAX90Test.php:111
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocationEntityTest::test with data set "OrderListByLocationEntityTestVariation2_0" (OrderListByLocationEntityTestVariation2_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "Store Address 2")])" . Wait: "1"
+4) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX91Test::test with data set "WebposTaxTAX91TestVariation_TAX91_0" (WebposTaxTAX91TestVariation_TAX91_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab435b01ede7"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByLocationEntityTest.php:75
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomePriceIfAvailable/WebposTaxTAX91Test.php:113
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-5) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocationEntityTest::test with data set "OrderListByLocationEntityTestVariation3_0" (OrderListByLocationEntityTestVariation3_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
+5) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX102Test::test with data set "WebposTaxTAX102TestVariation_TAX102_0" (WebposTaxTAX102TestVariation_TAX102_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab435be39b98"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByLocationEntityTest.php:75
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTNo/WebposTaxTAX102Test.php:112
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-6) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByPaymentEntityTest::test with data set "OrderListByStaffEntityTestVariation1_0" (OrderListByStaffEntityTestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form)" . Wait: "1"
+6) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX104Test::test with data set "WebposTaxTAX104TestVariation_TAX104_0" (WebposTaxTAX104TestVariation_TAX104_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab435cc6bb12"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:426
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByPaymentEntityTest.php:75
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTNo/WebposTaxTAX104Test.php:112
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-7) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByPaymentEntityTest::test with data set "OrderListByStaffEntityTestVariation2_0" (OrderListByStaffEntityTestVariation2_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form)" . Wait: "1"
+7) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX105Test::test with data set "WebposTaxTAX105TestVariation_TAX105_0" (WebposTaxTAX105TestVariation_TAX105_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab435da9ed3b"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:426
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByPaymentEntityTest.php:75
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTNo/WebposTaxTAX105Test.php:112
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-8) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByPaymentEntityTest::test with data set "OrderListByStaffEntityTestVariation3_0" (OrderListByStaffEntityTestVariation3_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form)" . Wait: "1"
+8) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX106Test::test with data set "WebposTaxTAX106TestVariation_TAX106_0" (WebposTaxTAX106TestVariation_TAX106_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab435e8b0b2d"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:426
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByPaymentEntityTest.php:75
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTNo/WebposTaxTAX106Test.php:114
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-9) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation1_0" (OrderListByStaffEntityTestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
+9) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX100Test::test with data set "WebposTaxTAX100TestVariation_TAX100_0" (WebposTaxTAX100TestVariation_TAX100_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab435f6cbe84"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX100Test.php:93
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-10) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation2_0" (OrderListByStaffEntityTestVariation2_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
+10) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX101Test::test with data set "WebposTaxTAX101TestVariation_TAX101_0" (WebposTaxTAX101TestVariation_TAX101_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab43604e5978"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX101Test.php:93
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-11) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation3_0" (OrderListByStaffEntityTestVariation3_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
+11) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX97Test::test with data set "WebposTaxTAX97TestVariation_TAX97_0" (WebposTaxTAX97TestVariation_TAX97_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4361319cdf"}
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX97Test.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+12) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX99Test::test with data set "WebposTaxTAX99TestVariation_TAX99_0" (WebposTaxTAX99TestVariation_TAX99_0)
+Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab436213b266"}
+
+/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX99Test.php:85
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -462,4 +350,4 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 42, Assertions: 33, Errors: 11.
+Tests: 12, Assertions: 0, Errors: 12.
