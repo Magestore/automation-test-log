@@ -1,350 +1,275 @@
-============== Test suite Webpos14 =============
+============== Test suite Webpos17 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EEEEEEEEEEEEEEEEEEEEE                                             21 / 21 (100%)EEEE
+EEEEEEEEEEEEEEEEEEE                                               19 / 19 (100%)
 
-Time: 4.32 minutes, Memory: 28.00MB
+Time: 31.27 minutes, Memory: 26.00MB
 
-There were 25 errors:
+There were 19 errors:
 
-1) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrderHistoryRefundCheckCancelConfirmationOH60Test::test with data set "WebposOrderHistoryRefundCheckCancelConfirmationOH60TestVariation1_0" (WebposOrderHistoryRefundCheckCancelConfirmationOH60TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4207ccde63"}
+1) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH81Test::test with data set "WebposTakePayment_OH81_0" (WebposTakePayment_OH81_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrderHistoryRefundCheckCancelConfirmationOH60Test.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH81Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrderHistoryRefundValidateRefundShippingFieldOH72Test::test with data set "WebposOrderHistoryRefundValidateRefundShippingFieldOH72TestVariation1_0" (WebposOrderHistoryRefundValidateRefundShippingFieldOH72TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4208793c8f"}
+2) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH82Test::test with data set "WebposTakePayment_OH82_0" (WebposTakePayment_OH82_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrderHistoryRefundValidateRefundShippingFieldOH72Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH82Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrderHistoryRefundWithoutShippingFeeOH71Test::test with data set "WebposOrderHistoryRefundWithoutShippingFeeOH71TestVariation1_0" (WebposOrderHistoryRefundWithoutShippingFeeOH71TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420944c282"}
+3) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH83Test::test with data set "WebposTakePayment_OH83_0" (WebposTakePayment_OH83_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrderHistoryRefundWithoutShippingFeeOH71Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH83Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryMassActionRefundCheckGUITest::test with data set "WebposOrdersHistoryMassActionRefundCheckGUITestOH55Variation1_0" (WebposOrdersHistoryMassActionRefundCheckGUITestOH55Variation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4209f30707"}
+4) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH84Test::test with data set "WebposTakePayment_OH84_0" (WebposTakePayment_OH84_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryMassActionRefundCheckGUITest.php:39
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH84Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-5) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryMassActionRefundCheckGUITest::test with data set "WebposOrdersHistoryMassActionRefundCheckGUITestOH56Variation2_0" (WebposOrdersHistoryMassActionRefundCheckGUITestOH56Variation2_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420a898852"}
+5) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH85Test::test with data set "WebposTakePayment_OH85_0" (WebposTakePayment_OH85_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryMassActionRefundCheckGUITest.php:39
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH85Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-6) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundAdjustRefundOH79Test::test with data set "WebposOrdersHistoryRefundAdjustRefundOH79TestVariation1_0" (WebposOrdersHistoryRefundAdjustRefundOH79TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420b4d45d6"}
+6) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH86Test::test with data set "WebposTakePayment_OH86_0" (WebposTakePayment_OH86_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundAdjustRefundOH79Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH86Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-7) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundCheckCancelButtonOH57Test::test with data set "WebposOrdersHistoryRefundCheckCancelButtonOH57TestVariation1_0" (WebposOrdersHistoryRefundCheckCancelButtonOH57TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420bf4075a"}
+7) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH87Test::test with data set "WebposTakePayment_OH87_0" (WebposTakePayment_OH87_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundCheckCancelButtonOH57Test.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH87Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-8) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundCheckCloseConfirmationOH61Test::test with data set "WebposOrdersHistoryRefundCheckCloseConfirmationOH61TestVariation1_0" (WebposOrdersHistoryRefundCheckCloseConfirmationOH61TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420c84f5d4"}
+8) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH88Test::test with data set "WebposTakePayment_OH88_0" (WebposTakePayment_OH88_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundCheckCloseConfirmationOH61Test.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH88Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-9) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundCheckErrorPopupOH77Test::test with data set "WebposOrdersHistoryRefundCheckErrorPopupOH77TestVariation1_0" (WebposOrdersHistoryRefundCheckErrorPopupOH77TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420d2d3838"}
+9) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH89Test::test with data set "WebposTakePayment_OH89_0" (WebposTakePayment_OH89_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundCheckErrorPopupOH77Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH89Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-10) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundCheckErrorPopupOH78Test::test with data set "WebposOrdersHistoryRefundCheckErrorPopupOH78TestVariation1_0" (WebposOrdersHistoryRefundCheckErrorPopupOH78TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420df8fb1f"}
+10) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH90Test::test with data set "WebposTakePayment_OH90_0" (WebposTakePayment_OH90_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundCheckErrorPopupOH78Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH90Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-11) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundCheckOkConfirmationOH62Test::test with data set "WebposOrdersHistoryRefundCheckOkConfirmationOH62TestVariation1_0" (WebposOrdersHistoryRefundCheckOkConfirmationOH62TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420ea01cac"}
+11) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH91Test::test with data set "WebposTakePayment_OH91_0" (WebposTakePayment_OH91_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundCheckOkConfirmationOH62Test.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH91Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-12) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundCheckRefundOfflineOH59Test::test with data set "WebposOrdersHistoryRefundCheckRefundOfflineOH59TestVariation1_0" (WebposOrdersHistoryRefundCheckRefundOfflineOH59TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420f2d1e1b"}
+12) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH92Test::test with data set "WebposTakePayment_OH92_0" (WebposTakePayment_OH92_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundCheckRefundOfflineOH59Test.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH92Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-13) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundCheckSubmitRefundOH58Test::test with data set "WebposOrdersHistoryRefundCheckSubmitRefundOH58TestVariation1_0" (WebposOrdersHistoryRefundCheckSubmitRefundOH58TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab420fb8a9b1"}
+13) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH93Test::test with data set "WebposTakePayment_OH93_0" (WebposTakePayment_OH93_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundCheckSubmitRefundOH58Test.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH93Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-14) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundOH68Test::test with data set "WebposOrdersHistoryRefundOH68TestVariation1_0" (WebposOrdersHistoryRefundOH68TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421044ad59"}
+14) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH94Test::test with data set "WebposTakePayment_OH94_0" (WebposTakePayment_OH94_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundOH68Test.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH94Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-15) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundOH74OH75OH76Test::test with data set "WebposOrdersHistoryRefundOH74TestVariation1_0" (WebposOrdersHistoryRefundOH74TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4210edeaad"}
+15) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH95Test::test with data set "WebposTakePayment_OH95_0" (WebposTakePayment_OH95_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundOH74OH75OH76Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH95Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-16) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundOH74OH75OH76Test::test with data set "WebposOrdersHistoryRefundOH75TestVariation2_0" (WebposOrdersHistoryRefundOH75TestVariation2_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421187869f"}
+16) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH96Test::test with data set "WebposTakePayment_OH96_0" (WebposTakePayment_OH96_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundOH74OH75OH76Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH96Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-17) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundOH74OH75OH76Test::test with data set "WebposOrdersHistoryRefundOH76TestVariation3_0" (WebposOrdersHistoryRefundOH76TestVariation3_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab42121c3f18"}
+17) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH97Test::test with data set "WebposTakePayment_OH97_0" (WebposTakePayment_OH97_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundOH74OH75OH76Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH97Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-18) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundOrderCreateOnBackendOH80Test::test with data set "WebposOrdersHistoryRefundOrderCreateOnBackendOH80TestVariation1_0" (WebposOrdersHistoryRefundOrderCreateOnBackendOH80TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4212e1d7ad"}
+18) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH98Test::test with data set "WebposTakePayment_OH98_0" (WebposTakePayment_OH98_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Sales/Test/Fixture/OrderInjectable/EntityId.php:40
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:218
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:159
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:245
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:156
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:236
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php:53
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php:48
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:138
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:172
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundOrderCreateOnBackendOH80Test.php:17
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-19) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundPartialOH63Test::test with data set "WebposOrdersHistoryRefundPartialOH63TestVariation1_0" (WebposOrdersHistoryRefundPartialOH63TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab42136ecf0f"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundPartialOH63Test.php:39
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH98Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-20) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundPartialOH64Test::test with data set "WebposOrdersHistoryRefundPartialOH64TestVariation1_0" (WebposOrdersHistoryRefundPartialOH64TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4213faadd0"}
+19) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH99Test::test with data set "WebposTakePayment_OH99_0" (WebposTakePayment_OH99_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundPartialOH64Test.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-21) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundValidateInputFieldsOH73Test::test with data set "WebposOrdersHistoryRefundValidateInputFieldsOH73TestVariation1_0" (WebposOrdersHistoryRefundValidateInputFieldsOH73TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab42149ed995"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundValidateInputFieldsOH73Test.php:51
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-22) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundWithDefaultValuesOH69Test::test with data set "WebposOrdersHistoryRefundWithDefaultValuesOH69TestVariation1_0" (WebposOrdersHistoryRefundWithDefaultValuesOH69TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4215432984"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundWithDefaultValuesOH69Test.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-23) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundWithReturnStockOH66OH67Test::test with data set "WebposOrdersHistoryRefundWithReturnStockOH66TestVariation1_0" (WebposOrdersHistoryRefundWithReturnStockOH66TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4215cd85bc"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundWithReturnStockOH66OH67Test.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-24) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundWithReturnStockOH66OH67Test::test with data set "WebposOrdersHistoryRefundWithReturnStockOH67TestVariation1_0" (WebposOrdersHistoryRefundWithReturnStockOH67TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab42163b4eab"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundWithReturnStockOH66OH67Test.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-25) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundWithShippingFeeOH70Test::test with data set "WebposOrdersHistoryRefundWithShippingFeeOH70TestVariation1_0" (WebposOrdersHistoryRefundWithShippingFeeOH70TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4216ddc514"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundWithShippingFeeOH70Test.php:51
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH99Test.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -352,278 +277,184 @@ Exception: Product creation by webapi handler was not successful! Response: {"me
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 25, Assertions: 0, Errors: 25.
-============== Test suite Webpos15 =============
+Tests: 19, Assertions: 0, Errors: 19.
+============== Test suite Webpos18 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EEEEEEEEEEEEEEEEE                                                 17 / 17 (100%)E
+EE...E.......EEEEEEE                                              20 / 20 (100%)E.....................
 
-Time: 2.89 minutes, Memory: 28.00MB
+Time: 27.45 minutes, Memory: 38.00MB
 
-There were 18 errors:
+There were 11 errors:
 
-1) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionReOrder\WebposMassActionReOrderOH27Test::test with data set "WebposOrdersHistoryMassActionReOrder_OH27_0" (WebposOrdersHistoryMassActionReOrder_OH27_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4217536258"} in /var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php(254): Magento\Catalog\Test\Handler\CatalogProductSimple\Webapi->persist(Object(Magento\Catalog\Test\Fixture\CatalogProductSimple))
-#1 /var/www/dev/tests/functional/tests/app/Magento/Sales/Test/Fixture/OrderInjectable/EntityId.php(40): Magento\Mtf\Fixture\InjectableFixture->persist()
-#2 [internal function]: Magento\Sales\Test\Fixture\OrderInjectable\EntityId->__construct(Object(Magento\Mtf\Fixture\FixtureFactory), Array, Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(245): ReflectionClass->newInstanceArgs(Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(53): Magento\Mtf\ObjectManager\Factory->create('Magento\\Sales\\T...', Array)
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php(48): Magento\Mtf\ObjectManager\ObjectManager->create('Magento\\Sales\\T...', Array)
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php(218): Magento\Mtf\Factory\AbstractFactory->create('Magento\\Sales\\T...', Array)
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php(159): Magento\Mtf\Fixture\InjectableFixture->prepareSource('entity_id', Array, Array)
-#8 [internal function]: Magento\Mtf\Fixture\InjectableFixture->__construct(Object(Magento\Mtf\Config\Data), Object(Magento\Mtf\Repository\RepositoryFactory), Object(Magento\Mtf\Fixture\FixtureFactory), Object(Magento\Mtf\Handler\HandlerFactory), Object(Magento\Mtf\System\Event\EventManager), Object(Magento\Mtf\Fixture\InjectableFixture\Replacer), Array, 'default', false)
-#9 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(245): ReflectionClass->newInstanceArgs(Array)
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(53): Magento\Mtf\ObjectManager\Factory->create('Magento\\Sales\\T...', Array)
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(156): Magento\Mtf\ObjectManager\ObjectManager->create('Magento\\Sales\\T...', Array)
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(88): Magento\Mtf\ObjectManager\Factory->_resolveArguments('Magento\\Webpos\\...', Array, Array)
-#13 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php(68): Magento\Mtf\ObjectManager\Factory->prepareArguments(Object(Magento\Webpos\Test\TestCase\OrdersHistory\MassActionReOrder\WebposMassActionReOrderOH27Test), 'test', Array)
-#14 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(283): Magento\Mtf\ObjectManager->prepareArguments(Object(Magento\Webpos\Test\TestCase\OrdersHistory\MassActionReOrder\WebposMassActionReOrderOH27Test), 'test', Array)
-#15 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(164): Magento\Mtf\TestCase\Injectable->prepareVariation(Array, Array)
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#20 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#21 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#22 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#23 {main}
-2) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionReOrder\WebposMassActionReOrderOH28Test::test with data set "WebposOrdersHistoryMassActionReOrder_OH28_0" (WebposOrdersHistoryMassActionReOrder_OH28_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab42179c3300"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionReOrder/WebposMassActionReOrderOH28Test.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionReOrder\WebposMassActionReOrderOH29Test::test with data set "WebposOrdersHistoryMassActionReOrder_OH29_0" (WebposOrdersHistoryMassActionReOrder_OH29_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4217fb6dce"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionReOrder/WebposMassActionReOrderOH29Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-4) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionReOrder\WebposMassActionReOrderOH30Test::test with data set "WebposOrdersHistoryMassActionReOrder_OH30_0" (WebposOrdersHistoryMassActionReOrder_OH30_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421845b6ff"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionReOrder/WebposMassActionReOrderOH30Test.php:62
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-5) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionSendMail\WebposOrdersHistoryMassActionSendMailTest::test with data set "WebposOrdersHistoryMassActionSendMail_CheckGUI_OH19_0" (WebposOrdersHistoryMassActionSendMail_CheckGUI_OH19_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421870aa1f"} in /var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php(254): Magento\Catalog\Test\Handler\CatalogProductSimple\Webapi->persist(Object(Magento\Catalog\Test\Fixture\CatalogProductSimple))
-#1 /var/www/dev/tests/functional/tests/app/Magento/Sales/Test/Fixture/OrderInjectable/EntityId.php(40): Magento\Mtf\Fixture\InjectableFixture->persist()
-#2 [internal function]: Magento\Sales\Test\Fixture\OrderInjectable\EntityId->__construct(Object(Magento\Mtf\Fixture\FixtureFactory), Array, Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(245): ReflectionClass->newInstanceArgs(Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(53): Magento\Mtf\ObjectManager\Factory->create('Magento\\Sales\\T...', Array)
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Factory/AbstractFactory.php(48): Magento\Mtf\ObjectManager\ObjectManager->create('Magento\\Sales\\T...', Array)
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php(218): Magento\Mtf\Factory\AbstractFactory->create('Magento\\Sales\\T...', Array)
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php(159): Magento\Mtf\Fixture\InjectableFixture->prepareSource('entity_id', Array, Array)
-#8 [internal function]: Magento\Mtf\Fixture\InjectableFixture->__construct(Object(Magento\Mtf\Config\Data), Object(Magento\Mtf\Repository\RepositoryFactory), Object(Magento\Mtf\Fixture\FixtureFactory), Object(Magento\Mtf\Handler\HandlerFactory), Object(Magento\Mtf\System\Event\EventManager), Object(Magento\Mtf\Fixture\InjectableFixture\Replacer), Array, 'default', false)
-#9 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(245): ReflectionClass->newInstanceArgs(Array)
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(53): Magento\Mtf\ObjectManager\Factory->create('Magento\\Sales\\T...', Array)
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(156): Magento\Mtf\ObjectManager\ObjectManager->create('Magento\\Sales\\T...', Array)
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(88): Magento\Mtf\ObjectManager\Factory->_resolveArguments('Magento\\Webpos\\...', Array, Array)
-#13 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php(68): Magento\Mtf\ObjectManager\Factory->prepareArguments(Object(Magento\Webpos\Test\TestCase\OrdersHistory\MassActionSendMail\WebposOrdersHistoryMassActionSendMailTest), 'test', Array)
-#14 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(283): Magento\Mtf\ObjectManager->prepareArguments(Object(Magento\Webpos\Test\TestCase\OrdersHistory\MassActionSendMail\WebposOrdersHistoryMassActionSendMailTest), 'test', Array)
-#15 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(164): Magento\Mtf\TestCase\Injectable->prepareVariation(Array, Array)
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#20 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#21 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#22 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#23 {main}
-6) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCheckCancelButtonOH32Test::test with data set "WebposOrdersHistoryCheckCancelButtonOH32TestVariation1_0" (WebposOrdersHistoryCheckCancelButtonOH32TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4218ba4368"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryCheckCancelButtonOH32Test.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-7) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCheckConfirmationPopupCancelOH35Test::test with data set "WebposOrdersHistoryCheckConfirmationPopupCancelOH35TestVariation1_0" (WebposOrdersHistoryCheckConfirmationPopupCancelOH35TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4219051171"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryCheckConfirmationPopupCancelOH35Test.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-8) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCheckConfirmationPopupCloseOH34Test::test with data set "WebposOrdersHistoryCheckConfirmationPopupCloseOH34TestVariation1_0" (WebposOrdersHistoryCheckConfirmationPopupCloseOH34TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421950f3be"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryCheckConfirmationPopupCloseOH34Test.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-9) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCheckConfirmationPopupOH33Test::test with data set "WebposOrdersHistoryCheckConfirmationPopupOH33TestVariation1_0" (WebposOrdersHistoryCheckConfirmationPopupOH33TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab42199a527c"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryCheckConfirmationPopupOH33Test.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-10) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCreateShipmentOH36Test::test with data set "WebposOrdersHistoryCreateShipmentOH36TestVariation1_0" (WebposOrdersHistoryCreateShipmentOH36TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4219e48bcd"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryCreateShipmentOH36Test.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-11) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCreateShipmentOH37Test::test with data set "WebposOrdersHistoryCreateShipmentOH37TestVariation1_0" (WebposOrdersHistoryCreateShipmentOH37TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421a2d3480"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryCreateShipmentOH37Test.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-12) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCreateShipmentOH38Test::test with data set "WebposOrdersHistoryCreateShipmentOH38TestVariation1_0" (WebposOrdersHistoryCreateShipmentOH38TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421a7668ee"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryCreateShipmentOH38Test.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-13) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryPartialShipmentOH40Test::test with data set "WebposOrdersHistoryPartialShipmentOH40TestVariation1_0" (WebposOrdersHistoryPartialShipmentOH40TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421ac0b4fb"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryPartialShipmentOH40Test.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-14) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryShipmentInBackendOH39Test::test with data set "WebposOrdersHistoryShipmentInBackendOH39TestVariation1_0" (WebposOrdersHistoryShipmentInBackendOH39TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421b0bac5e"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryShipmentInBackendOH39Test.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-15) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryShipmentOH44Test::test with data set "WebposOrdersHistoryShipmentOH44TestVariation1_0" (WebposOrdersHistoryShipmentOH44TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab421b702c2b"}
-
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/TestStep/CreateProductsStep.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryShipmentOH44Test.php:29
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-16) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryShipmentWithCustomProductOH43Test::test with data set "WebposOrdersHistoryShipmentWithCustomProductOH43TestVariation1_0" (WebposOrdersHistoryShipmentWithCustomProductOH43TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
+1) Magento\Webpos\Test\TestCase\Pos\CreatePosEntityTest::test with data set "CreatePosEntityTestVariation1_0" (CreatePosEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name='location_id']) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryShipmentWithCustomProductOH43Test.php:33
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Pos/CreatePosEntityTest.php:70
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-17) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryShipmentWithExtantItemsOH41OH42Test::test with data set "WebposOrdersHistoryPartialShipmentOH41TestVariation1_0" (WebposOrdersHistoryPartialShipmentOH41TestVariation1_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4221b9d11d"}
+2) Magento\Webpos\Test\TestCase\Pos\CreatePosEntityTest::test with data set "CreatePosEntityTestVariation2_0" (CreatePosEntityTestVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector([name='location_id']) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryShipmentWithExtantItemsOH41OH42Test.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:268
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Pos/CreatePosEntityTest.php:70
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-18) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryShipmentWithExtantItemsOH41OH42Test::test with data set "WebposOrdersHistoryPartialShipmentOH42TestVariation2_0" (WebposOrdersHistoryPartialShipmentOH42TestVariation2_0)
-Exception: Product creation by webapi handler was not successful! Response: {"message":"Internal Error. Details are available in Magento log file. Report ID: webapi-5ab4221e4ce91"}
+3) Magento\Webpos\Test\TestCase\Pos\GridPosSortingTest::test with data set "GridPosSortingTest2_0" (GridPosSortingTest2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> xpath(.//*[@data-role="grid-wrapper"]//th/span[.="Store View"])" . Wait: "1"
 
-/var/www/dev/tests/functional/tests/app/Magento/Catalog/Test/Handler/CatalogProductSimple/Webapi.php:114
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreateNewProductsStep.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryShipmentWithExtantItemsOH41OH42Test.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Block/Adminhtml/DataGrid.php:415
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:96
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocationEntityTest::test with data set "OrderListByLocationEntityTestVariation2_0" (OrderListByLocationEntityTestVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "Store Address 2")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByLocationEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocationEntityTest::test with data set "OrderListByLocationEntityTestVariation3_0" (OrderListByLocationEntityTestVariation3_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByLocationEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByPaymentEntityTest::test with data set "OrderListByStaffEntityTestVariation1_0" (OrderListByStaffEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:426
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByPaymentEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByPaymentEntityTest::test with data set "OrderListByStaffEntityTestVariation2_0" (OrderListByStaffEntityTestVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:426
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByPaymentEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+8) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByPaymentEntityTest::test with data set "OrderListByStaffEntityTestVariation3_0" (OrderListByStaffEntityTestVariation3_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:426
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:247
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByPaymentEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+9) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation1_0" (OrderListByStaffEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+10) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation2_0" (OrderListByStaffEntityTestVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+11) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation3_0" (OrderListByStaffEntityTestVariation3_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
+/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -631,4 +462,4 @@ Exception: Product creation by webapi handler was not successful! Response: {"me
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 16, Assertions: 0, Errors: 18.
+Tests: 42, Assertions: 33, Errors: 11.
