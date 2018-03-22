@@ -1,11 +1,11 @@
 Unable to get Js Errors. Exception: 
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5a331242-18d8-4531-9728-f2f4d69aa00e in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: f5eff122-a5d3-48a8-84c6-9fd71ab4b362 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -16,7 +16,37 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX76Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX24Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9f734bca-1605-4f5b-859e-8cae2fa1acf6 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX25Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -32,10 +62,10 @@ Unable to get Js Errors. Exception:
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 13 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1fa82dcd-65d6-44d0-9758-feafd94ec881 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: 73a7fcc2-37aa-41c3-9ba4-240b028f5500 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -46,307 +76,7 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX78Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1983c550-9c04-4f50-a44e-dc9901bf4292 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX79Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d77ad2f9-0216-48ce-8e9b-cded101198e4 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX80Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cfd1b771-78ff-45ca-965c-7b33b945c79e in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesExcludingTax\WebposTaxTAX81Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2cea4ddb-6609-40a9-a98e-a885211272e0 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX82Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 553a1cf0-52dd-4c10-bc66-644057b74ad4 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX84Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: bf494fe3-993a-4703-a53a-dab7921d2905 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX85Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ec871474-4628-48b5-b39d-fd2fe1446fd1 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX86Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e085a1d3-1646-4eb4-885f-e00c52d15850 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX92Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: eda7d775-cda3-4fb3-ad6f-fb4e8ea94214 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX94Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3146a24b-1e97-4355-af33-e89b6665ea20 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX95Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX26Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -362,10 +92,10 @@ Unable to get Js Errors. Exception:
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 14 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 18e336a5-46f6-496a-b227-132fb24e868d in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: 153018d2-71ee-4270-b9c8-32ebee155e23 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -376,7 +106,7 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX96Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX28Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -390,12 +120,12 @@ Stack trace:
 #20 {main}
 Unable to get Js Errors. Exception: 
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
+Command duration or timeout: 14 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b8f803fa-4373-449a-b4ed-33277afbd6d0 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: 7da16bf3-d039-431e-8bde-305f5028f1cc in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -406,7 +136,337 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX87Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX29Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3303e7d5-f426-4e4b-8949-a3b62d6cc80a in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX33Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391d67f1-b4b9-46f4-bc78-e4858d36e5f2 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX34Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 29df202b-a540-4ed7-8ae8-7ca48eee3574 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithoutShippingFeeAndDiscountAmount\WebposTaxTAX02Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 82bf9d2f-30bf-4d86-9d80-c1ecf6b95bd1 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithoutShippingFeeAndDiscountAmount\WebposTaxTAX03Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0dd3daed-62ad-4ba0-a14e-db5612142b67 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithoutShippingFeeAndDiscountAmount\WebposTaxTAX04Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 645f9de0-6638-4ae4-ba01-4007c1a3272e in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithoutShippingFeeAndDiscountAmount\WebposTaxTAX06Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ecf0c26f-3d64-4654-94e4-87885f600dc6 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithoutShippingFeeAndDiscountAmount\WebposTaxTAX07Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b0527fe5-bf15-48d7-84b8-4aadb53f2a53 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithoutShippingFeeAndDiscountAmount\WebposTaxTAX11Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c367846a-8f33-415f-9928-4fcb8cf9f2b4 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithoutShippingFeeAndDiscountAmount\WebposTaxTAX12Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9a473a49-f543-42bd-95ff-3608b0f21fed in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithoutShippingFeeAndDiscountAmount\WebposTaxTAX12_1Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d025cce6-f0b1-4ac7-bd62-f765be55f2f5 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX13Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -422,10 +482,10 @@ Unable to get Js Errors. Exception:
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 11 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e874800d-af29-4f93-92b8-40b624671724 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: 2fad126e-7974-40a0-ae59-396f5792b32d in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -436,7 +496,127 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX89Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX14Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a3ef3dba-21b2-4ee2-90b6-9b4476a40d64 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX15Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 813eb483-9f6b-4e64-83c1-cee3fa9e7275 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX17Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0901cd52-24da-4738-9e62-3720a0c36dd0 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX18Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9e6027bb-03ba-4c2c-9692-3b7c1a3bbb84 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX22Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -452,10 +632,10 @@ Unable to get Js Errors. Exception:
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 10 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e5ca801d-5312-4975-9539-8ff8485d6bc4 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: 6ee05be5-ba34-464d-a5a8-949ffc20d93f in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -466,7 +646,7 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX90Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX23Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -480,12 +660,12 @@ Stack trace:
 #20 {main}
 Unable to get Js Errors. Exception: 
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3e16a709-99e2-4891-9b07-60bbd99f9bb2 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: b914677a-154f-4cb2-9373-1d7bd31547c4 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -496,7 +676,7 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX91Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalNo\WebposTaxTAX112Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -510,12 +690,12 @@ Stack trace:
 #20 {main}
 Unable to get Js Errors. Exception: 
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: af6ae657-0d8d-4f66-8f6e-9ad5400156a5 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: 572ac1c1-08b6-45c8-9757-db27d6e89a2d in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -526,7 +706,7 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX102Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalNo\WebposTaxTAX114Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -540,12 +720,12 @@ Stack trace:
 #20 {main}
 Unable to get Js Errors. Exception: 
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e028cedd-945f-4d51-8ff6-31711c025d0e in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: 3051ec55-9343-4486-a02d-5d3d84360526 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -556,7 +736,67 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX104Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalNo\WebposTaxTAX115Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 461aeb3a-58f6-4536-a222-0179333f500f in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalNo\WebposTaxTAX116Test))
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
+#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#20 {main}
+Unable to get Js Errors. Exception: 
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 05251f72-94c7-4350-bbd7-73b06a93748f in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
+#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
+#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
+#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX107Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -572,10 +812,10 @@ Unable to get Js Errors. Exception:
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 16 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 264cd587-a982-48ff-9877-350c811b4afb in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: 57e2f1e8-c36f-43d5-b489-21fa7e82fb71 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -586,97 +826,7 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX105Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 11 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: dec1581f-473a-4a2a-ad07-7b6f8ff6d769 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX106Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 95a5e2ef-c60f-4260-905f-ef647dfbac1e in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX100Test))
-#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
-#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
-#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
-#13 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
-#14 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#15 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#16 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
-#17 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
-#18 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
-#19 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
-#20 {main}
-Unable to get Js Errors. Exception: 
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 24 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 542d2921-3a1b-4d21-a923-50e09befc0d2 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(393): PHPUnit_Extensions_Selenium2TestCase_CommandsHolder->__call('execute', Array)
-#3 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(237): PHPUnit_Extensions_Selenium2TestCase->__call('execute', Array)
-#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php(297): Magento\Mtf\Client\Driver\Selenium\Driver->getJsErrors()
-#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php(52): Magento\Mtf\Client\Browser->getJsErrors()
-#6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
-#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
-#8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX101Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX109Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -692,10 +842,10 @@ Unable to get Js Errors. Exception:
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 12 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 81a2e93c-d767-4290-b53e-089c1ed3c976 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: b7182dfb-7037-4db7-8932-347529e721e7 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -706,7 +856,7 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX97Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX110Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
@@ -722,10 +872,10 @@ Unable to get Js Errors. Exception:
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException:  (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 12 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-0c5ab770-8c42-4875-ab4e-0bfc878914f9', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-1ab44b50-4703-4fb7-805c-9637b930a55b', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 420b572c-a593-473d-87b8-6ea7e63c9ee0 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Session ID: 4be67331-96be-402b-b415-25d26c445523 in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 Stack trace:
 #0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
 #1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_ElementCommand_GenericPost))
@@ -736,7 +886,7 @@ Stack trace:
 #6 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php(83): Magento\Mtf\System\Observer\ClientError->process(Object(Magento\Mtf\System\Event\Event))
 #7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(317): Magento\Mtf\System\Event\EventManager->dispatchEvent(Array, Array)
 #8 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestResult.php(701): Magento\Mtf\TestCase\Functional->runBare()
-#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX99Test))
+#9 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestCase.php(892): PHPUnit_Framework_TestResult->run(Object(Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX111Test))
 #10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php(217): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
 #11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(210): Magento\Mtf\TestCase\Functional->run(Object(PHPUnit_Framework_TestResult))
 #12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(166): Magento\Mtf\TestCase\Injectable->executeTestVariation(Object(PHPUnit_Framework_TestResult), Array)
