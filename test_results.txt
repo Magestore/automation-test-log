@@ -1,140 +1,32 @@
-============== Test suite Webpos16 =============
+============== Test suite Webpos1 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.0.25
+Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EEEEEEE                                                             7 / 7 (100%).E
+.F.E.F.....F..F..E.....                                           23 / 23 (100%)...
 
-Time: 24.57 minutes, Memory: 44.00MB
+Time: 43.74 minutes, Memory: 72.00MB
 
-There were 8 errors:
+There were 2 errors:
 
-1) Magento\Webpos\Test\TestCase\OrdersHistory\OrderStatus\WebposOrderStatusOH04Test::test with data set "WebposOrderStatusOH04TestVariation1_0" (WebposOrderStatusOH04TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#payment-method)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/OrderStatus/WebposOrderStatusOH04Test.php:47
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\OrdersHistory\OrderStatus\WebposOrderStatusOH05Test::test with data set "WebposOrderStatusOH05TestVariation1_0" (WebposOrderStatusOH05TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#payment-method)" . Wait: "1"
+1) Magento\Webpos\Test\TestCase\Checkout\CartPage\Customer\WebposCartPageCustomerCP178Test::test with data set "WebposCartPageCustomerCP178TestVariation_0" (WebposCartPageCustomerCP178TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#popup-change-customer) -> css selector(ul.list-customer-old > li:nth-child(1))" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/OrderStatus/WebposOrderStatusOH05Test.php:47
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/Customer/WebposCartPageCustomerCP178Test.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Webpos\Test\TestCase\OrdersHistory\OrderStatus\WebposOrderStatusOH06Test::test with data set "WebposOrderStatusOH06TestVariation1_0" (WebposOrderStatusOH06TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#payment-method)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/OrderStatus/WebposOrderStatusOH06Test.php:47
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-4) Magento\Webpos\Test\TestCase\OrdersHistory\OrderStatus\WebposOrderStatusOH07Test::test with data set "WebposOrderStatusOH07TestVariation1_0" (WebposOrderStatusOH07TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#payment-method)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/OrderStatus/WebposOrderStatusOH07Test.php:47
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-5) Magento\Webpos\Test\TestCase\OrdersHistory\OrderStatus\WebposOrderStatusOH08Test::test with data set "WebposOrderStatusOH08TestVariation1_0" (WebposOrderStatusOH08TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#payment-method)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/OrderStatus/WebposOrderStatusOH08Test.php:47
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-6) Magento\Webpos\Test\TestCase\OrdersHistory\PaymentShippingMethod\WebposOHCheckoutWithMultiPaymentMethodTest::test with data set "WebposOHCheckoutWithMultiPaymentMethodTestVariation_OH15_0" (WebposOHCheckoutWithMultiPaymentMethodTestVariation_OH15_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"])" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:43
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/PaymentShippingMethod/WebposOHCheckoutWithMultiPaymentMethodTest.php:87
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-7) Magento\Webpos\Test\TestCase\OrdersHistory\PaymentShippingMethod\WebposOHPaymentShippingMethodTest::test with data set "WebposOHPaymentShippingMethodTestVariation_OH12_0" (WebposOHPaymentShippingMethodTestVariation_OH12_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/AddDiscountWholeCartStep.php:55
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/PaymentShippingMethod/WebposOHPaymentShippingMethodTest.php:84
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-8) Magento\Webpos\Test\TestCase\OrdersHistory\PaymentShippingMethod\WebposOHPaymentShippingMethodTest::test with data set "WebposOHPaymentShippingMethodTestVariation_OH14_0" (WebposOHPaymentShippingMethodTestVariation_OH14_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([data-bind="visible:shipAble"])" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutShippingMethod.php:43
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/PaymentShippingMethod/WebposOHPaymentShippingMethodTest.php:95
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 9, Assertions: 12, Errors: 8.
-============== Test suite Webpos17 =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.0.25
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-EEEEEEEEEEEEEEEEEEE                                               19 / 19 (100%)
-
-Time: 31.33 minutes, Memory: 46.00MB
-
-There were 19 errors:
-
-1) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH81Test::test with data set "WebposTakePayment_OH81_0" (WebposTakePayment_OH81_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+2) Magento\Webpos\Test\TestCase\Checkout\CartPage\Customer\WebposCartPageCustomerCheckoutByNewCustomerTest::test with data set "WebposCartPageCustomerCheckoutByNewCustomerTestVariation2_CP44_0" (WebposCartPageCustomerCheckoutByNewCustomerTestVariation2_CP44_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (169.5, 17.5): [object HTMLButtonElement]
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
@@ -143,489 +35,7 @@ Driver info: driver.version: unknown
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH81Test.php:91
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH82Test::test with data set "WebposTakePayment_OH82_0" (WebposTakePayment_OH82_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH82Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH83Test::test with data set "WebposTakePayment_OH83_0" (WebposTakePayment_OH83_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH83Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-4) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH84Test::test with data set "WebposTakePayment_OH84_0" (WebposTakePayment_OH84_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH84Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-5) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH85Test::test with data set "WebposTakePayment_OH85_0" (WebposTakePayment_OH85_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH85Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-6) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH86Test::test with data set "WebposTakePayment_OH86_0" (WebposTakePayment_OH86_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH86Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-7) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH87Test::test with data set "WebposTakePayment_OH87_0" (WebposTakePayment_OH87_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH87Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-8) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH88Test::test with data set "WebposTakePayment_OH88_0" (WebposTakePayment_OH88_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH88Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-9) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH89Test::test with data set "WebposTakePayment_OH89_0" (WebposTakePayment_OH89_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH89Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-10) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH90Test::test with data set "WebposTakePayment_OH90_0" (WebposTakePayment_OH90_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH90Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-11) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH91Test::test with data set "WebposTakePayment_OH91_0" (WebposTakePayment_OH91_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH91Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-12) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH92Test::test with data set "WebposTakePayment_OH92_0" (WebposTakePayment_OH92_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH92Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-13) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH93Test::test with data set "WebposTakePayment_OH93_0" (WebposTakePayment_OH93_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH93Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-14) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH94Test::test with data set "WebposTakePayment_OH94_0" (WebposTakePayment_OH94_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH94Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-15) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH95Test::test with data set "WebposTakePayment_OH95_0" (WebposTakePayment_OH95_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH95Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-16) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH96Test::test with data set "WebposTakePayment_OH96_0" (WebposTakePayment_OH96_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH96Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-17) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH97Test::test with data set "WebposTakePayment_OH97_0" (WebposTakePayment_OH97_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH97Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-18) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH98Test::test with data set "WebposTakePayment_OH98_0" (WebposTakePayment_OH98_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH98Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-19) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH99Test::test with data set "WebposTakePayment_OH99_0" (WebposTakePayment_OH99_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1975d7d6-922f-49da-ae78-e6c71ea94384', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH99Test.php:90
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 19, Assertions: 0, Errors: 19.
-============== Test suite Webpos18 =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.0.25
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-...............F.................FEE...                           39 / 39 (100%).EE...EEE................. 65 / 39 (166%)
-....
-
-Time: 36.94 minutes, Memory: 46.00MB
-
-There were 7 errors:
-
-1) Magento\Webpos\Test\TestCase\Role\EditRoleOnGrid\EditRoleOnGridTest::test with data set "EditRoleOnGridTestVariation_MR14_0" (EditRoleOnGridTestVariation_MR14_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector(button[data-bind="click: cancel"])" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Role/EditRoleOnGrid/EditRoleOnGridTest.php:67
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\Role\EditRoleOnGrid\EditRoleOnGridTest::test with data set "EditRoleOnGridTestVariation_MR15_0" (EditRoleOnGridTestVariation_MR15_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector(button[data-bind="click: save, disable: !canSave()"])" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Role/EditRoleOnGrid/EditRoleOnGridTest.php:77
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocationEntityTest::test with data set "OrderListByLocationEntityTestVariation2_0" (OrderListByLocationEntityTestVariation2_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "Store Address 2")])" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByLocationEntityTest.php:75
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-4) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocationEntityTest::test with data set "OrderListByLocationEntityTestVariation3_0" (OrderListByLocationEntityTestVariation3_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "Test Store Address")])" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByLocationEntityTest.php:75
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-5) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation1_0" (OrderListByStaffEntityTestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-6) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation2_0" (OrderListByStaffEntityTestVariation2_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-7) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByStaffEntityTest::test with data set "OrderListByStaffEntityTestVariation3_0" (OrderListByStaffEntityTestVariation3_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector([name=period_type]) -> xpath(.//option[contains(normalize-space(.), "admin admin")])" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Form.php:248
-/var/www/dev/tests/functional/tests/app/Magento/Reports/Test/Block/Adminhtml/AbstractFilter.php:62
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByStaffEntityTest.php:75
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/Customer/WebposCartPageCustomerCheckoutByNewCustomerTest.php:129
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -634,13 +44,20 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 
 --
 
-There were 2 failures:
+There were 4 failures:
 
-1) Magento\Webpos\Test\TestCase\Role\CheckGridOfStaffList\GridStaffListSortingMR26MR27MR28MR29MR30Test::test with data set "GridStaffListSortingMR26MR27MR28MR29MR30TestVariation1_0" (GridStaffListSortingMR26MR27MR28MR29MR30TestVariation1_0)
-Sorting for "Status" column have not changed the first item of grid!
-Failed asserting that '5' is not equal to <string:5>.
+1) Magento\Webpos\Test\TestCase\Checkout\CartPage\Customer\WebposCartPageCustomerCP176Test::test with data set "WebposCartPageCustomerCP176TestVariation_0" (WebposCartPageCustomerCP176TestVariation_0)
+CategoryRepository - TaxClass - Customer's name is wrong
+Expected: John_586838655 Doe_586838655
+Actual: Veronica Costello
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'John_586838655 Doe_586838655'
++'Veronica Costello'
 
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Constraint/AssertGridSorting.php:28
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/CartPage/Customer/AssertCartPageCustomerNameIsCorrect.php:26
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -651,20 +68,356 @@ Failed asserting that '5' is not equal to <string:5>.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Role\EditRoleOnGrid\EditRoleOnGridTest::test with data set "EditRoleOnGridTestVariation_MR13_0" (EditRoleOnGridTestVariation_MR13_0)
-Edit role on grid - Cancel button is not shown
-Failed asserting that false is true.
+2) Magento\Webpos\Test\TestCase\Checkout\CartPage\Customer\WebposCartPageCustomerCP180Test::test with data set "WebposCartPageCustomerCP180TestVariation_0" (WebposCartPageCustomerCP180TestVariation_0)
+CategoryRepository - TaxClass - Customer's name is wrong
+Expected: John_1702803315 Doe_1702803315
+Actual: John_375204891 Doe_375204891
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'John_1702803315 Doe_1702803315'
++'John_375204891 Doe_375204891'
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Role/EditRoleOnGrid/AssertEditableRowIsVisible.php:38
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/CartPage/Customer/AssertCartPageCustomerNameIsCorrect.php:26
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Checkout\CartPage\Customer\WebposCartPageCustomerCheckoutByExistingCustomerCP41Test::test with data set "WebposCartPageCustomerCheckoutByExistingCustomerCP41TestVariation1_CP41_0" (WebposCartPageCustomerCheckoutByExistingCustomerCP41TestVariation1_CP41_0)
+CategoryRepository - TaxClass - Customer's name is wrong
+Expected: John Doe1669541443
+Actual: Veronica Costello
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'John Doe1669541443'
++'Veronica Costello'
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/CartPage/Customer/AssertCartPageCustomerNameIsCorrect.php:26
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\Checkout\CartPage\Customer\WebposCartPageCustomerCheckoutByExistingCustomerTest::test with data set "WebposCartPageCustomerCheckoutByExistingCustomerTestVariation1_CP39_0" (WebposCartPageCustomerCheckoutByExistingCustomerTestVariation1_CP39_0)
+CategoryRepository - TaxClass - Customer's name is wrong
+Expected: John Doe
+Actual: Guest
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'John Doe'
++'Guest'
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/CartPage/Customer/AssertCartPageCustomerNameIsCorrect.php:26
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/Customer/WebposCartPageCustomerCheckoutByExistingCustomerTest.php:104
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 69, Assertions: 155, Errors: 7, Failures: 2.
+Tests: 26, Assertions: 150, Errors: 2, Failures: 4.
+============== Test suite Webpos2 =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+.EEE.EEE.....EE......                                             21 / 21 (100%).
+
+Time: 28.34 minutes, Memory: 70.00MB
+
+There were 8 errors:
+
+1) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomPrice\WebposCheckGUICustomerPriceInsertNegativePriceCP55EntityTest::test with data set "WebposCheckGUICustomerPriceInsertNegativePriceCP55EntityTestVariation1_CP5_0" (WebposCheckGUICustomerPriceInsertNegativePriceCP55EntityTestVariation1_CP5_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomPrice/WebposCheckGUICustomerPriceInsertNegativePriceCP55EntityTest.php:55
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomPrice\WebposCheckGUICustomerPriceTest::test with data set "WebposCheckGUICustomerPriceInsertZeroPriceCP56EntityTestVariation1_CP56_0" (WebposCheckGUICustomerPriceInsertZeroPriceCP56EntityTestVariation1_CP56_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomPrice/WebposCheckGUICustomerPriceTest.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomPrice\WebposCheckGUICustomerPriceTest::test with data set "WebposCheckGUICustomerPriceInsertPriceValueCP57EntityTestVariation1_CP57_0" (WebposCheckGUICustomerPriceInsertPriceValueCP57EntityTestVariation1_CP57_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomPrice/WebposCheckGUICustomerPriceTest.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomPrice\WebposCustomerPriceWithValidValueCP60Test::test with data set "WebposCustomerPriceWithValidValueCP60TestVariation1_CP60_0" (WebposCustomerPriceWithValidValueCP60TestVariation1_CP60_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomPrice/WebposCustomerPriceWithValidValueCP60Test.php:60
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomPrice\WebposPlaceOrderWithCustomerPercentCP61Test::test with data set "WebposPlaceOrderWithCustomerPercentCP61TestVariation1_CP61_0" (WebposPlaceOrderWithCustomerPercentCP61TestVariation1_CP61_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomPrice/WebposPlaceOrderWithCustomerPercentCP61Test.php:67
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomPrice\WebposPlaceOrderWithCustomerPriceCP58Test::test with data set "WebposPlaceOrderWithCustomerPriceCP58TestVariation1_CP58_0" (WebposPlaceOrderWithCustomerPriceCP58TestVariation1_CP58_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomPrice/WebposPlaceOrderWithCustomerPriceCP58Test.php:66
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomSale\WebposCustomSaleCustomProductPlaceOrderCP80EntityTest::test with data set "Webpos_CustomSale_CustomProductPlaceOrderCP80_Test1_CP80_0" (Webpos_CustomSale_CustomProductPlaceOrderCP80_Test1_CP80_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomSale/WebposCustomSaleCustomProductPlaceOrderCP80EntityTest.php:62
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+8) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomSale\WebposCustomSaleCustomProductWithDiscountCP78EntityTest::test with data set "Webpos_CustomSale_CustomProductWithDiscount_CP78_Test1_CP78_0" (Webpos_CustomSale_CustomProductWithDiscount_CP78_Test1_CP78_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomSale/WebposCustomSaleCustomProductWithDiscountCP78EntityTest.php:67
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 22, Assertions: 59, Errors: 8.
+============== Test suite Webpos3 =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+...........EE                                                     13 / 13 (100%)EEE
+
+Time: 20.52 minutes, Memory: 70.00MB
+
+There were 5 errors:
+
+1) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposCheckoutWithDiscountProductDollarCP65EntityTest::test with data set "Webpos_CheckoutWithDiscount_ByDollar_CP65TestVariation1_CP65_0" (Webpos_CheckoutWithDiscount_ByDollar_CP65TestVariation1_CP65_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposCheckoutWithDiscountProductDollarCP65EntityTest.php:74
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposCheckoutWithDiscountProductPercentCP67EntityTest::test with data set "Webpos_Check_Input_ValueToDiscountProduct_ByPercentCP66_Test1_CP66_0" (Webpos_Check_Input_ValueToDiscountProduct_ByPercentCP66_Test1_CP66_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposCheckoutWithDiscountProductPercentCP67EntityTest.php:76
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposInputValidValueToDiscountDollarCP64EntityTest::test with data set "Webpos_Check_Input_ValueToDiscountProduct_ByDollarCP64_Test1_CP64_0" (Webpos_Check_Input_ValueToDiscountProduct_ByDollarCP64_Test1_CP64_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposInputValidValueToDiscountDollarCP64EntityTest.php:67
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposInputValidValueToDiscountPercentCP66EntityTest::test with data set "Webpos_Check_Input_ValueToDiscountProduct_ByPercentCP66_Test1_CP66_0" (Webpos_Check_Input_ValueToDiscountProduct_ByPercentCP66_Test1_CP66_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposInputValidValueToDiscountPercentCP66EntityTest.php:70
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposValidateDiscountCP63EntityTest::test with data set "Webpos_CheckValidate_DiscountProduct_WithValidValueCP63_Test1_CP63_0" (Webpos_CheckValidate_DiscountProduct_WithValidValueCP63_Test1_CP63_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLDivElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-cc1eeb9c-de7d-4fb8-9c1e-24c33451dae3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposValidateDiscountCP63EntityTest.php:67
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 16, Assertions: 48, Errors: 5.
