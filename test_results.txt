@@ -1,45 +1,25 @@
-============== Test suite Webpos24 =============
+============== Test suite Webpos25 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-....F.E....F.F.                                                   15 / 15 (100%)
+..E........                                                       11 / 11 (100%)
 
-Time: 26.97 minutes, Memory: 72.00MB
+Time: 19.03 minutes, Memory: 70.00MB
 
 There was 1 error:
 
-1) Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX23Test::test with data set "WebposTaxTAX23TestVariation_TAX23_0" (WebposTaxTAX23TestVariation_TAX23_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Element is no longer attached to the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-17eafe24-7310-42b2-bba3-23775af43160', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
+1) Magento\Webpos\Test\TestCase\Tax\ShippingPriceTaxableGoodsAndShippingIncludingTax\WebposTaxTAX50Test::test with data set "WebposTaxTAX50TestVariation_TAX50_0" (WebposTaxTAX50TestVariation_TAX50_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderViewFooter.php:42
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderViewFooter.php:65
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CheckTaxAmountWithShippingFee/WebposTaxTAX23Test.php:176
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
---
-
-There were 3 failures:
-
-1) Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX18Test::test with data set "WebposTaxTAX18TestVariation_TAX18_0" (WebposTaxTAX18TestVariation_TAX18_0)
-Success Message is not displayed
-Failed asserting that false is true.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Invoice/AssertInvoiceSuccess.php:38
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Toaster.php:17
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Invoice/AssertInvoiceSuccess.php:37
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -50,33 +30,5 @@ Failed asserting that false is true.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX107Test::test with data set "WebposTaxTAX107TestVariation_TAX107_0" (WebposTaxTAX107TestVariation_TAX107_0)
-Subtotal is not equals actual subtotal.
-Expected: 110
-Actual: 100.00
-Failed asserting that '100.00' matches expected 110.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountWithIncludeFptInSubtotal.php:32
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/IncludeFPTInSubtotalYes/WebposTaxTAX107Test.php:138
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX110Test::test with data set "WebposTaxTAX110TestVariation_TAX110_0" (WebposTaxTAX110TestVariation_TAX110_0)
-Subtotal is not equals actual subtotal.
-Expected: 110
-Actual: 100.00
-Failed asserting that '100.00' matches expected 110.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountWithIncludeFptInSubtotal.php:32
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/IncludeFPTInSubtotalYes/WebposTaxTAX110Test.php:171
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
 ERRORS!
-Tests: 15, Assertions: 143, Errors: 1, Failures: 3.
+Tests: 11, Assertions: 112, Errors: 1.
