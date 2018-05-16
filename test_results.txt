@@ -1,16 +1,16 @@
-============== Test suite Webpos23 =============
+============== Test suite Webpos24 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-....E...........                                                  16 / 16 (100%)
+....E......F.F.                                                   15 / 15 (100%)
 
-Time: 28.86 minutes, Memory: 72.00MB
+Time: 26.03 minutes, Memory: 72.00MB
 
 There was 1 error:
 
-1) Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX29Test::test with data set "WebposTaxTAX29TestVariation_TAX01_0" (WebposTaxTAX29TestVariation_TAX01_0)
+1) Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithShippingFee\WebposTaxTAX18Test::test with data set "WebposTaxTAX18TestVariation_TAX18_0" (WebposTaxTAX18TestVariation_TAX18_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -30,5 +30,37 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
+--
+
+There were 2 failures:
+
+1) Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX107Test::test with data set "WebposTaxTAX107TestVariation_TAX107_0" (WebposTaxTAX107TestVariation_TAX107_0)
+Subtotal is not equals actual subtotal.
+Expected: 110
+Actual: 100.00
+Failed asserting that '100.00' matches expected 110.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountWithIncludeFptInSubtotal.php:32
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/IncludeFPTInSubtotalYes/WebposTaxTAX107Test.php:138
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX110Test::test with data set "WebposTaxTAX110TestVariation_TAX110_0" (WebposTaxTAX110TestVariation_TAX110_0)
+Subtotal is not equals actual subtotal.
+Expected: 110
+Actual: 100.00
+Failed asserting that '100.00' matches expected 110.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountWithIncludeFptInSubtotal.php:32
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/IncludeFPTInSubtotalYes/WebposTaxTAX110Test.php:171
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
 ERRORS!
-Tests: 16, Assertions: 214, Errors: 1.
+Tests: 15, Assertions: 169, Errors: 1, Failures: 2.
