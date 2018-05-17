@@ -1,0 +1,22 @@
+PHPUnit 6.2.4 by Sebastian Bergmann and contributors.
+
+EEEE
+Warning: Uncaught PHPUnit\Framework\Exception: Warning: require(/var/www/dev/tests/integration/testsuite/Magento/Giftvoucher/_file/generateGiftcode.php): failed to open stream: No such file or directory in /var/www/dev/tests/api-functional/framework/Magento/TestFramework/Annotation/ApiDataFixture.php:112.
+
+/var/www/dev/tests/api-functional/framework/bootstrap.php:125
+/var/www/dev/tests/api-functional/framework/Magento/TestFramework/Annotation/ApiDataFixture.php:112
+/var/www/dev/tests/api-functional/framework/Magento/TestFramework/Annotation/ApiDataFixture.php:112
+/var/www/dev/tests/api-functional/framework/Magento/TestFramework/Annotation/ApiDataFixture.php:134
+/var/www/dev/tests/api-functional/framework/Magento/TestFramework/Annotation/ApiDataFixture.php:56
+/var/www/dev/tests/integration/framework/Magento/TestFramework/EventManager.php:49
+/var/www/dev/tests/integration/framework/Magento/TestFramework/Event/PhpUnit.php:126
+/var/www/vendor/phpunit/phpunit/phpunit:53
+
+  thrown in /var/www/dev/tests/api-functional/framework/bootstrap.php on line 125
+
+Fatal error: Magento\TestFramework\Annotation\ApiDataFixture::_applyOneFixture(): Failed opening required '/var/www/dev/tests/integration/testsuite/Magento/Giftvoucher/_file/generateGiftcode.php' (include_path='/var/www/dev/tests/api-functional/./testsuite:/var/www/generated/code:/var/www/generated/code:/var/www/dev/tests/api-functional/./testsuite:/var/www/vendor/magento/zendframework1/library:.:/home/travis/.phpenv/versions/7.1.11/share/pear') in /var/www/dev/tests/api-functional/framework/Magento/TestFramework/Annotation/ApiDataFixture.php on line 112
+
+=== Memory Usage System Stats ===
+Memory usage (OS):	93.90M (146.72% of 64.00M reported by PHP)
+Estimated memory leak:	29.90M (31.84% of used memory)
+
