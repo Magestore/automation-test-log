@@ -1,28 +1,43 @@
-============== Test suite Webpos14 =============
+============== Test suite Webpos15 =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..........E..F....EF.                                             21 / 21 (100%)....
+.E.............E.                                                 17 / 17 (100%).E...
 
-Time: 33.41 minutes, Memory: 76.00MB
+Time: 27.8 minutes, Memory: 76.00MB
 
-There were 2 errors:
+There were 3 errors:
 
-1) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundCheckOkConfirmationOH62Test::test with data set "WebposOrdersHistoryRefundCheckOkConfirmationOH62TestVariation1_0" (WebposOrdersHistoryRefundCheckOkConfirmationOH62TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Element is no longer attached to the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+1) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionReOrder\WebposMassActionReOrderOH28Test::test with data set "WebposOrdersHistoryMassActionReOrder_OH28_0" (WebposOrdersHistoryMassActionReOrder_OH28_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (576, 0): [object HTMLElement]
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-1b3ee43d-77b1-46e9-b9e8-0014a6db9dec', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-23c2b157-fdb1-44a5-99d8-a16ae0975fef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:257
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MainContent.php:22
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/EditCustomPriceOfProductOnCartStep.php:58
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionReOrder/WebposMassActionReOrderOH28Test.php:73
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCreateShipmentOH38Test::test with data set "WebposOrdersHistoryCreateShipmentOH38TestVariation1_0" (WebposOrdersHistoryCreateShipmentOH38TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#toaster)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Refund/AssertRefundSuccess.php:42
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Shipment/AssertShipmentSuccess.php:46
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -33,53 +48,27 @@ Driver info: driver.version: unknown
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundPartialOH63Test::test with data set "WebposOrdersHistoryRefundPartialOH63TestVariation1_0" (WebposOrdersHistoryRefundPartialOH63TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#webpos_order_view_container .main-content) -> xpath(//table/tbody/tr/td/h4[text()="product_100_dollar101137959"]/../..)" . Wait: "1"
+3) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryShipmentOH44Test::test with data set "WebposOrdersHistoryShipmentOH44TestVariation1_0" (WebposOrdersHistoryShipmentOH44TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderViewContent.php:101
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundPartialOH63Test.php:96
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Toaster.php:44
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Toaster.php:49
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Shipment/AssertShipmentSuccess.php:40
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
---
-
-There were 2 failures:
-
-1) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundOH68Test::test with data set "WebposOrdersHistoryRefundOH68TestVariation1_0" (WebposOrdersHistoryRefundOH68TestVariation1_0)
-Error message's is Wrong
-Expected: Data Refund Invalid!
-Actual: Data Refund Invalid!
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'A creditmemo has been created!'
-+'Data Refund Invalid!'
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundOH68Test.php:118
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionRefund\WebposOrdersHistoryRefundPartialOH64Test::test with data set "WebposOrdersHistoryRefundPartialOH64TestVariation1_0" (WebposOrdersHistoryRefundPartialOH64TestVariation1_0)
-Success Message is not displayed
-Failed asserting that false is true.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Refund/AssertRefundSuccess.php:38
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionRefund/WebposOrdersHistoryRefundPartialOH64Test.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 25, Assertions: 141, Errors: 2, Failures: 2.
+Tests: 22, Assertions: 154, Errors: 3.
