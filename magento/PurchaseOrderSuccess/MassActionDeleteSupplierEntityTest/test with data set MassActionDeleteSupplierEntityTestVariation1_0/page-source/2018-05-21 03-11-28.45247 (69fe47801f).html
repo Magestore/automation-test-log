@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>There has been an error processing your request</title>
+    <base href="http://magento2.travis/pub/errors/default/" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="*" name="robots" />
+    <link type="text/css" href="css/styles.css" rel="stylesheet" />
+    <link type="image/x-icon" href="images/favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="images/favicon.ico" rel="shortcut icon" />
+</head>
+<body>
+    <main class="page-main">
+        
+<h1>There has been an error processing your request</h1>
+
+<div class="trace-container">
+    <div class="trace">
+        <pre>SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'supplier_id' in where clause is ambiguous, query was: SELECT `main_table`.`supplier_id` FROM `os_supplier` AS `main_table`
+ LEFT JOIN `os_supplier_product` AS `supplier_product` ON main_table.supplier_id = supplier_product.supplier_id
+ LEFT JOIN `os_purchase_order` AS `purchase_order` ON main_table.supplier_id = purchase_order.supplier_id WHERE (`supplier_id` IN('16', '17')) GROUP BY `main_table`.`supplier_id`</pre>
+    </div>
+</div>
+    <p>Error log record number: 586318923916</p>
+    </main>
+
+
+</body></html>

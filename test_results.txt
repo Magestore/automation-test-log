@@ -1,10 +1,85 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.0.25
+Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....................                                             21 / 21 (100%)..............
+.......E.............                                             21 / 21 (100%).........EFF..
 
-Time: 19.03 minutes, Memory: 100.00MB
+Time: 17.96 minutes, Memory: 126.00MB
 
-OK (35 tests, 245 assertions)
+There were 2 errors:
+
+1) Magento\PurchaseOrderSuccess\Test\TestCase\OpenImportPricelistEntityTest::test with data set "OpenImportPricelistEntityTestVariation1_0" (OpenImportPricelistEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.modal-slide.mage-new-video-dialog.form-inline._show)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/Block/Adminhtml/Pricelist/ModalImportPricelist.php:19
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/Constraint/Form/AssertImportPricelistFormIsAvailable.php:22
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\PurchaseOrderSuccess\Test\TestCase\Supplier\MassActionDeleteSupplierEntityTest::test with data set "MassActionDeleteSupplierEntityTestVariation1_0" (MassActionDeleteSupplierEntityTestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Backend/Test/Block/Messages.php:94
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/Constraint/Supplier/AssertSupplierMassDeteteSuccessMessage.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There were 2 failures:
+
+1) Magento\PurchaseOrderSuccess\Test\TestCase\Supplier\MassChangeStatusSupplierEntityTest::test with data set "MassActionEnableSupplierEntityTestVariation1_0" (MassActionEnableSupplierEntityTestVariation1_0)
+There is more than one supplier founded
+Failed asserting that 1 matches expected 2.
+
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/Constraint/Supplier/AssertSupplierMassChangeStatusInGrid.php:41
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\PurchaseOrderSuccess\Test\TestCase\Supplier\MassChangeStatusSupplierEntityTest::test with data set "MassActionDisableSupplierEntityTestVariation2_0" (MassActionDisableSupplierEntityTestVariation2_0)
+There is more than one supplier founded
+Failed asserting that 1 matches expected 2.
+
+/var/www/dev/tests/functional/tests/app/Magento/PurchaseOrderSuccess/Test/Constraint/Supplier/AssertSupplierMassChangeStatusInGrid.php:41
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 35, Assertions: 230, Errors: 2, Failures: 2.
