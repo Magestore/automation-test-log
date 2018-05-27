@@ -1,75 +1,56 @@
-============== Test suite Setting =============
+============== Test suite StaffCheckSortColumnInGridCheckValidation =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..............                                                    14 / 14 (100%)..............
+......                                                              6 / 6 (100%).......
 
-Time: 15.31 minutes, Memory: 70.00MB
+Time: 5.14 minutes, Memory: 66.00MB
 
-OK (28 tests, 97 assertions)
-============== Test suite Shift =============
+OK (13 tests, 44 assertions)
+============== Test suite StaffEditStaff =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EE                                                                  2 / 2 (100%)E
+...............                                                   15 / 15 (100%)F
 
-Time: 23.59 seconds, Memory: 58.00MB
+Time: 10.52 minutes, Memory: 70.00MB
 
-There were 3 errors:
+There was 1 failure:
 
-1) Magento\Webpos\Test\TestCase\Shift\GridShiftFilteringTest::test with data set "GridShiftFilteringTest_0" (GridShiftFilteringTest_0)
-Exception: Zreport creation by Web API handler was not successful!
+1) Magento\Webpos\Test\TestCase\Staff\EditStaff\WebposManageStaffMS50Test::test with data set "WebposManageStaffMS50TestVariation_0" (WebposManageStaffMS50TestVariation_0)
+Invalid page title is displayed.
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Staff'
++'Edit Staff Test Automation 848070941'
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:47
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:149
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:86
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/Staff/Grid/AssertPageManageStaff.php:31
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Shift\GridShiftSortingTest::test with data set "GridShiftSortingTest1_0" (GridShiftSortingTest1_0)
-Exception: Zreport creation by Web API handler was not successful!
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:47
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:83
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\Shift\GridShiftSortingTest::test with data set "GridShiftSortingTest2_0" (GridShiftSortingTest2_0)
-Exception: Zreport creation by Web API handler was not successful!
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:47
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
-/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:83
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 3, Assertions: 0, Errors: 3.
-============== Test suite StaffAddStaffCheckFilterFunctionCheckGUI =============
+FAILURES!
+Tests: 16, Assertions: 163, Failures: 1.
+============== Test suite StaffEditStaffOnGridMassAction =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.............                                                     13 / 13 (100%)
+........                                                            8 / 8 (100%)..
 
-Time: 5.63 minutes, Memory: 68.00MB
+Time: 6.31 minutes, Memory: 68.00MB
 
-OK (13 tests, 135 assertions)
+OK (10 tests, 80 assertions)
