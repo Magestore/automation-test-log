@@ -1,33 +1,75 @@
-============== Test suite RoleCheckGUICheckValidate =============
+============== Test suite Setting =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-....                                                                4 / 4 (100%)
+..............                                                    14 / 14 (100%)..............
 
-Time: 1.83 minutes, Memory: 62.00MB
+Time: 15.31 minutes, Memory: 70.00MB
 
-OK (4 tests, 32 assertions)
-============== Test suite RoleEditRoleEditRoleOnGrid =============
+OK (28 tests, 97 assertions)
+============== Test suite Shift =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..........                                                        10 / 10 (100%)..
+EE                                                                  2 / 2 (100%)E
 
-Time: 7.18 minutes, Memory: 68.00MB
+Time: 23.59 seconds, Memory: 58.00MB
 
-OK (12 tests, 56 assertions)
-============== Test suite RoleRoleFilterMassAction =============
+There were 3 errors:
+
+1) Magento\Webpos\Test\TestCase\Shift\GridShiftFilteringTest::test with data set "GridShiftFilteringTest_0" (GridShiftFilteringTest_0)
+Exception: Zreport creation by Web API handler was not successful!
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:47
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:149
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:86
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Shift\GridShiftSortingTest::test with data set "GridShiftSortingTest1_0" (GridShiftSortingTest1_0)
+Exception: Zreport creation by Web API handler was not successful!
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:47
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:83
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Shift\GridShiftSortingTest::test with data set "GridShiftSortingTest2_0" (GridShiftSortingTest2_0)
+Exception: Zreport creation by Web API handler was not successful!
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:47
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:83
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 3, Assertions: 0, Errors: 3.
+============== Test suite StaffAddStaffCheckFilterFunctionCheckGUI =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.......                                                             7 / 7 (100%)
+.............                                                     13 / 13 (100%)
 
-Time: 2.78 minutes, Memory: 64.00MB
+Time: 5.63 minutes, Memory: 68.00MB
 
-OK (7 tests, 23 assertions)
+OK (13 tests, 135 assertions)
