@@ -1,105 +1,27 @@
-============== Test suite CheckGUILocationEditLocationOnGrid =============
+============== Test suite OnHoldOrderCheckGUIHoldOrder =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..............                                                    14 / 14 (100%)...
+...............                                                   15 / 15 (100%)
 
-Time: 5.95 minutes, Memory: 66.00MB
+Time: 16.22 minutes, Memory: 70.00MB
 
-OK (17 tests, 87 assertions)
-============== Test suite EditLocationFilterLocations =============
+OK (15 tests, 150 assertions)
+============== Test suite OnHoldOrderProcessingOnHoldOrderSearch =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..E..E.EE......                                                   15 / 15 (100%)
+..F...E.....E.                                                    14 / 14 (100%)
 
-Time: 5.83 minutes, Memory: 66.00MB
+Time: 16.59 minutes, Memory: 72.00MB
 
-There were 4 errors:
+There were 2 errors:
 
-1) Magento\Webpos\Test\TestCase\Location\EditLocation\WebposManageLocationML26Test::test with data set "WebposManageLocationML26TestVariation_0" (WebposManageLocationML26TestVariation_0)
-Exception: Searched item was not found by filter
-Array
-(
-    [display_name] => Test Store Address 841659544
-)
-
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Locations/LocationsGrid.php:175
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Location/EditLocation/WebposManageLocationML26Test.php:70
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\Location\EditLocation\WebposManageLocationML30Test::test with data set "WebposManageLocationML30TestVariation_0" (WebposManageLocationML30TestVariation_0)
-Exception: Searched item was not found by filter
-Array
-(
-    [display_name] => Test Store Address 78654558
-)
-
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Locations/LocationsGrid.php:175
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Location/EditLocation/WebposManageLocationML30Test.php:72
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\Location\EditLocation\WebposManageLocationML32Test::test with data set "WebposManageLocationML32TestVariation_0" (WebposManageLocationML32TestVariation_0)
-Exception: Searched item was not found by filter
-Array
-(
-    [display_name] => Test Store Address 806642659
-)
-
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Locations/LocationsGrid.php:175
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Location/EditLocation/WebposManageLocationML32Test.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-4) Magento\Webpos\Test\TestCase\Location\EditLocation\WebposManageLocationML33Test::test with data set "WebposManageLocationML33TestVariation_0" (WebposManageLocationML33TestVariation_0)
-Exception: Searched item was not found by filter
-Array
-(
-    [display_name] => Test Store Address 897841181
-)
-
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Locations/LocationsGrid.php:175
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Location/EditLocation/WebposManageLocationML33Test.php:70
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 15, Assertions: 47, Errors: 4.
-============== Test suite ManageStocks =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-.........                                                           9 / 9 (100%)..E....
-
-Time: 12.69 minutes, Memory: 100.00MB
-
-There was 1 error:
-
-1) Magento\Webpos\Test\TestCase\ManageStocks\UpdateProductAttributes\WebposManageStocksUpdateProductAttributesTest::test with data set "WebposManageStocksUpdateProductAttributesTestVariation_MSK13_0" (WebposManageStocksUpdateProductAttributesTestVariation_MSK13_0)
+1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH22Test::test with data set "WebposOnHoldOrderONH22TestVariation_0" (WebposOnHoldOrderONH22TestVariation_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.wrap-login-form)" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
@@ -107,7 +29,70 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Login/LoginForm.php:59
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:82
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/ManageStocks/UpdateProductAttributes/WebposManageStocksUpdateProductAttributesTest.php:73
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/ProcessingOnHoldOrder/WebposOnHoldOrderONH22Test.php:65
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\OnHoldOrder\Search\WebposOnHoldOrderONH28Test::test with data set "WebposOnHoldOrderONH28TestVariation_0" (WebposOnHoldOrderONH28TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.wrap-login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Login/LoginForm.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:82
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/Search/WebposOnHoldOrderONH28Test.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH18Test::test with data set "WebposOnHoldOrderONH18TestVariation_0" (WebposOnHoldOrderONH18TestVariation_0)
+Tax is not correct, taxExpected is : $7.22and taxActual is : $7
+Failed asserting that 7.0 matches expected 7.22.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckTaxHoldOrder.php:26
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 14, Assertions: 81, Errors: 2, Failures: 1.
+============== Test suite OrdersHistoryBillingShippingAddressCheckGUI =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+...E.                                                               5 / 5 (100%)
+
+Time: 6.44 minutes, Memory: 66.00MB
+
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\OrdersHistory\CheckGUI\WebposOrdersHistoryCheckGUITest::test with data set "WebposOrdersHistoryCheckGUITestVariation1_0" (WebposOrdersHistoryCheckGUITestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.wrap-login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Login/LoginForm.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:82
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/CheckGUI/WebposOrdersHistoryCheckGUITest.php:46
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -115,4 +100,4 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 16, Assertions: 89, Errors: 1.
+Tests: 5, Assertions: 36, Errors: 1.
