@@ -1,33 +1,68 @@
-============== Test suite CheckVisibleForm =============
+============== Test suite CustomerOnCheckoutPageShippingAddressPopupUseGuest =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%)
+.......                                                             7 / 7 (100%)...
 
-Time: 1.55 minutes, Memory: 58.00MB
+Time: 6.91 minutes, Memory: 68.00MB
 
-OK (6 tests, 24 assertions)
-============== Test suite CustomerOnCheckoutPageBillingAddressPopupCheckGUICreateCustomer =============
+OK (10 tests, 98 assertions)
+============== Test suite Denomination =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........                                                            8 / 8 (100%)........
+....                                                                4 / 4 (100%).
 
-Time: 9.68 minutes, Memory: 70.00MB
+Time: 2.04 minutes, Memory: 64.00MB
 
-OK (16 tests, 117 assertions)
-============== Test suite CustomerOnCheckoutPageEditCustomerSearch =============
+OK (5 tests, 22 assertions)
+============== Test suite LocationAddLocationChooseLocations =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..............                                                    14 / 14 (100%)
+.....E............................E...................            54 / 54 (100%)....
 
-Time: 14.55 minutes, Memory: 70.00MB
+Time: 26.2 minutes, Memory: 72.00MB
 
-OK (14 tests, 85 assertions)
+There were 2 errors:
+
+1) Magento\Webpos\Test\TestCase\Location\AddLocation\WebposManageLocationML21Test::test with data set "WebposManageLocationML21TestVariation_0" (WebposManageLocationML21TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaff.php:76
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Location/AddLocation/WebposManageLocationML21Test.php:178
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Location\EditLocation\WebposManageLocationML33Test::test with data set "WebposManageLocationML33TestVariation_0" (WebposManageLocationML33TestVariation_0)
+Exception: Searched item was not found by filter
+Array
+(
+    [display_name] => Test Store Address 1001197442
+)
+
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Locations/LocationsGrid.php:175
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Location/EditLocation/WebposManageLocationML33Test.php:70
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 58, Assertions: 247, Errors: 2.
