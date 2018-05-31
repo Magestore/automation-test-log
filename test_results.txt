@@ -1,33 +1,148 @@
-============== Test suite RoleCheckGUICheckValidate =============
+============== Test suite Setting =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-....                                                                4 / 4 (100%)
+...FF.........                                                    14 / 14 (100%)..............
 
-Time: 1.63 minutes, Memory: 62.00MB
+Time: 14.64 minutes, Memory: 70.00MB
 
-OK (4 tests, 32 assertions)
-============== Test suite RoleEditRoleEditRoleOnGrid =============
+There were 2 failures:
+
+1) Magento\Webpos\Test\TestCase\Setting\Account\WebPOSChangePasswordTest::test with data set "WebPOSChangePasswordTestVariation_SET06_0" (WebPOSChangePasswordTestVariation_SET06_0)
+On the Setting General Page - The current staff name is not correct.
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Please enter 7 or more characters, using both
+-                numeric and alphabetic.
+-            '
++'Please enter 7 or more characters, using both numeric and alphabetic.'
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Setting/Account/AssertWebPOSChangePasswordUnsuccessfullySET06.php:27
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Setting\Account\WebPOSChangePasswordTest::test with data set "WebPOSChangePasswordTestVariation_SET07_0" (WebPOSChangePasswordTestVariation_SET07_0)
+On the Setting General Page - The new and current password must be 7 or more characters, using both numeric and alphabetic.
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Please enter 7 or more characters, using both numeric
+-                and alphabetic.
+-            '
++'Please enter 7 or more characters, using both numeric and alphabetic.'
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Setting/Account/AssertWebPOSChangePasswordUnsuccessfullySET07.php:27
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 28, Assertions: 97, Failures: 2.
+============== Test suite Shift =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..........                                                        10 / 10 (100%)..
+EE                                                                  2 / 2 (100%)E
 
-Time: 5.72 minutes, Memory: 68.00MB
+Time: 21.21 seconds, Memory: 58.00MB
 
-OK (12 tests, 56 assertions)
-============== Test suite RoleRoleFilterMassAction =============
+There were 3 errors:
+
+1) Magento\Webpos\Test\TestCase\Shift\GridShiftFilteringTest::test with data set "GridShiftFilteringTest_0" (GridShiftFilteringTest_0)
+RuntimeException: Data must be set
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:274
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:58
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:39
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:149
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridFilteringTest.php:86
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Shift\GridShiftSortingTest::test with data set "GridShiftSortingTest1_0" (GridShiftSortingTest1_0)
+RuntimeException: Data must be set
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:274
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:58
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:39
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:83
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Shift\GridShiftSortingTest::test with data set "GridShiftSortingTest2_0" (GridShiftSortingTest2_0)
+RuntimeException: Data must be set
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:274
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:58
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Handler/Zreport/Webapi.php:39
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Fixture/InjectableFixture.php:254
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:117
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/TestCase/GridSortingTest.php:83
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 3, Assertions: 0, Errors: 3.
+============== Test suite StaffAddStaffCheckFilterFunctionCheckGUI =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.......                                                             7 / 7 (100%)
+............F                                                     13 / 13 (100%)
 
-Time: 2.28 minutes, Memory: 64.00MB
+Time: 5.27 minutes, Memory: 70.00MB
 
-OK (7 tests, 23 assertions)
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Staff\CheckGUI\ManageStaffPageMS01Test::test with data set "WebposManageStaffMS01TestVariation_0" (WebposManageStaffMS01TestVariation_0)
+Field Status,
+                Action
+             does not display
+Failed asserting that false is true.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/Staff/GUI/AssertStaffPageDisplay.php:41
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 13, Assertions: 129, Failures: 1.
