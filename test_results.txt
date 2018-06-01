@@ -1,35 +1,63 @@
-============== Test suite CheckVisibleForm =============
+============== Test suite CustomerOnCheckoutPageShippingAddressPopupUseGuest =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%)
+.......                                                             7 / 7 (100%)...
 
-Time: 1.48 minutes, Memory: 58.00MB
+Time: 6.93 minutes, Memory: 68.00MB
 
-OK (6 tests, 24 assertions)
-============== Test suite CustomerOnCheckoutPageBillingAddressPopupCheckGUICreateCustomer =============
+OK (10 tests, 98 assertions)
+============== Test suite Denomination =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....E..                                                            8 / 8 (100%)........
+....                                                                4 / 4 (100%).
 
-Time: 9.82 minutes, Memory: 70.00MB
+Time: 2.03 minutes, Memory: 64.00MB
 
-There was 1 error:
+OK (5 tests, 22 assertions)
+============== Test suite LocationAddLocationChooseLocations =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-1) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposCustomerOnCheckoutPageCC23Test::test with data set "WebposCustomerOnCheckoutPageCC23Test_CC23_0" (WebposCustomerOnCheckoutPageCC23Test_CC23_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.wrap-login-form)" . Wait: "1"
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Login/LoginForm.php:59
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:83
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposCustomerOnCheckoutPageCC23Test.php:100
+.....E........................E.......................            54 / 54 (100%)....
+
+Time: 25.93 minutes, Memory: 72.00MB
+
+There were 2 errors:
+
+1) Magento\Webpos\Test\TestCase\Location\AddLocation\WebposManageLocationML21Test::test with data set "WebposManageLocationML21TestVariation_0" (WebposManageLocationML21TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:584
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaff.php:89
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Location/AddLocation/WebposManageLocationML21Test.php:178
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Location\EditLocation\WebposManageLocationML29Test::test with data set "WebposManageLocationML29TestVariation_0" (WebposManageLocationML29TestVariation_0)
+Exception: Searched item was not found by filter
+Array
+(
+    [display_name] => Test Store Address 82487924
+)
+
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Locations/LocationsGrid.php:175
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Location/EditLocation/WebposManageLocationML29Test.php:71
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -37,15 +65,4 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 16, Assertions: 113, Errors: 1.
-============== Test suite CustomerOnCheckoutPageEditCustomerSearch =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-..............                                                    14 / 14 (100%)
-
-Time: 13.3 minutes, Memory: 68.00MB
-
-OK (14 tests, 85 assertions)
+Tests: 58, Assertions: 243, Errors: 2.
