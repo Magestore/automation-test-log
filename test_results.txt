@@ -1,102 +1,97 @@
-============== Test suite StaffCheckSortColumnInGridCheckValidation =============
+============== Test suite SyncCountryCurrencyCustomerComplaintsSwatchOption =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%)..FFF..
+.......                                                             7 / 7 (100%)
 
-Time: 4.18 minutes, Memory: 66.00MB
+Time: 8.5 minutes, Memory: 70.00MB
+
+OK (7 tests, 12 assertions)
+============== Test suite SyncGroupPaymentProduct =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+......                                                              6 / 6 (100%)
+
+Time: 6.66 minutes, Memory: 68.00MB
+
+OK (6 tests, 12 assertions)
+============== Test suite TaxApplyCustomerTaxBeforeDiscountApplyDiscountOnPricesExcludingTax =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+.E...FFF.                                                           9 / 9 (100%)
+
+Time: 14.81 minutes, Memory: 72.00MB
+
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX78Test::test with data set "WebposTaxTAX78TestVariation_TAX78_0" (WebposTaxTAX78TestVariation_TAX78_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.wrap-login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Login/LoginForm.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:83
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX78Test.php:142
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
 
 There were 3 failures:
 
-1) Magento\Webpos\Test\TestCase\Staff\CheckValidation\WebposManageStaffMS32Test::test with data set "WebposManageStaffMS32TestVariation_0" (WebposManageStaffMS32TestVariation_0)
-Show message is incorrect
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'Please enter 7 or more characters, using both numeric and
--                alphabetic.
--            '
-+'Please enter 7 or more characters, using both numeric and alphabetic.'
+1) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX82Test::test with data set "WebposTaxTAX82TestVariation_TAX82_0" (WebposTaxTAX82TestVariation_TAX82_0)
+Discount value is not equals actual discount value.
+Expected: 10.02
+Actual: 9.24
+Failed asserting that '9.24' matches expected 10.02.
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/Staff/Form/AssertValidationPassword.php:50
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountAndDiscountAmountWithApplyDiscountOnPriceIncludingTax.php:29
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX82Test.php:202
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Staff\CheckValidation\WebposManageStaffMS33Test::test with data set "WebposManageStaffMS33TestVariation1_0" (WebposManageStaffMS33TestVariation1_0)
-Show message is incorrect
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'Please enter 7 or more characters, using both numeric and
--                alphabetic.
--            '
-+'Please enter 7 or more characters, using both numeric and alphabetic.'
+2) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX84Test::test with data set "WebposTaxTAX84TestVariation_TAX84_0" (WebposTaxTAX84TestVariation_TAX84_0)
+Discount value is not equals actual discount value.
+Expected: 10.02
+Actual: 9.24
+Failed asserting that '9.24' matches expected 10.02.
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/Staff/Form/AssertValidationPassword.php:50
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountAndDiscountAmountWithApplyDiscountOnPriceIncludingTax.php:29
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX84Test.php:237
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Webpos\Test\TestCase\Staff\CheckValidation\WebposManageStaffMS33Test::test with data set "WebposManageStaffMS33TestVariation2_0" (WebposManageStaffMS33TestVariation2_0)
-Show message is incorrect
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'Please enter 7 or more characters, using both numeric and
--                alphabetic.
--            '
-+'Please enter 7 or more characters, using both numeric and alphabetic.'
+3) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX85Test::test with data set "WebposTaxTAX85TestVariation_TAX85_0" (WebposTaxTAX85TestVariation_TAX85_0)
+Discount value is not equals actual discount value.
+Expected: 10.02
+Actual: 9.24
+Failed asserting that '9.24' matches expected 10.02.
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/Staff/Form/AssertValidationPassword.php:50
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountAndDiscountAmountWithApplyDiscountOnPriceIncludingTax.php:29
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX85Test.php:242
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-FAILURES!
-Tests: 13, Assertions: 44, Failures: 3.
-============== Test suite StaffEditStaff =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-...............                                                   15 / 15 (100%).
-
-Time: 9.78 minutes, Memory: 70.00MB
-
-OK (16 tests, 164 assertions)
-============== Test suite StaffEditStaffOnGridMassAction =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-........                                                            8 / 8 (100%)..
-
-Time: 5.8 minutes, Memory: 68.00MB
-
-OK (10 tests, 80 assertions)
+ERRORS!
+Tests: 9, Assertions: 73, Errors: 1, Failures: 3.
