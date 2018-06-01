@@ -1,33 +1,51 @@
-============== Test suite CheckoutCartPageDeleteCart =============
+============== Test suite CheckoutCartPageEditQty =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-....                                                                4 / 4 (100%)...
+....                                                                4 / 4 (100%)....
 
-Time: 4.71 minutes, Memory: 64.00MB
+Time: 3.85 minutes, Memory: 64.00MB
 
-OK (7 tests, 29 assertions)
-============== Test suite CheckoutCartPageDeleteProduct =============
+OK (8 tests, 85 assertions)
+============== Test suite CheckoutCartPageHoldOrder =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...                                                                 3 / 3 (100%)
+.......F.............                                             21 / 21 (100%)
 
-Time: 2.81 minutes, Memory: 62.00MB
+Time: 22.42 minutes, Memory: 72.00MB
 
-OK (3 tests, 13 assertions)
-============== Test suite CheckoutCartPageDiscountProduct =============
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Checkout\CartPage\HoldOrder\WebposHoldOrderCP161Test::test with data set "WebposHoldOrderCP161TestVariation_0" (WebposHoldOrderCP161TestVariation_0)
+Price product is not correct
+Failed asserting that 200.0 matches expected 100.0.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckCartSimpleProduct.php:37
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 21, Assertions: 139, Failures: 1.
+============== Test suite CheckoutCartPageActionMenuCheckGUI =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%)
+.........                                                           9 / 9 (100%)..
 
-Time: 4.7 minutes, Memory: 64.00MB
+Time: 7.56 minutes, Memory: 68.00MB
 
-OK (6 tests, 25 assertions)
+OK (11 tests, 55 assertions)
