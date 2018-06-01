@@ -1,26 +1,4 @@
-============== Test suite CheckoutCartPageDeleteCart =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-....                                                                4 / 4 (100%)...
-
-Time: 4.86 minutes, Memory: 64.00MB
-
-OK (7 tests, 29 assertions)
-============== Test suite CheckoutCartPageDeleteProduct =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-...                                                                 3 / 3 (100%)
-
-Time: 2.91 minutes, Memory: 62.00MB
-
-OK (3 tests, 13 assertions)
-============== Test suite CheckoutCartPageDiscountProduct =============
+============== Test suite CheckVisibleForm =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
@@ -28,6 +6,46 @@ Configuration: /var/www/dev/tests/functional/phpunit.xml
 
 ......                                                              6 / 6 (100%)
 
-Time: 4.94 minutes, Memory: 64.00MB
+Time: 1.48 minutes, Memory: 58.00MB
 
-OK (6 tests, 32 assertions)
+OK (6 tests, 24 assertions)
+============== Test suite CustomerOnCheckoutPageBillingAddressPopupCheckGUICreateCustomer =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+.....E..                                                            8 / 8 (100%)........
+
+Time: 9.82 minutes, Memory: 70.00MB
+
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposCustomerOnCheckoutPageCC23Test::test with data set "WebposCustomerOnCheckoutPageCC23Test_CC23_0" (WebposCustomerOnCheckoutPageCC23Test_CC23_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.wrap-login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Login/LoginForm.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:83
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposCustomerOnCheckoutPageCC23Test.php:100
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 16, Assertions: 113, Errors: 1.
+============== Test suite CustomerOnCheckoutPageEditCustomerSearch =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+..............                                                    14 / 14 (100%)
+
+Time: 13.3 minutes, Memory: 68.00MB
+
+OK (14 tests, 85 assertions)
