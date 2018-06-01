@@ -1,51 +1,51 @@
-============== Test suite CheckoutCartPageEditQty =============
+============== Test suite CheckVisibleForm =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-....                                                                4 / 4 (100%)....
+......                                                              6 / 6 (100%)
 
-Time: 3.85 minutes, Memory: 64.00MB
+Time: 1.52 minutes, Memory: 58.00MB
 
-OK (8 tests, 85 assertions)
-============== Test suite CheckoutCartPageHoldOrder =============
+OK (6 tests, 24 assertions)
+============== Test suite CustomerOnCheckoutPageBillingAddressPopupCheckGUICreateCustomer =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.......F.............                                             21 / 21 (100%)
+........                                                            8 / 8 (100%)........
 
-Time: 22.42 minutes, Memory: 72.00MB
+Time: 9.08 minutes, Memory: 70.00MB
 
-There was 1 failure:
+OK (16 tests, 117 assertions)
+============== Test suite CustomerOnCheckoutPageEditCustomerSearch =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-1) Magento\Webpos\Test\TestCase\Checkout\CartPage\HoldOrder\WebposHoldOrderCP161Test::test with data set "WebposHoldOrderCP161TestVariation_0" (WebposHoldOrderCP161TestVariation_0)
-Price product is not correct
-Failed asserting that 200.0 matches expected 100.0.
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckCartSimpleProduct.php:37
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+.......E......                                                    14 / 14 (100%)
+
+Time: 14.76 minutes, Memory: 70.00MB
+
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerEditEmailCC34Test::test with data set "WebposEditCustomerEditEmailCC34TestVariation1_0" (WebposEditCustomerEditEmailCC34TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.wrap-login-form)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Login/LoginForm.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:83
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerEditEmailCC34Test.php:63
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-FAILURES!
-Tests: 21, Assertions: 139, Failures: 1.
-============== Test suite CheckoutCartPageActionMenuCheckGUI =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-.........                                                           9 / 9 (100%)..
-
-Time: 7.56 minutes, Memory: 68.00MB
-
-OK (11 tests, 55 assertions)
+ERRORS!
+Tests: 14, Assertions: 84, Errors: 1.
