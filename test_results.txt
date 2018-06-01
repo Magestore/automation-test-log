@@ -1,85 +1,33 @@
-============== Test suite OnHoldOrderCheckGUIHoldOrder =============
+============== Test suite RoleCheckGUICheckValidate =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...............                                                   15 / 15 (100%)
+....                                                                4 / 4 (100%)
 
-Time: 15.23 minutes, Memory: 70.00MB
+Time: 1.61 minutes, Memory: 62.00MB
 
-OK (15 tests, 150 assertions)
-============== Test suite OnHoldOrderProcessingOnHoldOrderSearch =============
+OK (4 tests, 32 assertions)
+============== Test suite RoleEditRoleEditRoleOnGrid =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..F....E.E....                                                    14 / 14 (100%)
+..........                                                        10 / 10 (100%)..
 
-Time: 15.94 minutes, Memory: 70.00MB
+Time: 6.07 minutes, Memory: 68.00MB
 
-There were 2 errors:
-
-1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH23Test::test with data set "WebposOnHoldOrderONH23TestVariation_0" (WebposOnHoldOrderONH23TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.wrap-login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Login/LoginForm.php:59
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:83
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/ProcessingOnHoldOrder/WebposOnHoldOrderONH23Test.php:70
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH25Test::test with data set "WebposOnHoldOrderONH25TestVariation_0" (WebposOnHoldOrderONH25TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.wrap-login-form)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:256
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Login/LoginForm.php:59
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:83
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/ProcessingOnHoldOrder/WebposOnHoldOrderONH25Test.php:68
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
---
-
-There was 1 failure:
-
-1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH18Test::test with data set "WebposOnHoldOrderONH18TestVariation_0" (WebposOnHoldOrderONH18TestVariation_0)
-Tax is not correct, taxExpected is : $7.22and taxActual is : $7
-Failed asserting that 7.0 matches expected 7.22.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckTaxHoldOrder.php:26
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 14, Assertions: 84, Errors: 2, Failures: 1.
-============== Test suite OrdersHistoryBillingShippingAddressCheckGUI =============
+OK (12 tests, 56 assertions)
+============== Test suite RoleRoleFilterMassAction =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....                                                               5 / 5 (100%)
+.......                                                             7 / 7 (100%)
 
-Time: 5.17 minutes, Memory: 68.00MB
+Time: 2.54 minutes, Memory: 64.00MB
 
-OK (5 tests, 54 assertions)
+OK (7 tests, 23 assertions)
