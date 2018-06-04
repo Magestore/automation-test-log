@@ -1,11 +1,44 @@
-============== Test suite EditLocationFilterLocations =============
+============== Test suite ManageStocks =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-............                                                      12 / 12 (100%)
+......                                                              6 / 6 (100%)..E..E.
 
-Time: 6.5 minutes, Memory: 66.00MB
+Time: 9.28 minutes, Memory: 96.00MB
 
-OK (12 tests, 40 assertions)
+There were 2 errors:
+
+1) Magento\Webpos\Test\TestCase\ManageStocks\UpdateProductAttributes\WebposManageStocksUpdateProductAttributesTest::test with data set "WebposManageStocksUpdateProductAttributesTestVariation_MSK13_0" (WebposManageStocksUpdateProductAttributesTestVariation_MSK13_0)
+PHPUnit_Framework_Exception: Notice: Undefined property: Magento\Webpos\Test\Constraint\ManageStocks\UpdateProductAttributes\AssertQtyOfProductOnManageStocksPageIsCorrect::$webposIndex in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/ManageStocks/UpdateProductAttributes/AssertQtyOfProductOnManageStocksPageIsCorrect.php:29.
+
+/var/www/dev/tests/functional/bootstrap.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/ManageStocks/UpdateProductAttributes/AssertQtyOfProductOnManageStocksPageIsCorrect.php:29
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\ManageStocks\UpdateProductAttributes\WebposManageStocksUpdateProductAttributesTest::test with data set "WebposManageStocksUpdateProductAttributesTestVariation_MSK12_0" (WebposManageStocksUpdateProductAttributesTestVariation_MSK12_0)
+PHPUnit_Framework_Exception: Notice: Undefined property: Magento\Webpos\Test\Constraint\ManageStocks\UpdateProductAttributes\AssertQtyOfProductOnManageStocksPageIsCorrect::$webposIndex in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/ManageStocks/UpdateProductAttributes/AssertQtyOfProductOnManageStocksPageIsCorrect.php:29.
+
+/var/www/dev/tests/functional/bootstrap.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/ManageStocks/UpdateProductAttributes/AssertQtyOfProductOnManageStocksPageIsCorrect.php:29
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 13, Assertions: 68, Errors: 2.
