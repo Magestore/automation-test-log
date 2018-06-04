@@ -4,11 +4,11 @@ PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....EEF......E...E.                                              20 / 20 (100%)
+.....EEF......EE..E.                                              20 / 20 (100%)
 
-Time: 27.46 minutes, Memory: 74.00MB
+Time: 28.44 minutes, Memory: 74.00MB
 
-There were 4 errors:
+There were 5 errors:
 
 1) Magento\Webpos\Test\TestCase\ProductsGrid\BundleProduct\WebposProductsGridPG34Test::test with data set "WebposProductsGridPG34Test_PG34_0" (WebposProductsGridPG34Test_PG34_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper) -> css selector(label[data-bind="text: total.call() + ' product(s)'"])" . Wait: "1"
@@ -26,7 +26,7 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 2) Magento\Webpos\Test\TestCase\ProductsGrid\BundleProduct\WebposProductsGridPG35Test::test with data set "WebposProductsGridPG35Test_PG35_0" (WebposProductsGridPG35Test_PG35_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Element is disabled and so may not be used for actions
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-cb643994-3471-4cf6-b5c8-f72d10c1f5c3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+System info: host: 'travis-job-4c4aaefb-1bac-4a74-88ab-b8ca60fde0d7', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
 Driver info: driver.version: unknown
 
 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
@@ -56,7 +56,21 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\ProductsGrid\GroupProduct\WebposProductGridGroupProductDetailAddAnOutOfStockChildProductPG49Test::test with data set "WebposProductGridGroupProductDetailAddAnOutOfStockChildProductPG49TestVariation1_0" (WebposProductGridGroupProductDetailAddAnOutOfStockChildProductPG49TestVariation1_0)
+4) Magento\Webpos\Test\TestCase\ProductsGrid\GroupProduct\WebposProductGridGroupProductBlockAddToCartSuccessfullyPG43Test::test with data set "WebposProductGridGroupProductBlockAddToCartSuccessfullyPG43TestVariation1_0" (WebposProductGridGroupProductBlockAddToCartSuccessfullyPG43TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#popup-product-detail)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:451
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductDetail.php:112
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/ProductsGrid/GroupProduct/WebposProductGridGroupProductBlockAddToCartSuccessfullyPG43Test.php:61
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\ProductsGrid\GroupProduct\WebposProductGridGroupProductDetailAddAnOutOfStockChildProductPG49Test::test with data set "WebposProductGridGroupProductDetailAddAnOutOfStockChildProductPG49TestVariation1_0" (WebposProductGridGroupProductDetailAddAnOutOfStockChildProductPG49TestVariation1_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -91,4 +105,4 @@ Failed asserting that false is true.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 20, Assertions: 83, Errors: 4, Failures: 1.
+Tests: 20, Assertions: 82, Errors: 5, Failures: 1.
