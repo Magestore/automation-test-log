@@ -1,132 +1,107 @@
-============== Test suite SessionManagementValidatePutMoneyTakeMoneyOut =============
+============== Test suite SessionManagementValidateSetClosingBalance =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EE.EEEE.EF.....E                                                  16 / 16 (100%)E
+E.E.EFFEEEE                                                       11 / 11 (100%)
 
-Time: 24.7 minutes, Memory: 72.00MB
+Time: 18.88 minutes, Memory: 70.00MB
 
-There were 9 errors:
+There were 7 errors:
 
-1) Magento\Webpos\Test\TestCase\SessionManagementValidate\PutMoney\WebposManagementValidate10Test::test with data set "WebposManagementValidate10_01_0" (WebposManagementValidate10_01_0)
+1) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM28Test::test with data set "WebposSessionManagementValidateSM28Test_SM28_0" (WebposSessionManagementValidateSM28Test_SM28_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#install_container)" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaffAndWaitSessionInstall.php:52
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/PutMoney/WebposManagementValidate10Test.php:78
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM28Test.php:83
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\SessionManagementValidate\PutMoney\WebposManagementValidate11Test::test with data set "WebposManagementValidate11_01_0" (WebposManagementValidate11_01_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Element not found in the cache - perhaps the page has changed since it was looked up
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'travis-job-d05cba8f-4370-44df-9419-fa6a7c3bc560', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaffAndWaitSessionInstall.php:52
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/PutMoney/WebposManagementValidate11Test.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\SessionManagementValidate\PutMoney\WebposManagementValidate13Test::test with data set "WebposManagementValidate13_01_0" (WebposManagementValidate13_01_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#install_container)" . Wait: "1"
+2) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM30Test::test with data set "WebposSessionManagementValidateSM30Test_SM30_0" (WebposSessionManagementValidateSM30Test_SM30_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.close-confirm) -> css selector(#modal-content-4)" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaffAndWaitSessionInstall.php:52
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/PutMoney/WebposManagementValidate13Test.php:84
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/SessionManagement/SessionConfirmModalPopup.php:63
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM30Test.php:103
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\SessionManagementValidate\PutMoney\WebposManagementValidate14Test::test with data set "WebposManagementValidate14_01_0" (WebposManagementValidate14_01_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#install_container)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaffAndWaitSessionInstall.php:52
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/PutMoney/WebposManagementValidate14Test.php:84
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-5) Magento\Webpos\Test\TestCase\SessionManagementValidate\PutMoney\WebposManagementValidate15Test::test with data set "WebposManagementValidate15_01_0" (WebposManagementValidate15_01_0)
+3) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM32Test::test with data set "WebposSessionManagementValidateSM32Test_SM32_0" (WebposSessionManagementValidateSM32Test_SM32_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#install_container) -> css selector(.label-percent.first-rates-label-percent)" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaffAndWaitSessionInstall.php:52
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/PutMoney/WebposManagementValidate15Test.php:88
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM32Test.php:89
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-6) Magento\Webpos\Test\TestCase\SessionManagementValidate\PutMoney\WebposManagementValidate16Test::test with data set "WebposManagementValidate16_01_0" (WebposManagementValidate16_01_0)
+4) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM35Test::test with data set "WebposSessionManagementValidateSM35Test_SM35_0" (WebposSessionManagementValidateSM35Test_SM35_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#install_container)" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaffAndWaitSessionInstall.php:52
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/PutMoney/WebposManagementValidate16Test.php:88
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM35Test.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-7) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckFieldsWhenTakingMoneyOutTwiceSM26Test::test with data set "WebposCheckValidateAmountFieldSM26TestVariation1_0" (WebposCheckValidateAmountFieldSM26TestVariation1_0)
-PHPUnit_Framework_Exception: Warning: A non-numeric value encountered in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckFieldsWhenTakingMoneyOutTwiceSM26Test.php:111.
+5) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM36Test::test with data set "WebposSessionManagementValidateSM36Test_SM36_0" (WebposSessionManagementValidateSM36Test_SM36_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#install_container)" . Wait: "1"
 
-/var/www/dev/tests/functional/bootstrap.php:54
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckFieldsWhenTakingMoneyOutTwiceSM26Test.php:111
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaffAndWaitSessionInstall.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM36Test.php:88
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-8) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckValidateAmountFieldSM24Test::test with data set "WebposCheckValidateAmountFieldSM24TestVariation1_0" (WebposCheckValidateAmountFieldSM24TestVariation1_0)
-PHPUnit_Framework_Exception: Warning: A non-numeric value encountered in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckValidateAmountFieldSM24Test.php:104.
+6) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM37Test::test with data set "WebposSessionManagementValidateSM37Test_SM37_0" (WebposSessionManagementValidateSM37Test_SM37_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#install_container)" . Wait: "1"
 
-/var/www/dev/tests/functional/bootstrap.php:54
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckValidateAmountFieldSM24Test.php:104
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaffAndWaitSessionInstall.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM37Test.php:77
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-9) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckValidateAmountFieldSM24Test::test with data set "WebposCheckValidateAmountFieldSM25TestVariation2_0" (WebposCheckValidateAmountFieldSM25TestVariation2_0)
-PHPUnit_Framework_Exception: Warning: A non-numeric value encountered in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckValidateAmountFieldSM24Test.php:104.
+7) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM38Test::test with data set "WebposSessionManagementValidateSM38Test_SM38_0" (WebposSessionManagementValidateSM38Test_SM38_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#install_container)" . Wait: "1"
 
-/var/www/dev/tests/functional/bootstrap.php:54
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckValidateAmountFieldSM24Test.php:104
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:480
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaffAndWaitSessionInstall.php:52
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM38Test.php:76
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -135,27 +110,29 @@ PHPUnit_Framework_Exception: Warning: A non-numeric value encountered in /var/ww
 
 --
 
-There was 1 failure:
+There were 2 failures:
 
-1) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckGUITakeMoneyOutSM18Test::test with data set "WebposCheckGUITakeMoneyOutSM18TestVariation1_0" (WebposCheckGUITakeMoneyOutSM18TestVariation1_0)
-Take Payment Popup In Session Management. Staff Name Is not Visible Correctly.
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'admin admin'
-+'John Doe'
+1) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM33Test::test with data set "WebposSessionManagementValidateSM33Test_SM33_0" (WebposSessionManagementValidateSM33Test_SM33_0)
+Set Reason Popup is visible.
+Failed asserting that true is false.
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/SessionManagementValidate/TakeMoneyOut/AssertWebposCheckGUITakeMoneyOutSM18.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM33Test.php:114
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM34Test::test with data set "WebposSessionManagementValidateSM34Test_SM34_0" (WebposSessionManagementValidateSM34Test_SM34_0)
+Set Reason Popup is visible.
+Failed asserting that true is false.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM34Test.php:101
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 17, Assertions: 44, Errors: 9, Failures: 1.
+Tests: 11, Assertions: 9, Errors: 7, Failures: 2.
