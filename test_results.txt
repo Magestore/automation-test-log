@@ -1,20 +1,20 @@
-============== Test suite ManageStocks =============
+============== Test suite OnHoldOrderProcessingOnHoldOrderSearch =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%)..E..E.
+..F...........                                                    14 / 14 (100%)
 
-Time: 9.7 minutes, Memory: 96.00MB
+Time: 15.67 minutes, Memory: 70.00MB
 
-There were 2 errors:
+There was 1 failure:
 
-1) Magento\Webpos\Test\TestCase\ManageStocks\UpdateProductAttributes\WebposManageStocksUpdateProductAttributesTest::test with data set "WebposManageStocksUpdateProductAttributesTestVariation_MSK13_0" (WebposManageStocksUpdateProductAttributesTestVariation_MSK13_0)
-PHPUnit_Framework_Exception: Notice: Undefined property: Magento\Webpos\Test\Constraint\ManageStocks\UpdateProductAttributes\AssertQtyOfProductOnManageStocksPageIsCorrect::$webposIndex in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/ManageStocks/UpdateProductAttributes/AssertQtyOfProductOnManageStocksPageIsCorrect.php:29.
+1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH18Test::test with data set "WebposOnHoldOrderONH18TestVariation_0" (WebposOnHoldOrderONH18TestVariation_0)
+Tax is not correct, taxExpected is : $7.22and taxActual is : $7
+Failed asserting that 7.0 matches expected 7.22.
 
-/var/www/dev/tests/functional/bootstrap.php:54
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/ManageStocks/UpdateProductAttributes/AssertQtyOfProductOnManageStocksPageIsCorrect.php:29
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckTaxHoldOrder.php:26
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -25,20 +25,5 @@ PHPUnit_Framework_Exception: Notice: Undefined property: Magento\Webpos\Test\Con
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\ManageStocks\UpdateProductAttributes\WebposManageStocksUpdateProductAttributesTest::test with data set "WebposManageStocksUpdateProductAttributesTestVariation_MSK12_0" (WebposManageStocksUpdateProductAttributesTestVariation_MSK12_0)
-PHPUnit_Framework_Exception: Notice: Undefined property: Magento\Webpos\Test\Constraint\ManageStocks\UpdateProductAttributes\AssertQtyOfProductOnManageStocksPageIsCorrect::$webposIndex in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/ManageStocks/UpdateProductAttributes/AssertQtyOfProductOnManageStocksPageIsCorrect.php:29.
-
-/var/www/dev/tests/functional/bootstrap.php:54
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/ManageStocks/UpdateProductAttributes/AssertQtyOfProductOnManageStocksPageIsCorrect.php:29
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 13, Assertions: 75, Errors: 2.
+FAILURES!
+Tests: 14, Assertions: 97, Failures: 1.
