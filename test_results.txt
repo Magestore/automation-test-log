@@ -1,12 +1,12 @@
-============== Test suite PosAddPosFilterMassAction =============
+============== Test suite PosPosFormPosGridSortGrid =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........E.......F..............                                   31 / 31 (100%)
+........E...F.....................F.                              36 / 36 (100%)..
 
-Time: 22.04 minutes, Memory: 74.00MB
+Time: 23.08 minutes, Memory: 74.00MB
 
 There was 1 error:
 
@@ -25,7 +25,7 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 
 --
 
-There was 1 failure:
+There were 2 failures:
 
 1) Magento\Webpos\Test\TestCase\Pos\Edit\WebposManagePosMP24Test::test with data set "WebposManagePosMP24Test_0" (WebposManagePosMP24Test_0)
 Button Back couldn't display
@@ -43,5 +43,21 @@ Failed asserting that false is true.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
+2) Magento\Webpos\Test\TestCase\Pos\PosForm\WebposManagePosMP02Test::test with data set "WebposManageLocationML02TestVariation_0" (WebposManageLocationML02TestVariation_0)
+Button Back couldn't display
+Failed asserting that false is true.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Pos/Form/AssertPosFormDisplay.php:40
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Pos/Form/AssertPosFormDisplay.php:23
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
 ERRORS!
-Tests: 31, Assertions: 154, Errors: 1, Failures: 1.
+Tests: 38, Assertions: 182, Errors: 1, Failures: 2.
