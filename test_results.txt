@@ -1,20 +1,25 @@
-============== Test suite OnHoldOrderProcessingOnHoldOrderSearch =============
+============== Test suite OrdersHistoryBillingShippingAddressCheckGUI =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..F...........                                                    14 / 14 (100%)
+....E                                                               5 / 5 (100%)
 
-Time: 15.21 minutes, Memory: 72.00MB
+Time: 6.95 minutes, Memory: 70.00MB
 
-There was 1 failure:
+There was 1 error:
 
-1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH18Test::test with data set "WebposOnHoldOrderONH18TestVariation_0" (WebposOnHoldOrderONH18TestVariation_0)
-Tax is not correct, taxExpected is : $7.22and taxActual is : $7
-Failed asserting that 7.0 matches expected 7.22.
+1) Magento\Webpos\Test\TestCase\OrdersHistory\CheckGUI\WebposOrdersHistoryMassActionShipCheckGUITest::test with data set "WebposOrdersHistoryMassActionShipCheckGUITestOH31Variation1_0" (WebposOrdersHistoryMassActionShipCheckGUITestOH31Variation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckTaxHoldOrder.php:26
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryShipment.php:27
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/CheckGUI/AssertOrdersHistoryShipment.php:23
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -25,5 +30,5 @@ Failed asserting that 7.0 matches expected 7.22.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-FAILURES!
-Tests: 14, Assertions: 97, Failures: 1.
+ERRORS!
+Tests: 5, Assertions: 45, Errors: 1.
