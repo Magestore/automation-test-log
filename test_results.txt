@@ -1,10 +1,65 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.1.11
+Runtime:       PHP 7.0.25
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.................                                                 17 / 17 (100%)..........
+EF...............                                                 17 / 17 (100%)........
 
-Time: 11.03 minutes, Memory: 130.00MB
+Time: 10.85 minutes, Memory: 104.00MB
 
-OK (27 tests, 220 assertions)
+There was 1 error:
+
+1) Magento\Rewardpoints\Test\TestCase\EarningRates\CreateEarningRatesEntityTest::test
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Unable to connect to host localhost on port 7055 after 45000 ms. Firefox console output:
+Error: cannot open display: :1.0
+ in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(71): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/SessionStrategy/Isolated.php(67): PHPUnit_Extensions_Selenium2TestCase_Driver->startSession(Array, Object(PHPUnit_Extensions_Selenium2TestCase_URL))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/SessionStrategy/Shared.php(79): PHPUnit_Extensions_Selenium2TestCase_SessionStrategy_Isolated->session(Array)
+#3 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php(296): PHPUnit_Extensions_Selenium2TestCase_SessionStrategy_Shared->session(Array)
+#4 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(112): PHPUnit_Extensions_Selenium2TestCase->prepareSession()
+#5 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php(85): Magento\Mtf\Client\Driver\Selenium\Driver->init()
+#6 [internal function]: Magento\Mtf\Client\Driver\Selenium\Driver->__construct(Object(Magento\Mtf\Config\Data), Object(Magento\Mtf\Client\Driver\Selenium\RemoteDriverFactory), Object(Magento\Mtf\System\Event\EventManager), Object(Magento\Mtf\ObjectManager), Object(Magento\Mtf\Client\Driver\Selenium\Driver\PageLoader))
+#7 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(245): ReflectionClass->newInstanceArgs(Array)
+#8 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(66): Magento\Mtf\ObjectManager\Factory->create('Magento\\Mtf\\Cli...')
+#9 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(155): Magento\Mtf\ObjectManager\ObjectManager->get('Magento\\Mtf\\Cli...')
+#10 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(236): Magento\Mtf\ObjectManager\Factory->_resolveArguments('Magento\\Mtf\\Cli...', Array, Array)
+#11 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(66): Magento\Mtf\ObjectManager\Factory->create('Magento\\Mtf\\Cli...')
+#12 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(155): Magento\Mtf\ObjectManager\ObjectManager->get('Magento\\Mtf\\Cli...')
+#13 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(236): Magento\Mtf\ObjectManager\Factory->_resolveArguments('Magento\\Rewardp...', Array, Array)
+#14 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/ObjectManager.php(53): Magento\Mtf\ObjectManager\Factory->create('Magento\\Rewardp...', Array)
+#15 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(156): Magento\Mtf\ObjectManager\ObjectManager->create('Magento\\Rewardp...', Array)
+#16 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(88): Magento\Mtf\ObjectManager\Factory->_resolveArguments('Magento\\Rewardp...', Array, Array)
+#17 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php(51): Magento\Mtf\ObjectManager\Factory->prepareArguments(Object(Magento\Rewardpoints\Test\TestCase\EarningRates\CreateEarningRatesEntityTest), '__inject', Array)
+#18 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php(81): Magento\Mtf\ObjectManager\Factory->invoke(Object(Magento\Rewardpoints\Test\TestCase\EarningRates\CreateEarningRatesEntityTest), '__inject', Array)
+#19 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php(152): Magento\Mtf\ObjectManager->invoke(Object(Magento\Rewardpoints\Test\TestCase\EarningRates\CreateEarningRatesEntityTest), '__inject', Array)
+#20 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): Magento\Mtf\TestCase\Injectable->run(Object(PHPUnit_Framework_TestResult))
+#21 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#22 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#23 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#24 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(185): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#25 /var/www/dev/tests/functional/vendor/phpunit/phpunit/src/TextUI/Command.php(115): PHPUnit_TextUI_Command->run(Array, true)
+#26 /var/www/dev/tests/functional/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#27 {main}
+--
+
+There was 1 failure:
+
+1) Magento\Rewardpoints\Test\TestCase\EarningRates\EarningRatesGridSortingTest::test with data set "Earning Rates grid sorting test_0" (Earning Rates grid sorting test_0)
+Sorting for "ID" column have not changed the first item of grid!
+Failed asserting that '1' is not equal to <string:1>.
+
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Constraint/AssertGridSorting.php:28
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 24, Assertions: 205, Errors: 1, Failures: 1.
