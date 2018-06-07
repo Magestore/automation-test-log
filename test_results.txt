@@ -1,14 +1,14 @@
-============== Test suite SalesOrderReportOrderListByLocationReportDailyReportPage =============
+============== Test suite SalesOrderReportSaleByLocationSaleByPaymentSaleByPaymentMethodSaleByPaymentMethodDaily =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...EE...                                                            8 / 8 (100%)EE..
+...EE...EEEEE                                                     13 / 13 (100%)......F
 
-Time: 11.57 minutes, Memory: 72.00MB
+Time: 14.96 minutes, Memory: 74.00MB
 
-There were 4 errors:
+There were 7 errors:
 
 1) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocation\OrderListByLocationReportRP39Test::test with data set "OrderListByStaffReportRP41TestVariation_0" (OrderListByStaffReportRP41TestVariation_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> xpath(//*[@id="sales_report_order_statuses"]/option[text()="Payment
@@ -40,32 +40,96 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Webpos\Test\TestCase\SalesOrderReport\ReportDaily\WebposSaleOderReportRP33Test::test with data set "WebposSaleOrderReportRP33TestVariation_0" (WebposSaleOrderReportRP33TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector(#sales_report_order_statuses) -> xpath(.//option[contains(normalize-space(.), "Payment
-                Review")])" . Wait: "1"
+3) Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPayment\SaleByPaymentReportRP47Test::test with data set "SaleByPaymentReportRP48TestVariation_0" (SaleByPaymentReportRP48TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> xpath(//*[@id="sales_report_order_statuses"]/option[text()="Payment
+                Review"])" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Report/Viewed/FilterSalesByLocationDaily.php:24
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/ReportDaily/WebposSaleOderReportRP33Test.php:68
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:367
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:223
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Report/Dashboard.php:76
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPayment/SaleByPaymentReportRP47Test.php:80
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\SalesOrderReport\ReportDaily\WebposSaleOderReportRP33Test::test with data set "WebposSaleOrderReportRP34TestVariation_0" (WebposSaleOrderReportRP34TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#filter_form) -> css selector(#sales_report_order_statuses) -> xpath(.//option[contains(normalize-space(.), "Payment
-                Review")])" . Wait: "1"
+4) Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPayment\SaleByPaymentReportRP47Test::test with data set "SaleByPaymentReportRP49TestVariation_0" (SaleByPaymentReportRP49TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> xpath(//*[@id="sales_report_order_statuses"]/option[text()="Payment
+                Review"])" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:367
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:223
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Report/Dashboard.php:76
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPayment/SaleByPaymentReportRP47Test.php:80
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPaymentMethod\SaleOrderReportRP52Test::test with data set "SaleOrderReportRP52Test_0" (SaleOrderReportRP52Test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (205, 17.5): [object HTMLButtonElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-7a46d051-d1a0-48d4-a94e-045b9f8fab97', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:262
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SelectElement.php:44
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Adminhtml/Report/Viewed/FilterSalesByLocationDaily.php:24
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/ReportDaily/WebposSaleOderReportRP33Test.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/WebposAddProductToCartThenCheckoutStep.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPaymentMethod/SaleOrderReportRP52Test.php:99
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPaymentMethod\SaleOrderReportRP53Test::test with data set "SaleOrderReportRP53Test_0" (SaleOrderReportRP53Test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (205, 17.5): [object HTMLButtonElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-7a46d051-d1a0-48d4-a94e-045b9f8fab97', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:262
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/WebposAddProductToCartThenCheckoutStep.php:113
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPaymentMethod/SaleOrderReportRP53Test.php:91
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPaymentMethodDaily\SaleByPaymentMethodDailyRP54Test::test with data set "SaleByPaymentMethodDailyRP54TestVariation1_0" (SaleByPaymentMethodDailyRP54TestVariation1_0)
+PHPUnit_Framework_Exception: Notice: Undefined property: Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPaymentMethodDaily\SaleByPaymentMethodDailyRP54Test::$salesByStaffDaily in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPaymentMethodDaily/SaleByPaymentMethodDailyRP54Test.php:67.
+
+/var/www/dev/tests/functional/bootstrap.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPaymentMethodDaily/SaleByPaymentMethodDailyRP54Test.php:67
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPaymentMethodDaily\SaleByPaymentMethodDailyRP60Test::test with data set "SaleByPaymentMethodDailyRP60TestVariation1_0" (SaleByPaymentMethodDailyRP60TestVariation1_0)
+The Sales Total Body In Table Body Of Report Form By Staff was not updated.
+Failed asserting that '$102.01' is greater than '$68.01'.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPaymentMethodDaily/SaleByPaymentMethodDailyRP60Test.php:144
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -73,4 +137,4 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 12, Assertions: 36, Errors: 4.
+Tests: 20, Assertions: 28, Errors: 7, Failures: 1.
