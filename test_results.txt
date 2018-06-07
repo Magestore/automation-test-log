@@ -1,25 +1,71 @@
-============== Test suite SessionManagementValidateCheckGUICheckPrintButtonOpenSession =============
+============== Test suite SessionManagementValidatePutMoneyTakeMoneyOut =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.F.........                                                       11 / 11 (100%)
+........EF.....E                                                  16 / 16 (100%)E
 
-Time: 8.74 minutes, Memory: 72.00MB
+Time: 17.49 minutes, Memory: 76.00MB
 
-There was 1 failure:
+There were 3 errors:
 
-1) Magento\Webpos\Test\TestCase\SessionManagementValidate\CheckGUI\WebposManagementValidate02Test::test with data set "WebposManagementValidate02_01_0" (WebposManagementValidate02_01_0)
-Delete action on open session popup is not show
-Failed asserting that false is true.
+1) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckFieldsWhenTakingMoneyOutTwiceSM26Test::test with data set "WebposCheckValidateAmountFieldSM26TestVariation1_0" (WebposCheckValidateAmountFieldSM26TestVariation1_0)
+PHPUnit_Framework_Exception: Warning: A non-numeric value encountered in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckFieldsWhenTakingMoneyOutTwiceSM26Test.php:111.
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/CheckGUI/WebposManagementValidate02Test.php:132
+/var/www/dev/tests/functional/bootstrap.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckFieldsWhenTakingMoneyOutTwiceSM26Test.php:111
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-FAILURES!
-Tests: 11, Assertions: 20, Failures: 1.
+2) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckValidateAmountFieldSM24Test::test with data set "WebposCheckValidateAmountFieldSM24TestVariation1_0" (WebposCheckValidateAmountFieldSM24TestVariation1_0)
+PHPUnit_Framework_Exception: Warning: A non-numeric value encountered in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckValidateAmountFieldSM24Test.php:104.
+
+/var/www/dev/tests/functional/bootstrap.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckValidateAmountFieldSM24Test.php:104
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckValidateAmountFieldSM24Test::test with data set "WebposCheckValidateAmountFieldSM25TestVariation2_0" (WebposCheckValidateAmountFieldSM25TestVariation2_0)
+PHPUnit_Framework_Exception: Warning: A non-numeric value encountered in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckValidateAmountFieldSM24Test.php:104.
+
+/var/www/dev/tests/functional/bootstrap.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckValidateAmountFieldSM24Test.php:104
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckGUITakeMoneyOutSM18Test::test with data set "WebposCheckGUITakeMoneyOutSM18TestVariation1_0" (WebposCheckGUITakeMoneyOutSM18TestVariation1_0)
+Take Payment Popup In Session Management. Staff Name Is not Visible Correctly.
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'admin admin'
++'John Doe'
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/SessionManagementValidate/TakeMoneyOut/AssertWebposCheckGUITakeMoneyOutSM18.php:56
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 17, Assertions: 66, Errors: 3, Failures: 1.
