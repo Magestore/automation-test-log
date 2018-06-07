@@ -1,29 +1,31 @@
-============== Test suite SyncCheckButtonCheckGUIConfiguration =============
+============== Test suite SyncCountryCurrencyCustomerComplaintsSwatchOption =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-F......                                                             7 / 7 (100%)
+E......                                                             7 / 7 (100%)
 
-Time: 8.69 minutes, Memory: 70.00MB
+Time: 9.96 minutes, Memory: 72.00MB
 
-There was 1 failure:
+There was 1 error:
 
-1) Magento\Webpos\Test\TestCase\Sync\CheckButton\WebposSync04Test::test with data set "WebposSync_04_0" (WebposSync_04_0)
-Synchronization - Swatch Option - progress bar is not shown
-Failed asserting that false is true.
+1) Magento\Webpos\Test\TestCase\Sync\Country\WebposSync18Test::test with data set "WebposSync_18_0" (WebposSync_18_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Sync/AssertSynchronization04.php:45
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:80
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:81
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/Country/WebposSync18Test.php:84
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-FAILURES!
-Tests: 7, Assertions: 14, Failures: 1.
+ERRORS!
+Tests: 7, Assertions: 10, Errors: 1.
