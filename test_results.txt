@@ -1,11 +1,25 @@
-============== Test suite SessionManagement =============
+============== Test suite SessionManagementValidateCheckGUICheckPrintButtonOpenSession =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...............................................                   47 / 47 (100%).............
+.F.........                                                       11 / 11 (100%)
 
-Time: 44.45 minutes, Memory: 78.00MB
+Time: 9.45 minutes, Memory: 70.00MB
 
-OK (60 tests, 177 assertions)
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\SessionManagementValidate\CheckGUI\WebposManagementValidate02Test::test with data set "WebposManagementValidate02_01_0" (WebposManagementValidate02_01_0)
+Delete action on open session popup is not show
+Failed asserting that false is true.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/CheckGUI/WebposManagementValidate02Test.php:133
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 11, Assertions: 20, Failures: 1.
