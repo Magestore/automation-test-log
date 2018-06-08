@@ -1,11 +1,51 @@
-============== Test suite TaxApplyTaxOnCustomePriceIfAvailableApplyTaxToFPTNo =============
+============== Test suite TaxApplyTaxToFPTYesCatalogPricesIncludingTaxCrossBorderTradeYes =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-............                                                      12 / 12 (100%)
+E.F.......                                                        10 / 10 (100%)
 
-Time: 19.49 minutes, Memory: 74.00MB
+Time: 15.07 minutes, Memory: 74.00MB
 
-OK (12 tests, 140 assertions)
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX100Test::test with data set "WebposTaxTAX100TestVariation_TAX100_0" (WebposTaxTAX100TestVariation_TAX100_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderViewHeader.php:37
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Invoice/AssertCreateInvoiceSuccess.php:42
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX97Test::test with data set "WebposTaxTAX97TestVariation_TAX97_0" (WebposTaxTAX97TestVariation_TAX97_0)
+[Apply Tax To FPT] = Yes - On the Checkout - The Tax at the web POS was not correctly.
+Expect: 9.35
+Actual: 8.5
+Failed asserting that 8.5 matches expected 9.35.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountOnCartPageAndCheckoutPageWithTaxApplyToFPT.php:44
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX97Test.php:143
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 10, Assertions: 78, Errors: 1, Failures: 1.
