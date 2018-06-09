@@ -1,10 +1,30 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.0.25
+Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.................................                                 33 / 33 (100%)..............
+.................................                                 33 / 33 (100%)......F.......
 
-Time: 28.91 minutes, Memory: 110.00MB
+Time: 27.83 minutes, Memory: 134.00MB
 
-OK (47 tests, 253 assertions)
+There was 1 failure:
+
+1) Magento\Giftvoucher\Test\TestCase\GiftcardProduct\GiftvoucherProductCheckoutTest::test with data set "GiftvoucherProductCheckoutTestVariation2_0" (GiftvoucherProductCheckoutTestVariation2_0)
+Next buttons was not found on page: 
+Back to register or connect an account
+Failed asserting that an array is empty.
+
+/var/www/dev/tests/functional/tests/app/Magento/Sales/Test/Constraint/AssertOrderButtonsAvailable.php:39
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 47, Assertions: 251, Failures: 1.
