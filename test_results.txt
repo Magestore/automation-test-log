@@ -1,11 +1,29 @@
-============== Test suite PosAddPosFilterMassAction =============
+============== Test suite PosPosFormPosGridSortGrid =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...............................                                   31 / 31 (100%)
+..F                                                                 3 / 3 (100%).
 
-Time: 21.03 minutes, Memory: 74.00MB
+Time: 1.47 minutes, Memory: 64.00MB
 
-OK (31 tests, 162 assertions)
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Pos\SortGrid\WebposGridPosSortingTest::test with data set "GridPosSortingMP03MP04MP05MP06_0" (GridPosSortingMP03MP04MP05MP06_0)
+Sorting for "Location" column have not changed the first item of grid!
+Failed asserting that '1' is not equal to <string:1>.
+
+/var/www/dev/tests/functional/tests/app/Magento/Ui/Test/Constraint/AssertGridSorting.php:28
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 4, Assertions: 25, Failures: 1.
