@@ -1,63 +1,41 @@
-============== Test suite StaffEditStaffOnGridMassAction =============
+============== Test suite SyncGroupPaymentProduct =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........                                                            8 / 8 (100%)..
+....EE                                                              6 / 6 (100%)
 
-Time: 5.39 minutes, Memory: 72.00MB
+Time: 10.39 minutes, Memory: 76.00MB
 
-OK (10 tests, 80 assertions)
-============== Test suite StaffStaffPermission =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+There were 2 errors:
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-.....F......F.......E.........                                    30 / 30 (100%)
-
-Time: 36.26 minutes, Memory: 78.00MB
-
-There was 1 error:
-
-1) Magento\Webpos\Test\TestCase\Staff\StaffPermission\WebposManageStaffMS72Test::test with data set "WebposManageStaffMS72TestVariation_0" (WebposManageStaffMS72TestVariation_0)
+1) Magento\Webpos\Test\TestCase\Sync\Product\WebposSync10Test::test with data set "WebposSync_10_0" (WebposSync_10_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Staff/StaffPermission/WebposManageStaffMS72Test.php:186
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Staff/StaffPermission/WebposManageStaffMS72Test.php:125
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Synchronization/SyncTabData.php:85
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Sync/AssertItemUpdateSuccess.php:21
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/Product/WebposSync10Test.php:147
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
---
+2) Magento\Webpos\Test\TestCase\Sync\Product\WebposSync11Test::test with data set "WebposSync_11_0" (WebposSync_11_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-There were 2 failures:
-
-1) Magento\Webpos\Test\TestCase\Staff\StaffPermission\WebposManageStaffMS56Test::test with data set "WebposManageStaffMS56TestVariation_0" (WebposManageStaffMS56TestVariation_0)
-Price is incorrect
-Failed asserting that 100.0 matches expected 20.0.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/Staff/Permission/AssertEditDiscountCustomPrice.php:27
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Staff/StaffPermission/WebposManageStaffMS56Test.php:127
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\Staff\StaffPermission\WebposManageStaffMS64Test::test with data set "WebposManageStaffMS64TestVariation_0" (WebposManageStaffMS64TestVariation_0)
-Cash In Method - Payment Is not visible after click Take payment in Order History. Bug of Products. TestCase ID is MS64
-Failed asserting that false is true.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Staff/StaffPermission/WebposManageStaffMS64Test.php:404
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Synchronization/SyncTabData.php:85
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Sync/AssertItemUpdateSuccess.php:21
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/Product/WebposSync11Test.php:157
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -65,4 +43,11 @@ Failed asserting that false is true.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 30, Assertions: 136, Errors: 1, Failures: 2.
+Tests: 6, Assertions: 8, Errors: 2.
+============== Test suite TaxApplyCustomerTaxBeforeDiscountApplyDiscountOnPricesExcludingTax =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+.....
