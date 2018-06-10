@@ -1,92 +1,22 @@
-============== Test suite SessionManagementValidatePutMoneyTakeMoneyOut =============
+============== Test suite SessionManagement =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........E.......                                                  16 / 16 (100%).
+...............................................                   47 / 47 (100%).............
 
-Time: 19.08 minutes, Memory: 74.00MB
+Time: 50.19 minutes, Memory: 78.00MB
 
-There was 1 error:
-
-1) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckFieldsWhenTakingMoneyOutTwiceSM26Test::test with data set "WebposCheckValidateAmountFieldSM26TestVariation1_0" (WebposCheckValidateAmountFieldSM26TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#shift_container) -> css selector(.btn-close-shift)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckFieldsWhenTakingMoneyOutTwiceSM26Test.php:77
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 17, Assertions: 71, Errors: 1.
-============== Test suite SessionManagementValidateSetClosingBalance =============
+OK (60 tests, 177 assertions)
+============== Test suite SessionManagementValidateCheckGUICheckPrintButtonOpenSession =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..E..FFF...                                                       11 / 11 (100%)
+...........                                                       11 / 11 (100%)
 
-Time: 11.94 minutes, Memory: 72.00MB
+Time: 10.34 minutes, Memory: 72.00MB
 
-There was 1 error:
-
-1) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM30Test::test with data set "WebposSessionManagementValidateSM30Test_SM30_0" (WebposSessionManagementValidateSM30Test_SM30_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.close-confirm) -> css selector(#modal-content-4)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:485
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/SessionManagement/SessionConfirmModalPopup.php:73
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM30Test.php:104
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
---
-
-There were 3 failures:
-
-1) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM33Test::test with data set "WebposSessionManagementValidateSM33Test_SM33_0" (WebposSessionManagementValidateSM33Test_SM33_0)
-Set Reason Popup is visible.
-Failed asserting that true is false.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM33Test.php:115
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM34Test::test with data set "WebposSessionManagementValidateSM34Test_SM34_0" (WebposSessionManagementValidateSM34Test_SM34_0)
-Set Reason Popup is visible.
-Failed asserting that true is false.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM34Test.php:104
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\SessionManagementValidate\SetClosingBalance\WebposSessionManagementValidateSM35Test::test with data set "WebposSessionManagementValidateSM35Test_SM35_0" (WebposSessionManagementValidateSM35Test_SM35_0)
-Set Reason Popup is visible.
-Failed asserting that true is false.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/SetClosingBalance/WebposSessionManagementValidateSM35Test.php:104
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 11, Assertions: 30, Errors: 1, Failures: 3.
+OK (11 tests, 20 assertions)
