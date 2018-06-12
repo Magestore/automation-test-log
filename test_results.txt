@@ -1,40 +1,40 @@
-============== Test suite Setting =============
+============== Test suite SessionManagementValidatePutMoneyTakeMoneyOut =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..............                                                    14 / 14 (100%)....F.........
+.........E......                                                  16 / 16 (100%).
 
-Time: 10.08 minutes, Memory: 74.00MB
+Time: 14.24 minutes, Memory: 74.00MB
 
-There was 1 failure:
+There was 1 error:
 
-1) Magento\Webpos\Test\TestCase\Setting\General\WebPOSCheckGUITabTest::test with data set "WebPOSCheckGUICheckoutTabTestVariation_SET13_0" (WebPOSCheckGUICheckoutTabTestVariation_SET13_0)
-On the Setting General Page - In the menu Currency Tab Page. Enable Pole Display Selection was visible correctly.
-Failed asserting that false is true.
+1) Magento\Webpos\Test\TestCase\SessionManagementValidate\TakeMoneyOut\WebposCheckGUITakeMoneyOutSM18Test::test with data set "WebposCheckGUITakeMoneyOutSM18TestVariation1_0" (WebposCheckGUITakeMoneyOutSM18TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Setting/General/AssertWebPOSCheckGUIPOSHubTabPageDisplayCorrectly.php:42
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SessionManagementValidate/TakeMoneyOut/WebposCheckGUITakeMoneyOutSM18Test.php:72
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-FAILURES!
-Tests: 28, Assertions: 97, Failures: 1.
-============== Test suite StaffAddStaffCheckFilterFunctionCheckGUI =============
+ERRORS!
+Tests: 17, Assertions: 65, Errors: 1.
+============== Test suite SessionManagementValidateSetClosingBalance =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.............                                                     13 / 13 (100%)
+...........                                                       11 / 11 (100%)
 
-Time: 4.4 minutes, Memory: 72.00MB
+Time: 7.09 minutes, Memory: 72.00MB
 
-OK (13 tests, 133 assertions)
+OK (11 tests, 40 assertions)
