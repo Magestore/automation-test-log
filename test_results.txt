@@ -1,58 +1,36 @@
-============== Test suite TaxIncludeFPTInSubtotalYesNo =============
+============== Test suite TaxTaxCalculationBasedOnShippingOrigin =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....FF..                                                           9 / 9 (100%)
+............                                                      12 / 12 (100%)
 
-Time: 9.8 minutes, Memory: 74.00MB
+Time: 15.13 minutes, Memory: 74.00MB
 
-There were 2 failures:
+OK (12 tests, 177 assertions)
+============== Test suite XreportWebPOSMenu =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-1) Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX109Test::test with data set "WebposTaxTAX109TestVariation_TAX109_0" (WebposTaxTAX109TestVariation_TAX109_0)
-Subtotal is not equals actual subtotal.
-Expected: 100
-Actual: 110.00
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'100'
-+'110.00'
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountWithIncludeFptInSubtotal.php:44
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/IncludeFPTInSubtotalYes/WebposTaxTAX109Test.php:204
+.......                                                             7 / 7 (100%)..E.
+
+Time: 10.7 minutes, Memory: 76.00MB
+
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR032Test::test with data set "WebposXreportZR032Test_0" (WebposXreportZR032Test_0)
+PHPUnit_Framework_Exception: Warning: A non-numeric value encountered in /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportZR032Test.php:183.
+
+/var/www/dev/tests/functional/bootstrap.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportZR032Test.php:183
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Tax\IncludeFPTInSubtotalYes\WebposTaxTAX110Test::test with data set "WebposTaxTAX110TestVariation_TAX110_0" (WebposTaxTAX110TestVariation_TAX110_0)
-Grandtotal is not equals actual grandtotal.
-Expected: 118.5
-Actual: 108.50
-Failed asserting that '108.50' matches expected 118.5.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountWithIncludeFptInSubtotal.php:51
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/IncludeFPTInSubtotalYes/WebposTaxTAX110Test.php:205
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-FAILURES!
-Tests: 9, Assertions: 103, Failures: 2.
-============== Test suite TaxShippingPriceTaxableGoodsAndShippingIncludingTax =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-..........                                                        10 / 10 (100%)
-
-Time: 10.54 minutes, Memory: 74.00MB
-
-OK (10 tests, 107 assertions)
+ERRORS!
+Tests: 11, Assertions: 94, Errors: 1.
