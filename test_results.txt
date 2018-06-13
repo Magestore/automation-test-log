@@ -1,10 +1,13 @@
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-Runtime:       PHP 7.0.25
+Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.                                                                   1 / 1 (100%).....
 
-Time: 2.11 minutes, Memory: 96.00MB
-
-OK (6 tests, 132 assertions)
+Fatal error: Uncaught PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-6f63d793-134a-46dd-97ff-9793b23a8412', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(175): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php(100): PHPUnit_Extensions_Selenium2TestCase_Driver->execute(Object(PHPUnit_Extensions_Selenium2TestCase_SessionCommand_Window))
+#2 /var/www/dev/tests/functional/vendor/phpunit in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php on line 165
