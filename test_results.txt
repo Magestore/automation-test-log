@@ -1,4 +1,4 @@
-============== Test suite OrdersHistoryNewFeature =============
+============== Test suite PosPosFormPosGridSortGrid =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
@@ -6,36 +6,33 @@ Configuration: /var/www/dev/tests/functional/phpunit.xml
 
 ...                                                                 3 / 3 (100%).
 
-Time: 3.31 minutes, Memory: 68.00MB
+Time: 1.2 minutes, Memory: 64.00MB
 
-OK (4 tests, 20 assertions)
-============== Test suite PosAddPosFilterMassAction =============
+OK (4 tests, 26 assertions)
+============== Test suite ProductsGridBundleProductCheckGUI =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........................EE......                                   31 / 31 (100%)
+.......E......................                                    30 / 30 (100%)
 
-Time: 18.43 minutes, Memory: 74.00MB
+Time: 24.39 minutes, Memory: 78.00MB
 
 There was 1 error:
 
-1) Magento\Webpos\Test\TestCase\Pos\Edit\WebposManagePosMP33Test::test with data set "WebposManagePosMP33Test_0" (WebposManagePosMP33Test_0)
-PHPUnit_Extensions_Selenium2TestCase_NoSeleniumException: Error connection[28] to http://localhost:4444/wd/hub/session/7e4c631b-a968-4ab0-8b53-eca3b9ccb372/execute: Operation timed out after 90000 milliseconds with 0 bytes received
+1) Magento\Webpos\Test\TestCase\ProductsGrid\CheckGUI\WebposProductsGridCheckGUITest::test with data set "WebposProductsGridCheckGUITest_PG01_0" (WebposProductsGridCheckGUITest_PG01_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper) -> css selector(.product-item)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:123
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
-/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:287
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Observer/ClientError.php:65
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/System/Event/EventManager.php:83
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:317
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:559
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:280
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/ProductsGrid/CheckGUI/WebposProductsGridCheckGUITest.php:58
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 31, Assertions: 162, Errors: 1.
+Tests: 30, Assertions: 161, Errors: 1.
