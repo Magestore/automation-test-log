@@ -1,22 +1,40 @@
-============== Test suite CheckVisibleForm =============
+============== Test suite CheckoutPaymentMethod =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%)
+..........................                                        26 / 26 (100%)
 
-Time: 53.42 seconds, Memory: 64.00MB
+Time: 15.51 minutes, Memory: 74.00MB
 
-OK (6 tests, 24 assertions)
-============== Test suite CustomerOnCheckoutPageBillingAddressPopupCheckGUICreateCustomer =============
+OK (26 tests, 178 assertions)
+============== Test suite CheckoutShippingMethod =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........                                                            8 / 8 (100%)........
+.F.......                                                           9 / 9 (100%)
 
-Time: 5.61 minutes, Memory: 74.00MB
+Time: 5.85 minutes, Memory: 72.00MB
 
-OK (16 tests, 117 assertions)
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Checkout\ShippingMethod\WebposShippingMethodCP194Test::test with data set "WebposShippingMethodCP194TestVariation_0" (WebposShippingMethodCP194TestVariation_0)
+Shipping label doen"s display on cart 
+Failed asserting that false matches expected true.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/ShippingMethod/AssertCheckSection.php:32
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 9, Assertions: 59, Failures: 1.
