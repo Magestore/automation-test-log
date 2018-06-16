@@ -1,18 +1,39 @@
-============== Test suite SyncGroupPaymentProduct =============
+============== Test suite TaxApplyTaxOnCustomePriceIfAvailableApplyTaxToFPTNo =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%)
+............                                                      12 / 12 (100%)
 
-Time: 5.4 minutes, Memory: 72.00MB
+Time: 15.41 minutes, Memory: 74.00MB
 
-OK (6 tests, 12 assertions)
-============== Test suite TaxApplyCustomerTaxBeforeDiscountApplyDiscountOnPricesExcludingTax =============
+OK (12 tests, 168 assertions)
+============== Test suite TaxApplyTaxToFPTYesCatalogPricesIncludingTaxCrossBorderTradeYes =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....
+..F.......                                                        10 / 10 (100%)
+
+Time: 9.69 minutes, Memory: 74.00MB
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX97Test::test with data set "WebposTaxTAX97TestVariation_TAX97_0" (WebposTaxTAX97TestVariation_TAX97_0)
+[Apply Tax To FPT] = Yes - On the Checkout - The Tax at the web POS was not correctly.
+Expect: 9.35
+Actual: 8.5
+Failed asserting that 8.5 matches expected 9.35.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountOnCartPageAndCheckoutPageWithTaxApplyToFPT.php:44
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX97Test.php:143
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 10, Assertions: 110, Failures: 1.
