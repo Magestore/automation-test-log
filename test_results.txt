@@ -1,16 +1,16 @@
-============== Test suite TaxTaxCalculationBasedOnShippingOrigin =============
+============== Test suite XreportWebPOSMenu =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EEEEEEEEEEEE                                                      12 / 12 (100%)
+EEEEEEE                                                             7 / 7 (100%)EEEE
 
-Time: 28.63 minutes, Memory: 66.00MB
+Time: 30.56 minutes, Memory: 70.00MB
 
-There were 12 errors:
+There were 11 errors:
 
-1) Magento\Webpos\Test\TestCase\Tax\TaxCalculationBasedOnShippingOrigin\WebposTaxTAX71Test::test with data set "WebposTaxTAX71TestVariation_TAX71_0" (WebposTaxTAX71TestVariation_TAX71_0)
+1) Magento\Webpos\Test\TestCase\Xreport\WebposXreportCheckGUITest::test with data set "WebposXreportCheckGUIZR021Test_0" (WebposXreportCheckGUIZR021Test_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -19,83 +19,75 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxCalculationBasedOnShippingOrigin/WebposTaxTAX71Test.php:172
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposWithSelectLocationPosStep.php:87
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportCheckGUITest.php:141
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Tax\TaxCalculationBasedOnShippingOrigin\WebposTaxTAX73Test::test with data set "WebposTaxTAX73TestVariation_TAX73_0" (WebposTaxTAX73TestVariation_TAX73_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+2) Magento\Webpos\Test\TestCase\Xreport\WebposXreportCheckGUITest::test with data set "WebposXreportCheckGUIZR022Test_0" (WebposXreportCheckGUIZR022Test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxCalculationBasedOnShippingOrigin/WebposTaxTAX73Test.php:160
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:32
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/WebposAddProductToCartThenCheckoutStep.php:71
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportCheckGUITest.php:150
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Webpos\Test\TestCase\Tax\TaxCalculationBasedOnShippingOrigin\WebposTaxTAX74Test::test with data set "WebposTaxTAX74TestVariation_TAX74_0" (WebposTaxTAX74TestVariation_TAX74_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+3) Magento\Webpos\Test\TestCase\Xreport\WebposXreportCheckGUITest::test with data set "WebposXreportCheckGUIZR023Test_0" (WebposXreportCheckGUIZR023Test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxCalculationBasedOnShippingOrigin/WebposTaxTAX74Test.php:173
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:32
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/WebposAddProductToCartThenCheckoutStep.php:71
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportCheckGUITest.php:150
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\Tax\TaxCalculationBasedOnShippingOrigin\WebposTaxTAX75Test::test with data set "WebposTaxTAX75TestVariation_TAX75_0" (WebposTaxTAX75TestVariation_TAX75_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+4) Magento\Webpos\Test\TestCase\Xreport\WebposXreportCheckGUITest::test with data set "WebposXreportCheckGUIZR025Test_0" (WebposXreportCheckGUIZR025Test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxCalculationBasedOnShippingOrigin/WebposTaxTAX75Test.php:170
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:32
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/WebposAddProductToCartThenCheckoutStep.php:71
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportCheckGUITest.php:150
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-5) Magento\Webpos\Test\TestCase\Tax\TaxClassForShippingTaxableGoodsAndShippingExcludingTax\WebposTaxTAX35Test::test with data set "WebposTaxTAX35TestVariation_TAX35_0" (WebposTaxTAX35TestVariation_TAX35_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+5) Magento\Webpos\Test\TestCase\Xreport\WebposXreportCheckGUITest::test with data set "WebposXreportCheckGUIZR034Test_0" (WebposXreportCheckGUIZR034Test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#product-list-wrapper)" . Wait: "1"
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxClassForShippingTaxableGoodsAndShippingExcludingTax/WebposTaxTAX35Test.php:115
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductList.php:32
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/WebposAddProductToCartThenCheckoutStep.php:71
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportCheckGUITest.php:150
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-6) Magento\Webpos\Test\TestCase\Tax\TaxClassForShippingTaxableGoodsAndShippingExcludingTax\WebposTaxTAX36Test::test with data set "WebposTaxTAX36TestVariation_TAX36_0" (WebposTaxTAX36TestVariation_TAX36_0)
+6) Magento\Webpos\Test\TestCase\Xreport\WebposXreportLoginTwiceTest::test with data set "WebposZreportZR024Test_0" (WebposZreportZR024Test_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -104,15 +96,15 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxClassForShippingTaxableGoodsAndShippingExcludingTax/WebposTaxTAX36Test.php:116
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaff.php:101
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportLoginTwiceTest.php:106
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-7) Magento\Webpos\Test\TestCase\Tax\TaxClassForShippingTaxableGoodsAndShippingExcludingTax\WebposTaxTAX37Test::test with data set "WebposTaxTAX37TestVariation_TAX37_0" (WebposTaxTAX37TestVariation_TAX37_0)
+7) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR026Test::test with data set "WebposXreportZR026Test_0" (WebposXreportZR026Test_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -121,15 +113,15 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxClassForShippingTaxableGoodsAndShippingExcludingTax/WebposTaxTAX37Test.php:115
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposWithSelectLocationPosStep.php:87
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportZR026Test.php:93
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-8) Magento\Webpos\Test\TestCase\Tax\TaxClassForShippingTaxableGoodsAndShippingExcludingTax\WebposTaxTAX38Test::test with data set "WebposTaxTAX38TestVariation_TAX38_0" (WebposTaxTAX38TestVariation_TAX38_0)
+8) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR027Test::test with data set "WebposXreportZR027Test_0" (WebposXreportZR027Test_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -138,15 +130,15 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxClassForShippingTaxableGoodsAndShippingExcludingTax/WebposTaxTAX38Test.php:121
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposWithSelectLocationPosStep.php:87
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportZR027Test.php:102
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-9) Magento\Webpos\Test\TestCase\Tax\TaxClassForShippingTaxableGoodsAndShippingExcludingTax\WebposTaxTAX40Test::test with data set "WebposTaxTAX40TestVariation_TAX40_0" (WebposTaxTAX40TestVariation_TAX40_0)
+9) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR028Test::test with data set "WebposXreportZR028Test_0" (WebposXreportZR028Test_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -155,15 +147,15 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxClassForShippingTaxableGoodsAndShippingExcludingTax/WebposTaxTAX40Test.php:129
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposWithSelectLocationPosStep.php:87
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportZR028Test.php:123
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-10) Magento\Webpos\Test\TestCase\Tax\TaxClassForShippingTaxableGoodsAndShippingExcludingTax\WebposTaxTAX41Test::test with data set "WebposTaxTAX41TestVariation_TAX41_0" (WebposTaxTAX41TestVariation_TAX41_0)
+10) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR032Test::test with data set "WebposXreportZR032Test_0" (WebposXreportZR032Test_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -172,15 +164,15 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxClassForShippingTaxableGoodsAndShippingExcludingTax/WebposTaxTAX41Test.php:152
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposWithSelectLocationPosStep.php:87
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportZR032Test.php:98
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-11) Magento\Webpos\Test\TestCase\Tax\TaxClassForShippingTaxableGoodsAndShippingExcludingTax\WebposTaxTAX45Test::test with data set "WebposTaxTAX45TestVariation_TAX45_0" (WebposTaxTAX45TestVariation_TAX45_0)
+11) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR033Test::test with data set "WebposXreportZR033Test_0" (WebposXreportZR033Test_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -189,25 +181,8 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxClassForShippingTaxableGoodsAndShippingExcludingTax/WebposTaxTAX45Test.php:154
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-12) Magento\Webpos\Test\TestCase\Tax\TaxClassForShippingTaxableGoodsAndShippingExcludingTax\WebposTaxTAX46Test::test with data set "WebposTaxTAX46TestVariation_TAX46_0" (WebposTaxTAX46TestVariation_TAX46_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxClassForShippingTaxableGoodsAndShippingExcludingTax/WebposTaxTAX46Test.php:153
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposWithSelectLocationPosStep.php:87
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportZR033Test.php:130
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -215,4 +190,4 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 12, Assertions: 0, Errors: 12.
+Tests: 11, Assertions: 0, Errors: 11.
