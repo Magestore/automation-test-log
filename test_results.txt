@@ -1,16 +1,16 @@
-============== Test suite SalesOrderReportOrderListByLocationReportDailyReportPage =============
+============== Test suite SalesOrderReportSaleByLocationSaleByPaymentSaleByPaymentMethodSaleByPaymentMethodDaily =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....E.F                                                            8 / 8 (100%)..E.
+....EE....                                                        10 / 10 (100%)...E
 
-Time: 10.02 minutes, Memory: 70.00MB
+Time: 9.78 minutes, Memory: 68.00MB
 
-There were 2 errors:
+There were 3 errors:
 
-1) Magento\Webpos\Test\TestCase\SalesOrderReport\OrderListByLocation\OrderListByLocationReportRP45Test::test with data set "OrderListByStaffReportRP45TestVariation_0" (OrderListByStaffReportRP45TestVariation_0)
+1) Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPaymentMethod\SaleOrderReportRP52Test::test with data set "SaleOrderReportRP52Test_0" (SaleOrderReportRP52Test_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -19,15 +19,15 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaff.php:101
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/OrderListByLocation/OrderListByLocationReportRP45Test.php:115
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPaymentMethod/SaleOrderReportRP52Test.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\SalesOrderReport\ReportDaily\WebposSaleOderReportRP37Test::test with data set "WebposSaleOrderReportTestCase37Variation_0" (WebposSaleOrderReportTestCase37Variation_0)
+2) Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPaymentMethod\SaleOrderReportRP53Test::test with data set "SaleOrderReportRP53Test_0" (SaleOrderReportRP53Test_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -36,32 +36,26 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaff.php:101
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/ReportDaily/WebposSaleOderReportRP37Test.php:96
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposStep.php:77
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPaymentMethod/SaleOrderReportRP53Test.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
---
+3) Magento\Webpos\Test\TestCase\SalesOrderReport\SaleByPaymentMethodDaily\SaleByPaymentMethodDailyRP60Test::test with data set "SaleByPaymentMethodDailyRP60TestVariation1_0" (SaleByPaymentMethodDailyRP60TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector([id="page:main-container"]) -> css selector(#container div.admin__data-grid-wrap table tbody td.col-orders)" . Wait: "1"
 
-There was 1 failure:
-
-1) Magento\Webpos\Test\TestCase\SalesOrderReport\ReportDaily\WebposSaleOderReportRP32Test::test with data set "WebposSaleOrderReportRP32TestVariation_0" (WebposSaleOrderReportRP32TestVariation_0)
-No data was showed
-Failed asserting that 'data-grid-tr-no-data even' does not contain "data-grid-tr-no-data".
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/ReportSaleOrder/AssertDateRangeByLocation.php:22
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:485
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/SalesOrderReport/SaleByPaymentMethodDaily/SaleByPaymentMethodDailyRP60Test.php:86
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 12, Assertions: 34, Errors: 2, Failures: 1.
+Tests: 14, Assertions: 19, Errors: 3.
