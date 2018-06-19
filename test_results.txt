@@ -1,11 +1,75 @@
-============== Test suite TaxTaxCalculationBasedOnShippingOrigin =============
+============== Test suite XreportWebPOSMenu =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-............                                                      12 / 12 (100%)
+.......                                                             7 / 7 (100%).FEF
 
-Time: 19.42 minutes, Memory: 74.00MB
+Time: 15.59 minutes, Memory: 76.00MB
 
-OK (12 tests, 177 assertions)
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR032Test::test with data set "WebposXreportZR032Test_0" (WebposXreportZR032Test_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/SessionManagement/SessionSetClosingBalanceReason.php:30
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/WebposSetClosingBalanceCloseSessionStep.php:71
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Xreport/WebposXreportZR032Test.php:136
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There were 2 failures:
+
+1) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR028Test::test with data set "WebposXreportZR028Test_0" (WebposXreportZR028Test_0)
+Zreport total sales not correct
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'$34.01'
++'$34.00'
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Zreport/AssertXreportOpeningPutInTakeOutDiscountRefund.php:67
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR033Test::test with data set "WebposXreportZR033Test_0" (WebposXreportZR033Test_0)
+Zreport total sales not correct
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'₴68.01'
++'₴68.00'
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Zreport/AssertXreportOpeningPutInTakeOutDiscountRefund.php:67
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 11, Assertions: 84, Errors: 1, Failures: 2.
