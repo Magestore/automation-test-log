@@ -1,11 +1,24 @@
-============== Test suite StaffEditStaffOnGridMassAction =============
+============== Test suite SyncCheckButtonCheckGUIConfiguration =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........                                                            8 / 8 (100%)..
+EE......                                                             7 / 7 (100%)
 
-Time: 5.32 minutes, Memory: 72.00MB
+Time: 8.49 minutes, Memory: 70.00MB
 
-OK (10 tests, 80 assertions)
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\Sync\CheckButton\WebposSync04Test::test with data set "WebposSync_04_0" (WebposSync_04_0)
+Error: Call to undefined method Magento\Webpos\Test\Page\WebposIndex::getgetC()
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/CheckButton/WebposSync04Test.php:160
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 7, Assertions: 11, Errors: 1.
