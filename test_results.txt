@@ -1,11 +1,28 @@
-============== Test suite PosPosFormPosGridSortGrid =============
+============== Test suite ProductsGridBundleProductCheckGUI =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...                                                                 3 / 3 (100%).
+.........................E....                                    30 / 30 (100%)
 
-Time: 1.48 minutes, Memory: 64.00MB
+Time: 34.05 minutes, Memory: 78.00MB
 
-OK (4 tests, 26 assertions)
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\ProductsGrid\GroupProduct\WebposProductGridGroupProductBlockAddToCartSuccessfullyPG43Test::test with data set "WebposProductGridGroupProductBlockAddToCartSuccessfullyPG43TestVariation1_0" (WebposProductGridGroupProductBlockAddToCartSuccessfullyPG43TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#popup-product-detail)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductDetail.php:128
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/ProductsGrid/GroupProduct/WebposProductGridGroupProductBlockAddToCartSuccessfullyPG43Test.php:62
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 30, Assertions: 164, Errors: 1.
