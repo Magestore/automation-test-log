@@ -1,22 +1,40 @@
-============== Test suite SessionManagement =============
+============== Test suite Setting =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...............................................                   47 / 47 (100%).............
+..............                                                    14 / 14 (100%)....F.........
 
-Time: 32.47 minutes, Memory: 78.00MB
+Time: 10.06 minutes, Memory: 74.00MB
 
-OK (60 tests, 177 assertions)
-============== Test suite SessionManagementValidateCheckGUICheckPrintButtonOpenSession =============
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Setting\General\WebPOSCheckGUITabTest::test with data set "WebPOSCheckGUICheckoutTabTestVariation_SET13_0" (WebPOSCheckGUICheckoutTabTestVariation_SET13_0)
+On the Setting General Page - In the menu Currency Tab Page. Enable Pole Display Selection was visible correctly.
+Failed asserting that false is true.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Setting/General/AssertWebPOSCheckGUIPOSHubTabPageDisplayCorrectly.php:42
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 28, Assertions: 97, Failures: 1.
+============== Test suite StaffAddStaffCheckFilterFunctionCheckGUI =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...........                                                       11 / 11 (100%)
+.............                                                     13 / 13 (100%)
 
-Time: 6.85 minutes, Memory: 72.00MB
+Time: 4.51 minutes, Memory: 72.00MB
 
-OK (11 tests, 20 assertions)
+OK (13 tests, 133 assertions)
