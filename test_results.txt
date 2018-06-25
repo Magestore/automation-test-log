@@ -1,30 +1,28 @@
-============== Test suite TaxApplyTaxOnCustomePriceIfAvailableApplyTaxToFPTNo =============
+============== Test suite TaxApplyTaxToFPTYesCatalogPricesIncludingTaxCrossBorderTradeYes =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..E.........                                                      12 / 12 (100%)
+..F.......                                                        10 / 10 (100%)
 
-Time: 18.89 minutes, Memory: 74.00MB
+Time: 13.23 minutes, Memory: 74.00MB
 
-There was 1 error:
+There was 1 failure:
 
-1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX95Test::test with data set "WebposTaxTAX95TestVariation_TAX95_0" (WebposTaxTAX95TestVariation_TAX95_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX97Test::test with data set "WebposTaxTAX97TestVariation_TAX97_0" (WebposTaxTAX97TestVariation_TAX97_0)
+[Apply Tax To FPT] = Yes - On the Checkout - The Tax at the web POS was not correctly.
+Expect: 9.35
+Actual: 8.5
+Failed asserting that 8.5 matches expected 9.35.
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderList.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomeOriginalPriceOnly/WebposTaxTAX95Test.php:204
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountOnCartPageAndCheckoutPageWithTaxApplyToFPT.php:44
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX97Test.php:143
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-ERRORS!
-Tests: 12, Assertions: 107, Errors: 1.
+FAILURES!
+Tests: 10, Assertions: 82, Failures: 1.
