@@ -1,22 +1,51 @@
-============== Test suite StaffCheckSortColumnInGridCheckValidation =============
+============== Test suite StaffEditStaffOnGridMassAction =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%).......
+........                                                            8 / 8 (100%)..
 
-Time: 2.84 minutes, Memory: 68.00MB
+Time: 4.13 minutes, Memory: 72.00MB
 
-OK (13 tests, 44 assertions)
-============== Test suite StaffEditStaff =============
+OK (10 tests, 80 assertions)
+============== Test suite StaffStaffPermission =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...............                                                   15 / 15 (100%).
+F...........F.................                                    30 / 30 (100%)
 
-Time: 7.17 minutes, Memory: 74.00MB
+Time: 29.3 minutes, Memory: 78.00MB
 
-OK (16 tests, 164 assertions)
+There were 2 failures:
+
+1) Magento\Webpos\Test\TestCase\Staff\StaffPermission\WebposManageStaffMS51Test::test with data set "WebposManageStaffMS51TestVariation_0" (WebposManageStaffMS51TestVariation_0)
+Discount does not apply by role
+Failed asserting that 35.0 matches expected 50.0.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/Staff/Permission/AssertDiscountWholeCartFixed.php:28
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Staff\StaffPermission\WebposManageStaffMS64Test::test with data set "WebposManageStaffMS64TestVariation_0" (WebposManageStaffMS64TestVariation_0)
+Cash In Method - Payment Is not visible after click Take payment in Order History. Bug of Products. TestCase ID is MS64
+Failed asserting that false is true.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Staff/StaffPermission/WebposManageStaffMS64Test.php:404
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 30, Assertions: 150, Failures: 2.
