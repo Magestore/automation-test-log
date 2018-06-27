@@ -1,20 +1,35 @@
-============== Test suite OnHoldOrderProcessingOnHoldOrderSearch =============
+============== Test suite OrdersHistoryInvoiceItemTableMassActionAddComment =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..FF..........                                                    14 / 14 (100%)
+..........FFF                                                     13 / 13 (100%)F...
 
-Time: 11.44 minutes, Memory: 74.00MB
+Time: 16 minutes, Memory: 78.00MB
 
-There were 2 failures:
+There were 4 failures:
 
-1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH18Test::test with data set "WebposOnHoldOrderONH18TestVariation_0" (WebposOnHoldOrderONH18TestVariation_0)
-Tax is not correct, taxExpected is : $7and taxActual is : $8.25
-Failed asserting that 8.25 matches expected 7.0.
+1) Magento\Webpos\Test\TestCase\OrdersHistory\Invoice\WebposOrdersHistoryInvoiceOH118Test::test with data set "WebposOrdersHistoryInvoiceOH118Test_OH118_0" (WebposOrdersHistoryInvoiceOH118Test_OH118_0)
+Payment Method didn't displayed
+Failed asserting that false is true.
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckTaxHoldOrder.php:26
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CreatePaymentAndInvoiceSuccessfullyStep.php:77
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Util/Iterator/Step.php:174
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/Invoice/WebposOrdersHistoryInvoiceOH118Test.php:33
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\OrdersHistory\ItemTable\WebposOHItemTableTest::test with data set "WebposOHItemTableTestVariation_OH16_0" (WebposOHItemTableTestVariation_OH16_0)
+Item table - Product "product_100_dollar1670618826" - Discount amount is wrong
+Failed asserting that 0.0 matches expected 10.0.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/ItemTable/AssertItemTableIsCorrect.php:90
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -25,11 +40,26 @@ Failed asserting that 8.25 matches expected 7.0.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH19Test::test with data set "WebposOnHoldOrderONH19TestVariation_0" (WebposOnHoldOrderONH19TestVariation_0)
-Price custom product with $ is not correct
-Failed asserting that 10.0 matches expected 15.0.
+3) Magento\Webpos\Test\TestCase\OrdersHistory\ItemTable\WebposOHItemTableTest::test with data set "WebposOHItemTableTestVariation_OH17_0" (WebposOHItemTableTestVariation_OH17_0)
+Item table - Product "product_100_dollar1563186190" - Discount amount is wrong
+Failed asserting that 0.0 matches expected 10.0.
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Checkout/HoldOrder/AssertCheckCartCustomPrice.php:49
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/ItemTable/AssertItemTableIsCorrect.php:90
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\OrdersHistory\ItemTable\WebposOHItemTableTest::test with data set "WebposOHItemTableTestVariation_OH18_0" (WebposOHItemTableTestVariation_OH18_0)
+Item table - Product "product_20_dollar 1122268818" - Discount amount is wrong
+Failed asserting that 0.0 matches expected 5.0.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/ItemTable/AssertItemTableIsCorrect.php:90
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -41,15 +71,32 @@ Failed asserting that 10.0 matches expected 15.0.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 FAILURES!
-Tests: 14, Assertions: 95, Failures: 2.
-============== Test suite OrdersHistoryBillingShippingAddressCheckGUI =============
+Tests: 17, Assertions: 139, Failures: 4.
+============== Test suite OrdersHistoryMassActionCancelMassActionRefund =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....                                                               5 / 5 (100%)
+....E.................                                            22 / 22 (100%)..........
 
-Time: 3.69 minutes, Memory: 72.00MB
+Time: 27.66 minutes, Memory: 80.00MB
 
-OK (5 tests, 61 assertions)
+There was 1 error:
+
+1) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionCancel\WebposOHMassActionCancelTest::test with data set "WebposOHMassActionCancelTestVariation_OH51_0" (WebposOHMassActionCancelTestVariation_OH51_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#add-cancel-comment-order) -> css selector(#input-add-cancel-comment-order)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/CancelOrderStep.php:82
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionCancel/WebposOHMassActionCancelTest.php:252
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 32, Assertions: 332, Errors: 1.
