@@ -1,51 +1,35 @@
-============== Test suite StaffEditStaffOnGridMassAction =============
+============== Test suite SyncCheckButtonCheckGUIConfiguration =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........                                                            8 / 8 (100%)..
+EE......                                                             7 / 7 (100%)
 
-Time: 4.13 minutes, Memory: 72.00MB
+Time: 6.15 minutes, Memory: 74.00MB
 
-OK (10 tests, 80 assertions)
-============== Test suite StaffStaffPermission =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+There was 1 error:
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
+1) Magento\Webpos\Test\TestCase\Sync\CheckButton\WebposSync04Test::test with data set "WebposSync_04_0" (WebposSync_04_0)
+Error: Call to undefined method Magento\Webpos\Test\Page\WebposIndex::getgetC()
 
-F...........F.................                                    30 / 30 (100%)
-
-Time: 29.3 minutes, Memory: 78.00MB
-
-There were 2 failures:
-
-1) Magento\Webpos\Test\TestCase\Staff\StaffPermission\WebposManageStaffMS51Test::test with data set "WebposManageStaffMS51TestVariation_0" (WebposManageStaffMS51TestVariation_0)
-Discount does not apply by role
-Failed asserting that 35.0 matches expected 50.0.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/Staff/Permission/AssertDiscountWholeCartFixed.php:28
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\Staff\StaffPermission\WebposManageStaffMS64Test::test with data set "WebposManageStaffMS64TestVariation_0" (WebposManageStaffMS64TestVariation_0)
-Cash In Method - Payment Is not visible after click Take payment in Order History. Bug of Products. TestCase ID is MS64
-Failed asserting that false is true.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Staff/StaffPermission/WebposManageStaffMS64Test.php:404
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/CheckButton/WebposSync04Test.php:160
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-FAILURES!
-Tests: 30, Assertions: 150, Failures: 2.
+ERRORS!
+Tests: 7, Assertions: 11, Errors: 1.
+============== Test suite SyncCountryCurrencyCustomerComplaintsSwatchOption =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+.......                                                             7 / 7 (100%)
+
+Time: 5.7 minutes, Memory: 74.00MB
+
+OK (7 tests, 12 assertions)
