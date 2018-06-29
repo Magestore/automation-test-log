@@ -1,27 +1,16 @@
-============== Test suite TaxTaxCalculationBasedOnShippingOrigin =============
+============== Test suite ZreportWebPOSMenu =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-............                                                      12 / 12 (100%)
+.........                                                           9 / 9 (100%)F..F
 
-Time: 15.28 minutes, Memory: 74.00MB
+Time: 14.36 minutes, Memory: 76.00MB
 
-OK (12 tests, 177 assertions)
-============== Test suite XreportWebPOSMenu =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+There were 2 failures:
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-.......                                                             7 / 7 (100%).FFF
-
-Time: 11.2 minutes, Memory: 76.00MB
-
-There were 3 failures:
-
-1) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR028Test::test with data set "WebposXreportZR028Test_0" (WebposXreportZR028Test_0)
+1) Magento\Webpos\Test\TestCase\Zreport\WebposZreportZR010Test::test with data set "WebposZreportZR010Test_0" (WebposZreportZR010Test_0)
 Zreport discount not correct
 Failed asserting that two strings are equal.
 --- Expected
@@ -30,7 +19,7 @@ Failed asserting that two strings are equal.
 -'-$10.00'
 +'$0.00'
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Zreport/AssertXreportOpeningPutInTakeOutDiscountRefund.php:72
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Zreport/AssertZreportOpeningPutInTakeOutDiscountRefund.php:84
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -41,27 +30,7 @@ Failed asserting that two strings are equal.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR032Test::test with data set "WebposXreportZR032Test_0" (WebposXreportZR032Test_0)
-Zreport Refund not correct
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'$0.00'
-+'-$34.00'
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Zreport/AssertGUIXZreportRefund.php:26
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\Xreport\WebposXreportZR033Test::test with data set "WebposXreportZR033Test_0" (WebposXreportZR033Test_0)
+2) Magento\Webpos\Test\TestCase\Zreport\WebposZreportZR017Test::test with data set "WebposZreportZR017Test_0" (WebposZreportZR017Test_0)
 Zreport discount not correct
 Failed asserting that two strings are equal.
 --- Expected
@@ -70,7 +39,7 @@ Failed asserting that two strings are equal.
 -'-₴10.00'
 +'₴0.00'
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Zreport/AssertXreportOpeningPutInTakeOutDiscountRefund.php:72
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Zreport/AssertZreportOpeningPutInTakeOutDiscountRefund.php:84
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -82,4 +51,4 @@ Failed asserting that two strings are equal.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 FAILURES!
-Tests: 11, Assertions: 89, Failures: 3.
+Tests: 13, Assertions: 129, Failures: 2.
