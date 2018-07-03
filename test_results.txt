@@ -1,16 +1,16 @@
-============== Test suite TaxCheckoutWithBundleProduct =============
+============== Test suite TaxCheckTaxAmountWithShippingFee =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EFEEF.F....                                                       11 / 11 (100%)
+.......E........                                                  16 / 16 (100%)
 
-Time: 22.21 minutes, Memory: 76.00MB
+Time: 22.79 minutes, Memory: 74.00MB
 
-There were 3 errors:
+There was 1 error:
 
-1) Magento\Webpos\Test\TestCase\Tax\CheckoutWithBundleProduct\WebposTaxTAX118Test::test with data set "WebposTaxTAX118TestVariation_TAX118_0" (WebposTaxTAX118TestVariation_TAX118_0)
+1) Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithoutShippingFeeAndDiscountAmount\WebposTaxTAX12Test::test with data set "WebposTaxTAX12TestVariation_TAX12_0" (WebposTaxTAX12TestVariation_TAX12_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#webpos_order_view_container .footer-order) -> xpath(//*[@id="webpos_order_view_container"]/footer/div[1]/table/tbody/tr/td[text()="Total Paid"]/../td[2])" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
@@ -18,79 +18,7 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderViewFooter.php:51
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderViewFooter.php:110
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Refund/AssertRefundSuccess.php:59
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CheckoutWithBundleProduct/WebposTaxTAX118Test.php:355
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\Tax\CheckoutWithGroupProduct\WebposTaxTAX119Test::test with data set "WebposTaxTAX119TestVariation_TAX119_0" (WebposTaxTAX119TestVariation_TAX119_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderList.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CheckoutWithGroupProduct/WebposTaxTAX119Test.php:235
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\Tax\CheckoutWithoutTax\WebposTaxTAX01Test::test with data set "WebposTaxTAX01TestVariation_TAX01_0" (WebposTaxTAX01TestVariation_TAX01_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderList.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CheckoutWithoutTax/WebposTaxTAX01Test.php:196
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
---
-
-There were 3 failures:
-
-1) Magento\Webpos\Test\TestCase\Tax\CheckoutWithConfigProduct\WebposTaxTAX117Test::test with data set "WebposTaxTAX117TestVariation_TAX117_0" (WebposTaxTAX117TestVariation_TAX117_0)
-Payment Method didn't show
-Failed asserting that false is true.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CheckoutWithConfigProduct/WebposTaxTAX117Test.php:274
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX24Test::test with data set "WebposTaxTAX24TestVariation_TAX01_0" (WebposTaxTAX24TestVariation_TAX01_0)
-On the Checkout - The Tax at the web POS was not correctly.
-Failed asserting that 10.2 matches expected 25.5.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountOnCartPageAndCheckoutPage.php:46
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CheckTaxAmountWithDiscountWholeCart/WebposTaxTAX24Test.php:163
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\Tax\CheckTaxAmountWithDiscountWholeCart\WebposTaxTAX26Test::test with data set "WebposTaxTAX26TestVariation_TAX01_0" (WebposTaxTAX26TestVariation_TAX01_0)
-On the Checkout - The Tax at the web POS was not correctly.
-Failed asserting that 10.2 matches expected 25.5.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountOnCartPageAndCheckoutPage.php:46
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CheckTaxAmountWithDiscountWholeCart/WebposTaxTAX26Test.php:218
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CheckTaxAmountWithoutShippingFeeAndDiscountAmount/WebposTaxTAX12Test.php:203
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -98,4 +26,4 @@ Failed asserting that 10.2 matches expected 25.5.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 11, Assertions: 141, Errors: 3, Failures: 3.
+Tests: 16, Assertions: 189, Errors: 1.
