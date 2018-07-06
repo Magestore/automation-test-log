@@ -1,24 +1,40 @@
-============== Test suite SessionManagementValidatePutMoneyTakeMoneyOut =============
+============== Test suite Setting =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.........EE
-Fatal error: Uncaught PHPUnit_Extensions_Selenium2TestCase_WebDriverException: The process has not exited yet therefore no result is available ... in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
-Stack trace:
-#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(71): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
-#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/SessionStrategy/Isolated.php(67): PHPUnit_Extensions_Selenium2TestCase_Driver->startSession(Array, Object(PHPUnit_Extensions_Selenium2TestCase_URL))
-#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/SessionStrategy/Shared.php(79): PHPUnit_Extensions_Selenium2TestCase_SessionStrategy_Isolated->session(Array)
-#3 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php on line 165
-============== Test suite SessionManagementValidateSetClosingBalance =============
+..............                                                    14 / 14 (100%)....F.........
+
+Time: 9.97 minutes, Memory: 74.00MB
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Setting\General\WebPOSCheckGUITabTest::test with data set "WebPOSCheckGUICheckoutTabTestVariation_SET13_0" (WebPOSCheckGUICheckoutTabTestVariation_SET13_0)
+On the Setting General Page - In the menu Currency Tab Page. Enable Pole Display Selection was visible correctly.
+Failed asserting that false is true.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Setting/General/AssertWebPOSCheckGUIPOSHubTabPageDisplayCorrectly.php:42
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 28, Assertions: 97, Failures: 1.
+============== Test suite StaffAddStaffCheckFilterFunctionCheckGUI =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...........                                                       11 / 11 (100%)
+.............                                                     13 / 13 (100%)
 
-Time: 7.47 minutes, Memory: 72.00MB
+Time: 4.32 minutes, Memory: 72.00MB
 
-OK (11 tests, 40 assertions)
+OK (13 tests, 133 assertions)
