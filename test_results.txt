@@ -1,27 +1,27 @@
-============== Test suite StaffCheckSortColumnInGridCheckValidation =============
+============== Test suite StaffEditStaffOnGridMassAction =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%).......
+........                                                            8 / 8 (100%)..
 
-Time: 2.63 minutes, Memory: 68.00MB
+Time: 4.5 minutes, Memory: 72.00MB
 
-OK (13 tests, 44 assertions)
-============== Test suite StaffEditStaff =============
+OK (10 tests, 80 assertions)
+============== Test suite StaffStaffPermission =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-........E......                                                   15 / 15 (100%).
+...........EF.................                                    30 / 30 (100%)
 
-Time: 7.84 minutes, Memory: 74.00MB
+Time: 31.48 minutes, Memory: 78.00MB
 
 There was 1 error:
 
-1) Magento\Webpos\Test\TestCase\Staff\EditStaff\WebposManageStaffMS43Test::test with data set "WebposManageStaffMS43TestVariation_0" (WebposManageStaffMS43TestVariation_0)
+1) Magento\Webpos\Test\TestCase\Staff\StaffPermission\WebposManageStaffMS63Test::test with data set "WebposManageStaffMS63TestVariation_0" (WebposManageStaffMS63TestVariation_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -30,16 +30,28 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/MsWebpos.php:79
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Adminhtml/Staff/Form/AssertLoginWebposChangePass.php:40
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/LoginWebposByStaff.php:101
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Staff/StaffPermission/WebposManageStaffMS63Test.php:136
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Staff\StaffPermission\WebposManageStaffMS64Test::test with data set "WebposManageStaffMS64TestVariation_0" (WebposManageStaffMS64TestVariation_0)
+Cash In Method - Payment Is not visible after click Take payment in Order History. Bug of Products. TestCase ID is MS64
+Failed asserting that false is true.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Staff/StaffPermission/WebposManageStaffMS64Test.php:404
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 16, Assertions: 163, Errors: 1.
+Tests: 30, Assertions: 142, Errors: 1, Failures: 1.
