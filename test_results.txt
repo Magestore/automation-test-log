@@ -1,11 +1,28 @@
-============== Test suite TaxShippingPriceTaxableGoodsAndShippingIncludingTax =============
+============== Test suite TaxTaxCalculationBasedOnShippingOrigin =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..........                                                        10 / 10 (100%)
+...........F                                                      12 / 12 (100%)
 
-Time: 14.72 minutes, Memory: 74.00MB
+Time: 18.66 minutes, Memory: 76.00MB
 
-OK (10 tests, 100 assertions)
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Tax\TaxClassForShippingTaxableGoodsAndShippingExcludingTax\WebposTaxTAX46Test::test with data set "WebposTaxTAX46TestVariation_TAX46_0" (WebposTaxTAX46TestVariation_TAX46_0)
+Order History - Refund - Total Refunded is wrong
+Expected: 238.7
+Actual: 237
+Failed asserting that 237.0 matches expected 238.7.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Refund/AssertRefundSuccess.php:68
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/TaxClassForShippingTaxableGoodsAndShippingExcludingTax/WebposTaxTAX46Test.php:242
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+FAILURES!
+Tests: 12, Assertions: 155, Failures: 1.
