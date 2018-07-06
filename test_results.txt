@@ -1,15 +1,17 @@
-============== Test suite SessionManagement =============
+============== Test suite SessionManagementValidatePutMoneyTakeMoneyOut =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-...............................................                   47 / 47 (100%).............
-
-Time: 34.37 minutes, Memory: 78.00MB
-
-OK (60 tests, 177 assertions)
-============== Test suite SessionManagementValidateCheckGUICheckPrintButtonOpenSession =============
+.........EE
+Fatal error: Uncaught PHPUnit_Extensions_Selenium2TestCase_WebDriverException: The process has not exited yet therefore no result is available ... in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+Stack trace:
+#0 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php(71): PHPUnit_Extensions_Selenium2TestCase_Driver->curl('POST', Object(PHPUnit_Extensions_Selenium2TestCase_URL), Array)
+#1 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/SessionStrategy/Isolated.php(67): PHPUnit_Extensions_Selenium2TestCase_Driver->startSession(Array, Object(PHPUnit_Extensions_Selenium2TestCase_URL))
+#2 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/SessionStrategy/Shared.php(79): PHPUnit_Extensions_Selenium2TestCase_SessionStrategy_Isolated->session(Array)
+#3 /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium in /var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php on line 165
+============== Test suite SessionManagementValidateSetClosingBalance =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
@@ -17,6 +19,6 @@ Configuration: /var/www/dev/tests/functional/phpunit.xml
 
 ...........                                                       11 / 11 (100%)
 
-Time: 6.84 minutes, Memory: 72.00MB
+Time: 7.47 minutes, Memory: 72.00MB
 
-OK (11 tests, 20 assertions)
+OK (11 tests, 40 assertions)
