@@ -1,80 +1,38 @@
-============== Test suite ManageStocks =============
+============== Test suite OnHoldOrderProcessingOnHoldOrderSearch =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%).......
+........E.....                                                    14 / 14 (100%)
 
-Time: 8.88 minutes, Memory: 100.00MB
+Time: 16.62 minutes, Memory: 74.00MB
 
-OK (13 tests, 70 assertions)
-============== Test suite OnHoldOrderCheckGUIHoldOrder =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+There was 1 error:
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-..F........E.E.                                                   15 / 15 (100%)
-
-Time: 18.3 minutes, Memory: 74.00MB
-
-There were 2 errors:
-
-1) Magento\Webpos\Test\TestCase\OnHoldOrder\HoldOrder\WebposOnHoldOrderONH12Test::test with data set "WebposOnHoldOrderONH12TestVariation_0" (WebposOnHoldOrderONH12TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#on_hold_orders_container .col-sm-8.col-left .main-content) -> xpath(//div/div[2]/div/div/div/table/tbody/tr[1])" . Wait: "1"
+1) Magento\Webpos\Test\TestCase\OnHoldOrder\ProcessingOnHoldOrder\WebposOnHoldOrderONH24Test::test with data set "WebposOnHoldOrderONH24TestVariation_0" (WebposOnHoldOrderONH24TestVariation_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#on_hold_orders_container #webpos_order_list) -> css selector(.list-orders .order-item)" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:485
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/OnHoldOrder/OnHoldOrderOrderViewContent.php:139
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OnHoldOrder/HoldOrder/AssertCheckOnHoldSimpleProduct.php:29
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\OnHoldOrder\HoldOrder\WebposOnHoldOrderONH14Test::test with data set "WebposOnHoldOrderONH14TestVariation_0" (WebposOnHoldOrderONH14TestVariation_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#on_hold_orders_container div.col-sm-8.col-left footer)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:485
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/OnHoldOrder/OnHoldOrderOrderViewFooter.php:43
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OnHoldOrder/HoldOrder/AssertCheckFeeShipping.php:21
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
---
-
-There was 1 failure:
-
-1) Magento\Webpos\Test\TestCase\OnHoldOrder\CheckGUI\WebposOnHoldOrderONH03Test::test with data set "WebposOnHoldOrderONH03TestVariation_0" (WebposOnHoldOrderONH03TestVariation_0)
-Cart button is not display
-Failed asserting that false is true.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OnHoldOrder/CheckGUI/AssertCheckVisibleGUI.php:58
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OnHoldOrder/ProcessingOnHoldOrder/WebposOnHoldOrderONH24Test.php:89
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 15, Assertions: 130, Errors: 2, Failures: 1.
+Tests: 14, Assertions: 88, Errors: 1.
+============== Test suite OrdersHistoryBillingShippingAddressCheckGUI =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+.....                                                               5 / 5 (100%)
+
+Time: 4.94 minutes, Memory: 68.00MB
+
+OK (5 tests, 54 assertions)
