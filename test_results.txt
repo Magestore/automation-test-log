@@ -1,56 +1,117 @@
-============== Test suite OrdersHistoryMassActionReOrderMassActionSendMail =============
+============== Test suite OrdersHistoryOrderStatusSearchAndFilterOrder =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....                                                               5 / 5 (100%)....
+...E..E...                                                        10 / 10 (100%)
 
-Time: 8.27 minutes, Memory: 70.00MB
-
-OK (9 tests, 59 assertions)
-============== Test suite OrdersHistoryMassActionShiPaymentShippingMethod =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-......FE...E.F                                                    14 / 14 (100%)...
-
-Time: 20.28 minutes, Memory: 78.00MB
+Time: 11.37 minutes, Memory: 74.00MB
 
 There were 2 errors:
 
-1) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryPartialShipmentOH40Test::test with data set "WebposOrdersHistoryPartialShipmentOH40TestVariation1_0" (WebposOrdersHistoryPartialShipmentOH40TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#webpos_order_view_container header) -> css selector(nav > div.more-info > a)" . Wait: "1"
+1) Magento\Webpos\Test\TestCase\OrdersHistory\OrderStatus\WebposOrderStatusOH07Test::test with data set "WebposOrderStatusOH07TestVariation1_0" (WebposOrderStatusOH07TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (205, 17.5): [object HTMLButtonElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-71f501bc-a104-41bc-8d96-39ba60abb914', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:262
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Shipment/AssertPartialShipment.php:32
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/OrderStatus/WebposOrderStatusOH07Test.php:91
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryShipmentWithExtantItemsOH41OH42Test::test with data set "WebposOrdersHistoryPartialShipmentOH41TestVariation1_0" (WebposOrdersHistoryPartialShipmentOH41TestVariation1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#webpos_order_view_container .main-content) -> xpath(//table/tbody/tr/td/h4[text()="product_100_dollar1151564676"]/../..)" . Wait: "1"
+2) Magento\Webpos\Test\TestCase\OrdersHistory\SearchAndFilterOrder\WebposOrderHistorySearchWithCustomerEmailOH127Test::test with data set "WebposOrderHistorySearchWithCustomerEmailOH127TestVariation1_0" (WebposOrderHistorySearchWithCustomerEmailOH127TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:485
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderViewContent.php:177
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Shipment/AssertShipmentProductQty.php:29
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderList.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/SearchAndFilterOrder/WebposOrderHistorySearchWithCustomerEmailOH127Test.php:61
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 10, Assertions: 57, Errors: 2.
+============== Test suite OrdersHistoryTakePayment =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+....EE.......F.FEE.E                                               19 / 19 (100%)E                                               19 / 19 (100%)
+
+Time: 19.45 minutes, Memory: 74.00MB
+
+There were 4 errors:
+
+1) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH85Test::test with data set "WebposTakePayment_OH85_0" (WebposTakePayment_OH85_0)
+Error: Call to undefined method Magento\Mtf\Client\Element\SimpleElement::isVi()
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH85Test.php:135
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH96Test::test with data set "WebposTakePayment_OH96_0" (WebposTakePayment_OH96_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (205, 17.5): [object HTMLButtonElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-71f501bc-a104-41bc-8d96-39ba60abb914', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:262
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH96Test.php:116
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH97Test::test with data set "WebposTakePayment_OH97_0" (WebposTakePayment_OH97_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Offset within element cannot be scrolled into view: (205, 17.5): [object HTMLButtonElement]
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-71f501bc-a104-41bc-8d96-39ba60abb914', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase.php:393
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:262
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH97Test.php:126
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH99Test::test with data set "WebposTakePayment_OH99_0" (WebposTakePayment_OH99_0)
+Error: Call to undefined method Magento\Mtf\Client\Element\SimpleElement::isVi()
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/TakePayment/WebposTakePaymentOH99Test.php:125
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
@@ -60,11 +121,16 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 
 There were 2 failures:
 
-1) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCreateShipmentOH38Test::test with data set "WebposOrdersHistoryCreateShipmentOH38TestVariation1_0" (WebposOrdersHistoryCreateShipmentOH38TestVariation1_0)
-Success Message is not displayed
-Failed asserting that false is true.
+1) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH93Test::test with data set "WebposTakePayment_OH93_0" (WebposTakePayment_OH93_0)
+Visible popup takepayment
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'5'
++'0.01'
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Shipment/AssertShipmentSuccess.php:30
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/TakePayment/AssertWebposTakePaymentOH93.php:27
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -75,12 +141,11 @@ Failed asserting that false is true.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\OrdersHistory\PaymentShippingMethod\WebposOHCheckoutWithMultiPaymentMethodTest::test with data set "WebposOHCheckoutWithMultiPaymentMethodTestVariation_OH15_0" (WebposOHCheckoutWithMultiPaymentMethodTestVariation_OH15_0)
-Orders History - Payment method "Web POS - Cash In" - Amount is wrong
-Failed asserting that 0.0 matches expected '30'.
+2) Magento\Webpos\Test\TestCase\OrdersHistory\TakePayment\WebposTakePaymentOH95Test::test with data set "WebposTakePayment_OH95_0" (WebposTakePayment_OH95_0)
+Total paid not greater amount fill
+Failed asserting that 0 is greater than '1'.
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/PaymentShippingMethod/AssertPaymentMethodIsShownOnDetailOrder.php:37
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/PaymentShippingMethod/AssertPaymentMethodsAreShownCorrectlyOnOrderDetail.php:33
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/TakePayment/AssertWebposTakePaymentOH95.php:26
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
@@ -92,4 +157,4 @@ Failed asserting that 0.0 matches expected '30'.
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 17, Assertions: 130, Errors: 2, Failures: 2.
+Tests: 19, Assertions: 65, Errors: 4, Failures: 2.
