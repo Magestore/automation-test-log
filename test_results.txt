@@ -1,27 +1,27 @@
-============== Test suite OnHoldOrderProcessingOnHoldOrderSearch =============
+============== Test suite OrdersHistoryMassActionReOrderMassActionSendMail =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-..............                                                    14 / 14 (100%)
+.....                                                               5 / 5 (100%)....
 
-Time: 14.37 minutes, Memory: 72.00MB
+Time: 8.3 minutes, Memory: 70.00MB
 
-OK (14 tests, 99 assertions)
-============== Test suite OrdersHistoryBillingShippingAddressCheckGUI =============
+OK (9 tests, 59 assertions)
+============== Test suite OrdersHistoryMassActionShiPaymentShippingMethod =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.E..E                                                               5 / 5 (100%)
+.E....E..E..EF                                                    14 / 14 (100%)...
 
-Time: 7.52 minutes, Memory: 72.00MB
+Time: 22.01 minutes, Memory: 78.00MB
 
-There were 2 errors:
+There were 4 errors:
 
-1) Magento\Webpos\Test\TestCase\OrdersHistory\BillingShippingAddress\WebposCheckoutByCustomerOH11Test::test with data set "WebposCheckoutByCustomerOH11TestVariation1_0" (WebposCheckoutByCustomerOH11TestVariation1_0)
+1) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCheckConfirmationPopupCancelOH35Test::test with data set "WebposOrdersHistoryCheckConfirmationPopupCancelOH35TestVariation1_0" (WebposOrdersHistoryCheckConfirmationPopupCancelOH35TestVariation1_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -30,28 +30,95 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
 /var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderList.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/BillingShippingAddress/WebposCheckoutByCustomerOH11Test.php:92
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/MassActionShip/WebposOrdersHistoryCheckConfirmationPopupCancelOH35Test.php:83
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\OrdersHistory\CheckGUI\WebposOrdersHistoryMassActionShipCheckGUITest::test with data set "WebposOrdersHistoryMassActionShipCheckGUITestOH31Variation1_0" (WebposOrdersHistoryMassActionShipCheckGUITestOH31Variation1_0)
+2) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryCreateShipmentOH38Test::test with data set "WebposOrdersHistoryCreateShipmentOH38TestVariation1_0" (WebposOrdersHistoryCreateShipmentOH38TestVariation1_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderList.php:64
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/CheckGUI/WebposOrdersHistoryMassActionShipCheckGUITest.php:86
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Toaster.php:44
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Toaster.php:49
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Shipment/AssertShipmentSuccess.php:29
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryShipmentOH44Test::test with data set "WebposOrdersHistoryShipmentOH44TestVariation1_0" (WebposOrdersHistoryShipmentOH44TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Element is no longer attached to the DOM
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'travis-job-7856c8f4-81ee-4e70-8445-fcd62c74abff', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-104-generic', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:165
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/Driver.php:175
+/var/www/dev/tests/functional/vendor/phpunit/phpunit-selenium/PHPUnit/Extensions/Selenium2TestCase/CommandsHolder.php:100
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:485
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Shipment/AssertShipmentSuccess.php:27
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Scenario.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\OrdersHistory\MassActionShip\WebposOrdersHistoryShipmentWithExtantItemsOH41OH42Test::test with data set "WebposOrdersHistoryPartialShipmentOH42TestVariation2_0" (WebposOrdersHistoryPartialShipmentOH42TestVariation2_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#webpos_order_view_container .main-content) -> xpath(//table/tbody/tr/td/h4[text()="product_100_dollar1109988458"]/../..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:485
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:93
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderViewContent.php:177
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/Shipment/AssertShipmentProductQty.php:29
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\OrdersHistory\PaymentShippingMethod\WebposOHCheckoutWithMultiPaymentMethodTest::test with data set "WebposOHCheckoutWithMultiPaymentMethodTestVariation_OH15_0" (WebposOHCheckoutWithMultiPaymentMethodTestVariation_OH15_0)
+Orders History - Payment method "Web POS - Cash In" - Amount is wrong
+Failed asserting that 0.0 matches expected '30'.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/PaymentShippingMethod/AssertPaymentMethodIsShownOnDetailOrder.php:37
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/OrderHistory/PaymentShippingMethod/AssertPaymentMethodsAreShownCorrectlyOnOrderDetail.php:33
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 5, Assertions: 34, Errors: 2.
+Tests: 17, Assertions: 118, Errors: 4, Failures: 1.
