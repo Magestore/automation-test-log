@@ -1,45 +1,57 @@
-============== Test suite ManageStocks =============
+============== Test suite OnHoldOrderProcessingOnHoldOrderSearch =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%)..F....
+..............                                                    14 / 14 (100%)
 
-Time: 8.97 minutes, Memory: 102.00MB
+Time: 14.37 minutes, Memory: 72.00MB
 
-There was 1 failure:
+OK (14 tests, 99 assertions)
+============== Test suite OrdersHistoryBillingShippingAddressCheckGUI =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-1) Magento\Webpos\Test\TestCase\ManageStocks\UpdateProductAttributes\WebposManageStocksUpdateProductAttributesTest::test with data set "WebposManageStocksUpdateProductAttributesTestVariation_MSK13_0" (WebposManageStocksUpdateProductAttributesTestVariation_MSK13_0)
-Manage Stocks - Qty of product 'Simple Product 1501757713' is wrong
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'-2'
-+'0'
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/ManageStocks/UpdateProductAttributes/AssertQtyOfProductOnManageStocksPageIsCorrect.php:40
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
+.E..E                                                               5 / 5 (100%)
+
+Time: 7.52 minutes, Memory: 72.00MB
+
+There were 2 errors:
+
+1) Magento\Webpos\Test\TestCase\OrdersHistory\BillingShippingAddress\WebposCheckoutByCustomerOH11Test::test with data set "WebposCheckoutByCustomerOH11TestVariation1_0" (WebposCheckoutByCustomerOH11TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderList.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/BillingShippingAddress/WebposCheckoutByCustomerOH11Test.php:92
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-FAILURES!
-Tests: 13, Assertions: 77, Failures: 1.
-============== Test suite OnHoldOrderCheckGUIHoldOrder =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+2) Magento\Webpos\Test\TestCase\OrdersHistory\CheckGUI\WebposOrdersHistoryMassActionShipCheckGUITest::test with data set "WebposOrdersHistoryMassActionShipCheckGUITestOH31Variation1_0" (WebposOrdersHistoryMassActionShipCheckGUITestOH31Variation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:132
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Order/OrderHistoryOrderList.php:64
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/OrdersHistory/CheckGUI/WebposOrdersHistoryMassActionShipCheckGUITest.php:86
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-...............                                                   15 / 15 (100%)
-
-Time: 15.62 minutes, Memory: 72.00MB
-
-OK (15 tests, 150 assertions)
+ERRORS!
+Tests: 5, Assertions: 34, Errors: 2.
