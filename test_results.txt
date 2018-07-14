@@ -1,19 +1,41 @@
-============== Test suite SyncCheckButtonCheckGUIConfiguration =============
+============== Test suite SyncGroupPaymentProduct =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EE......                                                             7 / 7 (100%)
+....EE                                                              6 / 6 (100%)
 
-Time: 7.93 minutes, Memory: 70.00MB
+Time: 9.91 minutes, Memory: 76.00MB
 
-There was 1 error:
+There were 2 errors:
 
-1) Magento\Webpos\Test\TestCase\Sync\CheckButton\WebposSync04Test::test with data set "WebposSync_04_0" (WebposSync_04_0)
-Error: Call to undefined method Magento\Webpos\Test\Page\WebposIndex::getgetC()
+1) Magento\Webpos\Test\TestCase\Sync\Product\WebposSync10Test::test with data set "WebposSync_10_0" (WebposSync_10_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/CheckButton/WebposSync04Test.php:160
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Synchronization/SyncTabData.php:85
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Sync/AssertItemUpdateSuccess.php:21
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/Product/WebposSync10Test.php:147
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Sync\Product\WebposSync11Test::test with data set "WebposSync_11_0" (WebposSync_11_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Synchronization/SyncTabData.php:85
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Sync/AssertItemUpdateSuccess.php:21
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/Product/WebposSync11Test.php:157
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -21,15 +43,135 @@ Error: Call to undefined method Magento\Webpos\Test\Page\WebposIndex::getgetC()
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 7, Assertions: 11, Errors: 1.
-============== Test suite SyncCountryCurrencyCustomerComplaintsSwatchOption =============
+Tests: 6, Assertions: 8, Errors: 2.
+============== Test suite TaxApplyCustomerTaxBeforeDiscountApplyDiscountOnPricesExcludingTax =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.......                                                             7 / 7 (100%)
+EEEEEEEEE                                                           9 / 9 (100%)
 
-Time: 7.35 minutes, Memory: 72.00MB
+Time: 23.03 minutes, Memory: 74.00MB
 
-OK (7 tests, 12 assertions)
+There were 9 errors:
+
+1) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX76Test::test with data set "WebposTaxTAX76TestVariation_TAX76_0" (WebposTaxTAX76TestVariation_TAX76_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX76Test.php:163
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX78Test::test with data set "WebposTaxTAX78TestVariation_TAX78_0" (WebposTaxTAX78TestVariation_TAX78_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX78Test.php:158
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX79Test::test with data set "WebposTaxTAX79TestVariation_TAX79_0" (WebposTaxTAX79TestVariation_TAX79_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX79Test.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX80Test::test with data set "WebposTaxTAX80TestVariation_TAX80_0" (WebposTaxTAX80TestVariation_TAX80_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX80Test.php:169
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesExcludingTax\WebposTaxTAX81Test::test with data set "WebposTaxTAX81TestVariation_TAX81_0" (WebposTaxTAX81TestVariation_TAX81_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesExcludingTax/WebposTaxTAX81Test.php:164
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX82Test::test with data set "WebposTaxTAX82TestVariation_TAX82_0" (WebposTaxTAX82TestVariation_TAX82_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX82Test.php:186
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX84Test::test with data set "WebposTaxTAX84TestVariation_TAX84_0" (WebposTaxTAX84TestVariation_TAX84_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX84Test.php:183
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+8) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX85Test::test with data set "WebposTaxTAX85TestVariation_TAX85_0" (WebposTaxTAX85TestVariation_TAX85_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX85Test.php:186
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+9) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX86Test::test with data set "WebposTaxTAX86TestVariation_TAX86_0" (WebposTaxTAX86TestVariation_TAX86_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX86Test.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 9, Assertions: 0, Errors: 9.
