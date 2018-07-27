@@ -1,35 +1,100 @@
-============== Test suite CheckoutCartPageCustomSale =============
+============== Test suite CheckoutCartPageDeleteProduct =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-.....EE.......                                                    14 / 14 (100%)
+...                                                                 3 / 3 (100%)
 
-Time: 12.51 minutes, Memory: 72.00MB
+Time: 2.73 minutes, Memory: 64.00MB
 
-There were 2 errors:
+OK (3 tests, 13 assertions)
+============== Test suite CheckoutCartPageDiscountProduct =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
-1) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomSale\WebposCustomSaleCustomProductPlaceOrderCP80EntityTest::test with data set "Webpos_CustomSale_CustomProductPlaceOrderCP80_Test1_CP80_0" (Webpos_CustomSale_CustomProductPlaceOrderCP80_Test1_CP80_0)
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+EEEEEE                                                              6 / 6 (100%)
+
+Time: 12.76 minutes, Memory: 66.00MB
+
+There were 6 errors:
+
+1) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposCheckGUIDiscountCP62EntityTest::test with data set "Webpos_CheckGUI_DiscountProduct_WithValidValueCP62_Test1_CP62_0" (Webpos_CheckGUI_DiscountProduct_WithValidValueCP62_Test1_CP62_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#popup-edit-product) -> css selector(.discount)" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomSale/WebposCustomSaleCustomProductPlaceOrderCP80EntityTest.php:77
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposCheckGUIDiscountCP62EntityTest.php:69
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Checkout\CartPage\CustomSale\WebposCustomSaleCustomProductWithDiscountCP78EntityTest::test with data set "Webpos_CustomSale_CustomProductWithDiscount_CP78_Test1_CP78_0" (Webpos_CustomSale_CustomProductWithDiscount_CP78_Test1_CP78_0)
+2) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposCheckoutWithDiscountProductDollarCP65EntityTest::test with data set "Webpos_CheckoutWithDiscount_ByDollar_CP65TestVariation1_CP65_0" (Webpos_CheckoutWithDiscount_ByDollar_CP65TestVariation1_CP65_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#popup-edit-product) -> css selector(.discount)" . Wait: "1"
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/CustomSale/WebposCustomSaleCustomProductWithDiscountCP78EntityTest.php:66
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposCheckoutWithDiscountProductDollarCP65EntityTest.php:76
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposCheckoutWithDiscountProductPercentCP67EntityTest::test with data set "Webpos_Check_Input_ValueToDiscountProduct_ByPercentCP66_Test1_CP66_0" (Webpos_Check_Input_ValueToDiscountProduct_ByPercentCP66_Test1_CP66_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#popup-edit-product) -> css selector(.discount)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposCheckoutWithDiscountProductPercentCP67EntityTest.php:76
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposInputValidValueToDiscountDollarCP64EntityTest::test with data set "Webpos_Check_Input_ValueToDiscountProduct_ByDollarCP64_Test1_CP64_0" (Webpos_Check_Input_ValueToDiscountProduct_ByDollarCP64_Test1_CP64_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#popup-edit-product) -> css selector(.discount)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposInputValidValueToDiscountDollarCP64EntityTest.php:69
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposInputValidValueToDiscountPercentCP66EntityTest::test with data set "Webpos_Check_Input_ValueToDiscountProduct_ByPercentCP66_Test1_CP66_0" (Webpos_Check_Input_ValueToDiscountProduct_ByPercentCP66_Test1_CP66_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#popup-edit-product) -> css selector(.discount)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposInputValidValueToDiscountPercentCP66EntityTest.php:72
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\Checkout\CartPage\DiscountProduct\WebposValidateDiscountCP63EntityTest::test with data set "Webpos_CheckValidate_DiscountProduct_WithValidValueCP63_Test1_CP63_0" (Webpos_CheckValidate_DiscountProduct_WithValidValueCP63_Test1_CP63_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutProductEdit.php:77
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DiscountProduct/WebposValidateDiscountCP63EntityTest.php:66
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -37,57 +102,4 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 14, Assertions: 50, Errors: 2.
-============== Test suite CheckoutCartPageDeleteCart =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
-
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-E...                                                                4 / 4 (100%).EE
-
-Time: 7.84 minutes, Memory: 66.00MB
-
-There were 3 errors:
-
-1) Magento\Webpos\Test\TestCase\Checkout\CartPage\DeleteCart\WebposCheckoutCartPageDeleteCartMultiOrderTest::test with data set "WebposCheckoutCartPageDeleteCartMultiOrderTestVariation1_CP09_0" (WebposCheckoutCartPageDeleteCartMultiOrderTestVariation1_CP09_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#webpos_cart > header) -> css selector(span.order-button.pull-right)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DeleteCart/WebposCheckoutCartPageDeleteCartMultiOrderTest.php:58
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\Checkout\CartPage\DeleteCart\WebposMultiOrderCP24Test::test with data set "WebposMultiOrderCP24_0" (WebposMultiOrderCP24_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#webpos_cart > header) -> css selector(span.order-button.pull-right)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DeleteCart/WebposMultiOrderCP24Test.php:54
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\Checkout\CartPage\DeleteCart\WebposMultiOrderCP25Test::test with data set "WebposMultiOrderCP25_0" (WebposMultiOrderCP25_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#webpos_cart > header) -> css selector(span.order-button.pull-right)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Checkout/CartPage/DeleteCart/WebposMultiOrderCP25Test.php:56
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-ERRORS!
-Tests: 7, Assertions: 21, Errors: 3.
+Tests: 6, Assertions: 0, Errors: 6.
