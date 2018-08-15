@@ -1,41 +1,211 @@
-============== Test suite SyncGroupPaymentProduct =============
+============== Test suite TaxApplyTaxOnCustomePriceIfAvailableApplyTaxToFPTNo =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-....EE                                                              6 / 6 (100%)
+EEEEEEEEFEEE                                                      12 / 12 (100%)
 
-Time: 10.21 minutes, Memory: 76.00MB
+Time: 29.98 minutes, Memory: 76.00MB
 
-There were 2 errors:
+There were 11 errors:
 
-1) Magento\Webpos\Test\TestCase\Sync\Product\WebposSync10Test::test with data set "WebposSync_10_0" (WebposSync_10_0)
+1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX92Test::test with data set "WebposTaxTAX92TestVariation_TAX92_0" (WebposTaxTAX92TestVariation_TAX92_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Synchronization/SyncTabData.php:85
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Sync/AssertItemUpdateSuccess.php:21
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/Product/WebposSync10Test.php:147
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/EditCustomPriceOfProductOnCartStep.php:50
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomeOriginalPriceOnly/WebposTaxTAX92Test.php:142
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Sync\Product\WebposSync11Test::test with data set "WebposSync_11_0" (WebposSync_11_0)
+2) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX94Test::test with data set "WebposTaxTAX94TestVariation_TAX94_0" (WebposTaxTAX94TestVariation_TAX94_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:130
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Synchronization/SyncTabData.php:85
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Sync/AssertItemUpdateSuccess.php:21
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Sync/Product/WebposSync11Test.php:157
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/EditCustomPriceOfProductOnCartStep.php:50
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomeOriginalPriceOnly/WebposTaxTAX94Test.php:139
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX95Test::test with data set "WebposTaxTAX95TestVariation_TAX95_0" (WebposTaxTAX95TestVariation_TAX95_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/EditCustomPriceOfProductOnCartStep.php:50
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomeOriginalPriceOnly/WebposTaxTAX95Test.php:152
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomeOriginalPriceOnly\WebposTaxTAX96Test::test with data set "WebposTaxTAX96TestVariation_TAX96_0" (WebposTaxTAX96TestVariation_TAX96_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/EditCustomPriceOfProductOnCartStep.php:50
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomeOriginalPriceOnly/WebposTaxTAX96Test.php:168
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX87Test::test with data set "WebposTaxTAX87TestVariation_TAX87_0" (WebposTaxTAX87TestVariation_TAX87_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/EditCustomPriceOfProductOnCartStep.php:50
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomePriceIfAvailable/WebposTaxTAX87Test.php:160
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX89Test::test with data set "WebposTaxTAX89TestVariation_TAX89_0" (WebposTaxTAX89TestVariation_TAX89_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/EditCustomPriceOfProductOnCartStep.php:50
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomePriceIfAvailable/WebposTaxTAX89Test.php:157
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX90Test::test with data set "WebposTaxTAX90TestVariation_TAX90_0" (WebposTaxTAX90TestVariation_TAX90_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/EditCustomPriceOfProductOnCartStep.php:50
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomePriceIfAvailable/WebposTaxTAX90Test.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+8) Magento\Webpos\Test\TestCase\Tax\ApplyTaxOnCustomePriceIfAvailable\WebposTaxTAX91Test::test with data set "WebposTaxTAX91TestVariation_TAX91_0" (WebposTaxTAX91TestVariation_TAX91_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestStep/EditCustomPriceOfProductOnCartStep.php:50
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxOnCustomePriceIfAvailable/WebposTaxTAX91Test.php:161
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+9) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX104Test::test with data set "WebposTaxTAX104TestVariation_TAX104_0" (WebposTaxTAX104TestVariation_TAX104_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTNo/WebposTaxTAX104Test.php:162
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+10) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX105Test::test with data set "WebposTaxTAX105TestVariation_TAX105_0" (WebposTaxTAX105TestVariation_TAX105_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTNo/WebposTaxTAX105Test.php:165
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+11) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX106Test::test with data set "WebposTaxTAX106TestVariation_TAX106_0" (WebposTaxTAX106TestVariation_TAX106_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTNo/WebposTaxTAX106Test.php:164
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTNo\WebposTaxTAX102Test::test with data set "WebposTaxTAX102TestVariation_TAX102_0" (WebposTaxTAX102TestVariation_TAX102_0)
+Tax amount is not equals actual tax amount.
+Expected: 8.5
+Actual: 0.00
+Failed asserting that '0.00' matches expected 8.5.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountNoApplyTaxToFpt.php:23
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTNo/WebposTaxTAX102Test.php:164
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -43,130 +213,177 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 6, Assertions: 8, Errors: 2.
-============== Test suite TaxApplyCustomerTaxBeforeDiscountApplyDiscountOnPricesExcludingTax =============
+Tests: 12, Assertions: 1, Errors: 11, Failures: 1.
+============== Test suite TaxApplyTaxToFPTYesCatalogPricesIncludingTaxCrossBorderTradeYes =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-EEEEEEEEE                                                           9 / 9 (100%)
+EEFEEEEEEE                                                        10 / 10 (100%)
 
-Time: 23.27 minutes, Memory: 74.00MB
+Time: 23.29 minutes, Memory: 74.00MB
 
 There were 9 errors:
 
-1) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX76Test::test with data set "WebposTaxTAX76TestVariation_TAX76_0" (WebposTaxTAX76TestVariation_TAX76_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX100Test::test with data set "WebposTaxTAX100TestVariation_TAX100_0" (WebposTaxTAX100TestVariation_TAX100_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX76Test.php:163
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX100Test.php:158
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-2) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX78Test::test with data set "WebposTaxTAX78TestVariation_TAX78_0" (WebposTaxTAX78TestVariation_TAX78_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+2) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX101Test::test with data set "WebposTaxTAX101TestVariation_TAX101_0" (WebposTaxTAX101TestVariation_TAX101_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX78Test.php:158
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX101Test.php:153
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-3) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX79Test::test with data set "WebposTaxTAX79TestVariation_TAX79_0" (WebposTaxTAX79TestVariation_TAX79_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+3) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX99Test::test with data set "WebposTaxTAX99TestVariation_TAX99_0" (WebposTaxTAX99TestVariation_TAX99_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX79Test.php:175
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX99Test.php:144
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-4) Magento\Webpos\Test\TestCase\Tax\ApplyCustomerTaxBeforeDiscount\WebposTaxTAX80Test::test with data set "WebposTaxTAX80TestVariation_TAX80_0" (WebposTaxTAX80TestVariation_TAX80_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+4) Magento\Webpos\Test\TestCase\Tax\CatalogPricesIncludingTaxCrossBorderTradeNo\WebposTaxTAX61Test::test with data set "WebposTaxTAX61TestVariation_TAX61_0" (WebposTaxTAX61TestVariation_TAX61_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyCustomerTaxBeforeDiscount/WebposTaxTAX80Test.php:169
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:70
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CatalogPricesIncludingTaxCrossBorderTradeNo/WebposTaxTAX61Test.php:160
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-5) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesExcludingTax\WebposTaxTAX81Test::test with data set "WebposTaxTAX81TestVariation_TAX81_0" (WebposTaxTAX81TestVariation_TAX81_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+5) Magento\Webpos\Test\TestCase\Tax\CatalogPricesIncludingTaxCrossBorderTradeNo\WebposTaxTAX63Test::test with data set "WebposTaxTAX63TestVariation_TAX63_0" (WebposTaxTAX63TestVariation_TAX63_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesExcludingTax/WebposTaxTAX81Test.php:164
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CatalogPricesIncludingTaxCrossBorderTradeNo/WebposTaxTAX63Test.php:167
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-6) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX82Test::test with data set "WebposTaxTAX82TestVariation_TAX82_0" (WebposTaxTAX82TestVariation_TAX82_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+6) Magento\Webpos\Test\TestCase\Tax\CatalogPricesIncludingTaxCrossBorderTradeNo\WebposTaxTAX64Test::test with data set "WebposTaxTAX64TestVariation_TAX64_0" (WebposTaxTAX64TestVariation_TAX64_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX82Test.php:186
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CatalogPricesIncludingTaxCrossBorderTradeNo/WebposTaxTAX64Test.php:171
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-7) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX84Test::test with data set "WebposTaxTAX84TestVariation_TAX84_0" (WebposTaxTAX84TestVariation_TAX84_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+7) Magento\Webpos\Test\TestCase\Tax\CatalogPricesIncludingTaxCrossBorderTradeYes\WebposTaxTAX57Test::test with data set "WebposTaxTAX57TestVariation_TAX57_0" (WebposTaxTAX57TestVariation_TAX57_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX84Test.php:183
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:54
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutCartItems.php:70
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CatalogPricesIncludingTaxCrossBorderTradeYes/WebposTaxTAX57Test.php:164
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-8) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX85Test::test with data set "WebposTaxTAX85TestVariation_TAX85_0" (WebposTaxTAX85TestVariation_TAX85_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+8) Magento\Webpos\Test\TestCase\Tax\CatalogPricesIncludingTaxCrossBorderTradeYes\WebposTaxTAX59Test::test with data set "WebposTaxTAX59TestVariation_TAX59_0" (WebposTaxTAX59TestVariation_TAX59_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX85Test.php:186
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CatalogPricesIncludingTaxCrossBorderTradeYes/WebposTaxTAX59Test.php:166
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-9) Magento\Webpos\Test\TestCase\Tax\ApplyDiscountOnPricesIncludingTax\WebposTaxTAX86Test::test with data set "WebposTaxTAX86TestVariation_TAX86_0" (WebposTaxTAX86TestVariation_TAX86_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(.grand-total-footer) -> xpath(//div/ul/li/div[contains(@class, "add-discount")]/..)" . Wait: "1"
+9) Magento\Webpos\Test\TestCase\Tax\CatalogPricesIncludingTaxCrossBorderTradeYes\WebposTaxTAX60Test::test with data set "WebposTaxTAX60TestVariation_TAX60_0" (WebposTaxTAX60TestVariation_TAX60_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyDiscountOnPricesIncludingTax/WebposTaxTAX86Test.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutPaymentMethod.php:48
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/CatalogPricesIncludingTaxCrossBorderTradeYes/WebposTaxTAX60Test.php:170
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+--
+
+There was 1 failure:
+
+1) Magento\Webpos\Test\TestCase\Tax\ApplyTaxToFPTYes\WebposTaxTAX97Test::test with data set "WebposTaxTAX97TestVariation_TAX97_0" (WebposTaxTAX97TestVariation_TAX97_0)
+[Apply Tax To FPT] = Yes - On the Checkout - The Tax at the web POS was not correctly.
+Expect: 0.85
+Actual: 0
+Failed asserting that 0.0 matches expected 0.85.
+
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/Tax/AssertTaxAmountOnCartPageAndCheckoutPageWithTaxApplyToFPT.php:44
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/Tax/ApplyTaxToFPTYes/WebposTaxTAX97Test.php:143
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
@@ -174,4 +391,4 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attem
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 9, Assertions: 0, Errors: 9.
+Tests: 10, Assertions: 1, Errors: 9, Failures: 1.
