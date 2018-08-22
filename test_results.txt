@@ -1,66 +1,16 @@
-============== Test suite CheckVisibleForm =============
+============== Test suite CustomerOnCheckoutPageEditCustomerSearch =============
 PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.1.11
 Configuration: /var/www/dev/tests/functional/phpunit.xml
 
-......                                                              6 / 6 (100%)
+EEEEEEEEEE....                                                    14 / 14 (100%)
 
-Time: 1.46 minutes, Memory: 64.00MB
+Time: 25.61 minutes, Memory: 72.00MB
 
-OK (6 tests, 24 assertions)
-============== Test suite CustomerOnCheckoutPageBillingAddressPopupCheckGUICreateCustomer =============
-PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+There were 10 errors:
 
-Runtime:       PHP 7.1.11
-Configuration: /var/www/dev/tests/functional/phpunit.xml
-
-EEEEEEEE                                                            8 / 8 (100%).FEEEEEE
-
-Time: 27.29 minutes, Memory: 68.00MB
-
-There were 14 errors:
-
-1) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposBillingAddressPopupCheckGUITest::test with data set "1_0" (1_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposBillingAddressPopupCheckGUITest.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-2) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposBillingAddressPopupCheckGUITest::test with data set "WebposBillingAddressPopupCheckGUITest_CC19_0" (WebposBillingAddressPopupCheckGUITest_CC19_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposBillingAddressPopupCheckGUITest.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-3) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposBillingAddressPopupCheckGUITest::test with data set "WebposBillingAddressPopupCheckGUITest_CC20_0" (WebposBillingAddressPopupCheckGUITest_CC20_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposBillingAddressPopupCheckGUITest.php:69
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-4) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposCustomerOnCheckoutPageCC21Test::test with data set "WebposCustomerOnCheckoutPageCC21Test_CC21_0" (WebposCustomerOnCheckoutPageCC21Test_CC21_0)
+1) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerChangeShippingAndBillingAddressCC35Test::test with data set "WebposEditCustomerChangeShippingAndBillingAddressCC35TestVariation1_0" (WebposEditCustomerChangeShippingAndBillingAddressCC35TestVariation1_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -68,29 +18,14 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/CheckoutContainer.php:59
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposCustomerOnCheckoutPageCC21Test.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerChangeShippingAndBillingAddressCC35Test.php:79
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-5) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposCustomerOnCheckoutPageCC22Test::test with data set "WebposCustomerOnCheckoutPageCC22Test_CC22_0" (WebposCustomerOnCheckoutPageCC22Test_CC22_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
-
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutAddCustomer.php:67
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposCustomerOnCheckoutPageCC22Test.php:118
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
-6) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposCustomerOnCheckoutPageCC23Test::test with data set "WebposCustomerOnCheckoutPageCC23Test_CC23_0" (WebposCustomerOnCheckoutPageCC23Test_CC23_0)
+2) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerCheckAddAddressButtonCC36Test::test with data set "WebposEditCustomerCheckAddAddressButtonCC36TestVariation1_0" (WebposEditCustomerCheckAddAddressButtonCC36TestVariation1_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -98,15 +33,14 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/CheckoutContainer.php:59
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposCustomerOnCheckoutPageCC23Test.php:111
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerCheckAddAddressButtonCC36Test.php:74
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-7) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposCustomerOnCheckoutPageCC24Test::test with data set "WebposCustomerOnCheckoutPageCC24Test_CC24_0" (WebposCustomerOnCheckoutPageCC24Test_CC24_0)
+3) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerCheckAddAddressButtonCC37Test::test with data set "WebposEditCustomerCheckAddAddressButtonCC37TestVariation1_0" (WebposEditCustomerCheckAddAddressButtonCC37TestVariation1_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -114,15 +48,14 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/CheckoutContainer.php:59
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposCustomerOnCheckoutPageCC24Test.php:95
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerCheckAddAddressButtonCC37Test.php:74
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-8) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\BillingAddressPopup\WebposCustomerOnCheckoutPageCC25Test::test with data set "WebposCustomerOnCheckoutPageCC25Test_CC25_0" (WebposCustomerOnCheckoutPageCC25Test_CC25_0)
+4) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerCheckAddAddressButtonCC38Test::test with data set "WebposEditCustomerCheckAddAddressButtonCC38TestVariation1_0" (WebposEditCustomerCheckAddAddressButtonCC38TestVariation1_0)
 PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
@@ -130,114 +63,249 @@ PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seco
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/CheckoutContainer.php:59
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/BillingAddressPopup/WebposCustomerOnCheckoutPageCC25Test.php:107
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerCheckAddAddressButtonCC38Test.php:80
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-9) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\CreateCustomer\WebposCCCreateCustomerTest::test with data set "WebposCCCreateCustomerTestVariation_CC03_0" (WebposCCCreateCustomerTestVariation_CC03_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+5) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerCheckCancelButtonCC32Test::test with data set "WebposEditCustomerCheckCancelButtonCC32TestVariation1_0" (WebposEditCustomerCheckCancelButtonCC32TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/CreateCustomer/WebposCCCreateCustomerTest.php:97
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerCheckCancelButtonCC32Test.php:72
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-10) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\CreateCustomer\WebposCCCreateCustomerTest::test with data set "2_0" (2_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+6) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerCheckGUICC31Test::test with data set "WebposEditCustomerCheckGUICC31TestVariation1_0" (WebposEditCustomerCheckGUICC31TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/CreateCustomer/WebposCCCreateCustomerTest.php:99
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerCheckGUICC31Test.php:71
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-11) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\CreateCustomer\WebposCCCreateCustomerTest::test with data set "WebposCCCreateCustomerTestVariation_CC05_0" (WebposCCCreateCustomerTestVariation_CC05_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+7) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerDeleteShippingAndBillingAddressCC40Test::test with data set "WebposEditCustomerDeleteShippingAndBillingAddressCC40TestVariation1_0" (WebposEditCustomerDeleteShippingAndBillingAddressCC40TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutAddCustomer.php:67
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/CreateCustomer/WebposCCCreateCustomerTest.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerDeleteShippingAndBillingAddressCC40Test.php:77
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-12) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\CreateCustomer\WebposCCCreateCustomerTest::test with data set "WebposCCCreateCustomerTestVariation_CC06_0" (WebposCCCreateCustomerTestVariation_CC06_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+8) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerEditEmailCC34Test::test with data set "WebposEditCustomerEditEmailCC34TestVariation1_0" (WebposEditCustomerEditEmailCC34TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutAddCustomer.php:67
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/CreateCustomer/WebposCCCreateCustomerTest.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerEditEmailCC34Test.php:77
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-13) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\CreateCustomer\WebposCCCreateCustomerTest::test with data set "WebposCCCreateCustomerTestVariation_CC07_0" (WebposCCCreateCustomerTestVariation_CC07_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+9) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerEditShippingAndBillingAddressCC39Test::test with data set "WebposEditCustomerEditShippingAndBillingAddressCC39TestVariation1_0" (WebposEditCustomerEditShippingAndBillingAddressCC39TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutAddCustomer.php:67
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/CreateCustomer/WebposCCCreateCustomerTest.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerEditShippingAndBillingAddressCC39Test.php:82
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
-14) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\CreateCustomer\WebposCCCreateCustomerTest::test with data set "WebposCCCreateCustomerTestVariation_CC08_0" (WebposCCCreateCustomerTestVariation_CC08_0)
-PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+10) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\EditCustomer\WebposEditCustomerEditSomeFieldsCC33Test::test with data set "WebposEditCustomerCheckCancelButtonCC32TestVariation1_0" (WebposEditCustomerCheckCancelButtonCC32TestVariation1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
 
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutAddCustomer.php:67
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/CreateCustomer/WebposCCCreateCustomerTest.php:85
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/EditCustomer/WebposEditCustomerEditSomeFieldsCC33Test.php:75
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
-
---
-
-There was 1 failure:
-
-1) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\CheckGUI\WebposCCCheckGuiTest::test with data set "WebposCCCheckGuiTestVariation_CC02_0" (WebposCCCheckGuiTestVariation_CC02_0)
-Customer On Cart Page - New Customer popup is not shown
-Failed asserting that false is true.
-
-/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Constraint/CustomerOnCheckoutPage/CheckGUI/AssertNewCustomerPopupIsDisplayed.php:23
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager/Factory.php:57
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/ObjectManager.php:81
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/AbstractConstraint.php:155
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Constraint/Composite.php:109
-/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:231
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
 /var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
 
 ERRORS!
-Tests: 16, Assertions: 13, Errors: 14, Failures: 1.
+Tests: 14, Assertions: 33, Errors: 10.
+============== Test suite CustomerOnCheckoutPageShippingAddressPopupUseGuest =============
+PHPUnit 5.5.7 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.1.11
+Configuration: /var/www/dev/tests/functional/phpunit.xml
+
+EEEEEEE                                                             7 / 7 (100%)EE.
+
+Time: 18.25 minutes, Memory: 66.00MB
+
+There were 9 errors:
+
+1) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\ShippingAddressPopup\WebposCCShippingAddressPopupCC12Test::test with data set "WebposCCShippingAddressPopupCC12TestVariation_CC12_0" (WebposCCShippingAddressPopupCC12TestVariation_CC12_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/CheckoutContainer.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/ShippingAddressPopup/WebposCCShippingAddressPopupCC12Test.php:117
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+2) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\ShippingAddressPopup\WebposCCShippingAddressPopupCC13Test::test with data set "WebposCCShippingAddressPopupCC13TestVariation_CC13_0" (WebposCCShippingAddressPopupCC13TestVariation_CC13_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:456
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:192
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/Checkout/CheckoutAddCustomer.php:67
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/ShippingAddressPopup/WebposCCShippingAddressPopupCC13Test.php:109
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+3) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\ShippingAddressPopup\WebposCCShippingAddressPopupCC14CC16Test::test with data set "WebposCCShippingAddressPopupCC14CC16TestVariation_CC14_0" (WebposCCShippingAddressPopupCC14CC16TestVariation_CC14_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/CheckoutContainer.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/ShippingAddressPopup/WebposCCShippingAddressPopupCC14CC16Test.php:111
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+4) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\ShippingAddressPopup\WebposCCShippingAddressPopupCC14CC16Test::test with data set "WebposCCShippingAddressPopupCC14CC16TestVariation_CC16_0" (WebposCCShippingAddressPopupCC14CC16TestVariation_CC16_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/CheckoutContainer.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/ShippingAddressPopup/WebposCCShippingAddressPopupCC14CC16Test.php:111
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+5) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\ShippingAddressPopup\WebposCCShippingAddressPopupCC15Test::test with data set "WebposCCShippingAddressPopupCC15TestVariation_CC15_0" (WebposCCShippingAddressPopupCC15TestVariation_CC15_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/CheckoutContainer.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/ShippingAddressPopup/WebposCCShippingAddressPopupCC15Test.php:105
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+6) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\ShippingAddressPopup\WebposCCShippingAddressPopupCC17Test::test with data set "WebposCCShippingAddressPopupCC17TestVariation_CC17_0" (WebposCCShippingAddressPopupCC17TestVariation_CC17_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Timed out after 90 seconds
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/WaitUntil.php:78
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/RemoteDriver.php:46
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:606
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Browser.php:206
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Block/Block.php:114
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/Block/CheckoutContainer.php:59
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/ShippingAddressPopup/WebposCCShippingAddressPopupCC17Test.php:134
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+7) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\ShippingAddressPopup\WebposCCShippingAddressPopupCheckGUITest::test with data set "1_0" (1_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/ShippingAddressPopup/WebposCCShippingAddressPopupCheckGUITest.php:65
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+8) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\ShippingAddressPopup\WebposCCShippingAddressPopupCheckGUITest::test with data set "WebposCCShippingAddressPopupCheckGUITestVariation_CC10_0" (WebposCCShippingAddressPopupCheckGUITestVariation_CC10_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/ShippingAddressPopup/WebposCCShippingAddressPopupCheckGUITest.php:65
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+9) Magento\Webpos\Test\TestCase\CustomerOnCheckoutPage\ShippingAddressPopup\WebposCCShippingAddressPopupCheckGUITest::test with data set "WebposCCShippingAddressPopupCheckGUITestVariation_CC11_0" (WebposCCShippingAddressPopupCheckGUITestVariation_CC11_0)
+PHPUnit_Extensions_Selenium2TestCase_WebDriverException: Error occurred on attempt to get element. Message: "Timed out after 90 seconds". Locator: "css selector(#form-customer-add-customer-checkout)" . Wait: "1"
+
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:180
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Driver/Selenium/Driver.php:261
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/Client/Element/SimpleElement.php:140
+/var/www/dev/tests/functional/tests/app/Magento/Webpos/Test/TestCase/CustomerOnCheckoutPage/ShippingAddressPopup/WebposCCShippingAddressPopupCheckGUITest.php:65
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:226
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:300
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Functional.php:217
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:210
+/var/www/dev/tests/functional/vendor/magento/mtf/Magento/Mtf/TestCase/Injectable.php:166
+
+ERRORS!
+Tests: 10, Assertions: 3, Errors: 9.
